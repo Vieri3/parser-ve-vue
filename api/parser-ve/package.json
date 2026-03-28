@@ -1,0 +1,25 @@
+{
+  "name": "parser-ve",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "vieri",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": "24.14.0"
+  },
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "cheerio": "^1.2.0",
+    "pdf-parse": "^2.4.5",
+    "express": "^5.2.1",
+    "cors": "^2.8.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
