@@ -5,9 +5,6 @@ import ButtonParseArchives from './components/ButtonParseArchives.vue';
 
 const API_URL = import.meta.env.VITE_API_URL
 
-console.log(API_URL)
-console.log(`${API_URL}/api/parser/archives`)
-
 interface IParseUrl {
     title: string,
     url: string
@@ -155,7 +152,6 @@ async function downloadFile(file_name: string, file_data: string) {
     URL.revokeObjectURL(url)
 }
 
-
 </script>
 
 <template>
@@ -228,7 +224,7 @@ async function downloadFile(file_name: string, file_data: string) {
                     v-for="res, idx in mass_data_archives"
                     :key="idx"
                 >
-                    <td class="border border-gray-300 text-center">
+                    <td class="border border-gray-300 text-center py-1">
                         <input
                             class="scale-150 cursor-pointer"
                             type="checkbox"
@@ -300,7 +296,7 @@ async function downloadFile(file_name: string, file_data: string) {
                     v-for="res, idx in mass_data_views"
                     :key="idx"
                 >
-                    <td class="border border-gray-300 text-center">
+                    <td class="border border-gray-300 text-center py-1">
                         <input
                             class="scale-150 cursor-pointer"
                             type="checkbox"
@@ -326,15 +322,15 @@ async function downloadFile(file_name: string, file_data: string) {
             v-if="show_table_parsed_data"
             class="mx-auto"
         >
-            <h1 class="text-center text-2xl font-bold">VIEWS</h1>
+            <h1 class="text-center text-2xl font-bold underline py-2">ARTICLES</h1>
             <details
                 class="py-2 my-1 bg-amber-400"
                 v-for="res, idx in mass_data_after_parsing"
                 :key="idx"
             >
-                <summary class="pl-5 text-3xl">
-                    <h1 class="font-bold text-3xl inline">{{ res.file_name }}</h1>
-                    <div class="pl-8 text-xl"><small class="pr-3">download:</small>
+                <summary class="pl-5 text-xl">
+                    <h1 class="font-bold text-xl inline">{{ res.file_name }}</h1>
+                    <div class="pl-5 text-xl"><small class="pr-3">download:</small>
                         <button
                             @click="downloadFile(res.file_name, res.str_data_out)"
                             class="text-blue-500 underline font-bold hover:text-green-900 hover:no-underline text-sm cursor-pointer"
