@@ -1,9 +1,15 @@
 <script setup lang="ts">
 
 import { ref } from 'vue'
-import ButtonParseArchives from './components/ButtonParseArchives.vue';
+
+import { mass_updates_site } from '@/constants/updates.-site.ts'
+import getVersionSite from '@/utils/utils.ts'
+
+import ButtonParseArchives from '@/components/ButtonParseArchives.vue';
 
 const API_URL = import.meta.env.VITE_API_URL
+
+getVersionSite(mass_updates_site)
 
 interface IParseUrl {
     title: string,
