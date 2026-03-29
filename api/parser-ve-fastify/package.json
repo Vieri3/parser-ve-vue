@@ -1,0 +1,35 @@
+{
+  "name": "api-parser-ve-fastify",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vieri3/parser-ve-vue.git"
+  },
+  "keywords": [],
+  "author": "vieri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vieri3/parser-ve-vue/issues"
+  },
+  "homepage": "https://github.com/Vieri3/parser-ve-vue#readme",
+  "description": "api on fastify for parser site ve",
+  "engines": {
+    "node": "24.14.0"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "cheerio": "^1.2.0",
+    "fastify": "^5.8.4",
+    "fastify-swagger": "^5.1.1",
+    "@fastify/cors": "^11.2.0",
+    "pdf-parse": "^2.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
