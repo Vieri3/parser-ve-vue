@@ -5,22 +5,14 @@ import { ref } from 'vue'
 import { mass_updates_site } from '@/utils/updates-site.ts'
 import getVersionSite from '@/utils/utils.ts'
 
+import type { IParseUrl, IParsedData } from '@/types/global-types.ts';
+
 import { API_URL, EDataSite } from '@/constants/constants.ts';
 
 import ButtonParseArchives from '@/components/ui/ButtonParseArchives.vue';
 
 getVersionSite(mass_updates_site)
 
-interface IParseUrl {
-    title: string,
-    url: string
-};
-
-interface IParsedData {
-    file_name: string,
-    str_data_out: string,
-    table_data_out: string[]
-}
 
 const loading = ref<boolean>(false);
 const show_btn_parse_archives = ref<boolean>(true);
