@@ -2,12 +2,12 @@
 
 import { ref } from 'vue'
 
-import { mass_updates_site } from '@/constants/updates.-site.ts'
+import { mass_updates_site } from '@/utils/updates-site.ts'
 import getVersionSite from '@/utils/utils.ts'
 
-import ButtonParseArchives from '@/components/ButtonParseArchives.vue';
+import { API_URL, EDataSite } from '@/constants/constants.ts';
 
-const API_URL = import.meta.env.VITE_API_URL
+import ButtonParseArchives from '@/components/ui/ButtonParseArchives.vue';
 
 getVersionSite(mass_updates_site)
 
@@ -59,7 +59,7 @@ async function parsePageArchives() {
     loading.value = true
     mass_data_archives.value = [];
     try {
-        const res = await fetch(`${API_URL}/api/parser/archives`, {
+        const res = await fetch( API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARCHIVES, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ async function parsePageViews() {
     // очищаем массив от предыдущего заполнения если таков был
     mass_data_views.value = [];
     try {
-        const res = await fetch(`${API_URL}/api/parser/views`, {
+        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_VIEWS, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ async function parseEveryOneView() {
     mass_data_after_parsing.value = [];
     console.log(mass_data_selected_values_in_table_views.value)
     try {
-        const res = await fetch(`${API_URL}/api/parser/view`, {
+        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_VIEW, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

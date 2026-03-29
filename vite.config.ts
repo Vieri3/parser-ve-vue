@@ -3,11 +3,13 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite' 
+import { EDataSite } from '@/constants/constants.ts'
 
 // https://vite.dev/config/
 export default defineConfig({
   // в моем основном сайте есть как бы папка с таким вот названием сайта vieri.xapp.one/parser-ve-vue/index.html вот типа такой путь должен быть
-  base: '/parser-ve-vue/',
+  // и беем base из констант потому что так проще менять чтоб не лазить по всем папкам сайта
+  base: EDataSite.SUBDIRECTORY_SITE_NAME,
   plugins: [
     vue(),
     tailwindcss()
