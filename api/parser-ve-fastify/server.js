@@ -1,5 +1,5 @@
 import Fastify from 'fastify'
-import { itemRoutes } from './routers/routes.js'
+import { useRoutes } from './routes/routes.js'
 
 // import cors from '@fastify/cors'
 
@@ -13,8 +13,7 @@ const fastify = Fastify({
 //   // put your options here
 // });
 
-fastify.register(itemRoutes)
-
+fastify.register(useRoutes)
 
 
 fastify.listen({port}, (err, address) => {

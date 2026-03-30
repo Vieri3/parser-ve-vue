@@ -1,4 +1,16 @@
-# Vue 3 + TypeScript + Vite + Api on Node.js
+<h1 align="center">Parser-VE</h1>
 
-1. Папка api (api/parser-ve) в корне проекта - это папка с backend на node.js проектом
-2. Если вносим обновления это можно записать в constants/updates-site.ts. В массив mass_updates_site
+## Description:
+Парсер собирает данные 'article' на сайте `https://virtual-economics.eu/` и формирует их в отдельные файлы формата .rdf
+
+## Installation:
+
+## Usage:
+Приложение находится в тестовой работе на сайте `https://vieri.xapp.one/parser-ve-vue/`
+
+## Contributing:
+
+## License:
+
+## Contacts:
+egordohlyj4@gmail.com
