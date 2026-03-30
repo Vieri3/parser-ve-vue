@@ -2,8 +2,6 @@ import Fastify from 'fastify'
 import cors from '@fastify/cors'
 import { useRoutes } from './routes/routes.js'
 
-const port = process.env.PORT || 3000;
-
 const fastify = Fastify({
     logger: true
 });
@@ -11,7 +9,8 @@ const fastify = Fastify({
 const start = async () => {
     try {
         await fastify.register(cors)
-        await fastify.register(useRoutes)
+        await fastify.register(useRoutes, { prefix: '/api/parser-fastify' })
+        const port = Number(process.env.PORT) || 3000;
         await fastify.listen({ port })
     } catch (err) {
         fastify.log.error(err)

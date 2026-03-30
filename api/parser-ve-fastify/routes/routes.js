@@ -2,12 +2,12 @@ import { getControllerArchives, getControllerViews, getControllerView } from '..
 
 export function useRoutes(fastify, options, done) {
 
-    fastify.post('/api/parser-fastify/archives', getControllerArchives);
+    fastify.post('/archives', getControllerArchives);
 
-    fastify.post('/api/parser-fastify/views', getControllerViews);
+    fastify.post('/views', getControllerViews);
 
-    fastify.post('/api/parser-fastify/view', getControllerView);
+    fastify.post('/view', getControllerView);
     
-    done()
+    done();
 
-}
+};
