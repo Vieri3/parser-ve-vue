@@ -9,7 +9,7 @@ export const enum EDataSite {
     SUBDIRECTORY_SITE_NAME = '/parser-ve-vue/',
 
    // это есть поддиректория в которой на сервере лежит наш бэкенд /api/parser/server.js или /api/parser/index.js или app.js или main.js 
-    SUBDIRECTORY_SITE_API_NAME = '/api/parser/',
+    SUBDIRECTORY_SITE_API_NAME = '/api/parser-fastify/',
 
     //response 
     // для удобства здесь описываем RES- отправка POST - тип отправки ARCHIVES - имя 

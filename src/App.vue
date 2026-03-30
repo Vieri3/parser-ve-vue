@@ -13,7 +13,6 @@ import ButtonParseArchives from '@/components/ui/ButtonParseArchives.vue';
 
 getVersionSite(mass_updates_site)
 
-
 const loading = ref<boolean>(false);
 const show_btn_parse_archives = ref<boolean>(true);
 const show_table_archives = ref<boolean>(false);
@@ -47,15 +46,17 @@ function selectionValuesInTableViews() {
 };
 
 async function parsePageArchives() {
+    console.log(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARCHIVES)
     // показываем загрузку
     loading.value = true
     mass_data_archives.value = [];
     try {
-        const res = await fetch( API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARCHIVES, {
+        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARCHIVES, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            }
+            // если тело пустое то не нужно задавать заголовки     
+            // headers: {
+            //     'Content-Type': 'application/json',
+            // },
         });
         if (!res.ok) {
             throw new Error(`HTTP error! status: ${res.status}`)

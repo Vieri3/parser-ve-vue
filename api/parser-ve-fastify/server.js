@@ -1,7 +1,6 @@
 import Fastify from 'fastify'
+import cors from '@fastify/cors'
 import { useRoutes } from './routes/routes.js'
-
-// import cors from '@fastify/cors'
 
 const port = process.env.PORT || 3000;
 
@@ -9,13 +8,14 @@ const fastify = Fastify({
     logger: true
 });
 
-// await fastify.register(cors, {
-//   // put your options here
-// });
-
-fastify.register(useRoutes)
-
-
-fastify.listen({port}, (err, address) => {
-    if (err) throw err
-})
+const start = async () => {
+    try {
+        await fastify.register(cors)
+        await fastify.register(useRoutes)
+        await fastify.listen({ port })
+    } catch (err) {
+        fastify.log.error(err)
+        process.exit(1)
+    }
+}
+start()

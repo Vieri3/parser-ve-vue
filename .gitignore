@@ -14,9 +14,7 @@ dist-ssr
 
 #folder node_modules backend
 api/parser-ve-express/node_modules
-api/parser-ve-express/test.http
 api/parser-ve-fastify/node_modules
-api/parser-ve-fastify/test.http
 
 # Editor directories and files
 .vscode/*
