@@ -6,7 +6,7 @@ POST http://localhost:3000/api/parser-fastify/views HTTP/1.1
 content-type: application/json
 
 [ 
-    "https://www.virtual-economics.eu/index.php/VE/issue/view/29" 
+    "https://www.virtual-economics.eu/index.php/VE/issue/view/27" 
 ]
 
 ### POST View url
