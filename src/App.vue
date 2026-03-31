@@ -4,132 +4,115 @@ import { ref } from 'vue'
 
 import { mass_updates_site, getVersionSite } from '@/utils/updates-site.ts'
 
-import type { IParseUrl, IParsedData } from '@/types/global-types.ts';
+import type { IParsedData, IParseUrl } from '@/types/global-types.ts';
 
 import { API_URL, EDataSite } from '@/constants/constants.ts';
 
 import TheHeader from '@/components/layout/TheHeader.vue';
 
+//функция проверяет версию сайта
 getVersionSite(mass_updates_site)
-
+// кнопка для начала программы
+const show_btn_start = ref<boolean>(true);
+// показывает Загрузка...
 const loading = ref<boolean>(false);
-const show_btn_parse_archives = ref<boolean>(true);
-const show_table_archives = ref<boolean>(false);
-const show_table_views = ref<boolean>(false);
+// скрывает/показывает БЛОК с Table
+const show_table = ref<boolean>(false);
+// archives or views реактивно выводим название таблиц
+const title_table = ref<string>('');
+// скрывает/показывает БЛОК с Articles
 const show_list_parsed_data = ref<boolean>(false);
-
-// данные с сервера будут возвращаться вот сюда
-const mass_data_archives = ref<IParseUrl[]>([])
-const mass_data_views = ref<IParseUrl[]>([])
+// данные с сервера будут возвращаться вот сюда (ссылки на статьи)
+const mass_data_displayed_in_table = ref<IParseUrl[]>([])
+// массив отмеченных чекбоксов (эти данные будут отслаться на сервер)
+const mass_data_selected_values_in_table = ref<string[] | []>([]);
+// данные с сервера. (готовые данные статьи)
 const mass_data_after_parsing = ref<IParsedData[]>([])
 
-// массив отмеченных чекбоксов
-const mass_data_selected_values_in_table_archives = ref<string[] | []>([]);
-const mass_data_selected_values_in_table_views = ref<string[] | []>([]);
-
-// функции вроде как дублируются, но рекомендация VUE не стоит раздувать шаблон
+// функция сброса checkboxes
 function resetValuesInTableArchives() {
-    mass_data_selected_values_in_table_archives.value = []
+    mass_data_selected_values_in_table.value = []
 };
-
+// функция выбора статей
 function selectionValuesInTableArchives() {
-    mass_data_selected_values_in_table_archives.value = mass_data_archives.value.map(el => el.url)!
+    mass_data_selected_values_in_table.value = mass_data_displayed_in_table.value.map(el => el.url)!
 };
 
-function resetValuesInTableViews() {
-    mass_data_selected_values_in_table_views.value = []
-};
-
-function selectionValuesInTableViews() {
-    mass_data_selected_values_in_table_views.value = mass_data_views.value.map(el => el.url)!
-};
+function getParseFn() {
+    if (title_table.value === 'Archives') {
+        parsePageViews()
+    }
+    if (title_table.value === 'Views') {
+        parseEveryOneView()
+    }
+}
 
 async function parsePageArchives() {
-    // показываем загрузку
+    show_btn_start.value = false;
     loading.value = true
-    mass_data_archives.value = [];
+    mass_data_displayed_in_table.value = [];
     try {
         const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARCHIVES, {
             method: 'POST',
-            // если тело пустое то не нужно задавать заголовки     
-            // headers: {
-            //     'Content-Type': 'application/json',
-            // },
         });
-        if (!res.ok) {
-            throw new Error(`HTTP error! status: ${res.status}`)
-        }
-        const data = await res.json()
-        mass_data_archives.value = data;
-        console.log(data)
+        if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
+        const data = await res.json();
+        mass_data_displayed_in_table.value = data;
     } catch (err) {
         console.error(err)
     } finally {
-        show_btn_parse_archives.value = false;
+        title_table.value = 'Archives'
+        show_table.value = true;
         loading.value = false;
-        show_table_archives.value = true;
     }
 };
 
 async function parsePageViews() {
-    // прячем таблицу выбора ссылок 
-    show_table_archives.value = false;
-    // показываем загрузку
-    loading.value = true
-    // очищаем массив от предыдущего заполнения если таков был
-    mass_data_views.value = [];
+    show_table.value = false;
+    loading.value = true;
+    mass_data_displayed_in_table.value = [];
     try {
         const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_VIEWS, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(mass_data_selected_values_in_table_archives.value)
+            body: JSON.stringify(mass_data_selected_values_in_table.value)
         });
-        if (!res.ok) {
-            throw new Error(`HTTP error! status: ${res.status}`)
-        }
-        // принимаем значение уже от сервера
+        if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
         const data = await res.json();
-        mass_data_views.value = data;
-        console.log(data)
+        mass_data_displayed_in_table.value = data;
     } catch (err) {
         console.error(err)
     } finally {
-        // Показываем что загрузка завершена 
+        // очищаем массив предыдущих выбранных элементов
+        mass_data_selected_values_in_table.value = [];
+        title_table.value = 'Views';
+        show_table.value = true;
         loading.value = false;
-        // открываем следующую таблицу (шапку пока данных нет)
-        show_table_views.value = true;
     }
 };
 
 async function parseEveryOneView() {
-    show_table_views.value = false;
+    show_table.value = false;
     loading.value = true;
-    mass_data_after_parsing.value = [];
-    console.log(mass_data_selected_values_in_table_views.value)
+    mass_data_displayed_in_table.value = [];
     try {
         const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_VIEW, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(mass_data_selected_values_in_table_views.value)
+            body: JSON.stringify(mass_data_selected_values_in_table.value)
         });
-        if (!res.ok) {
-            throw new Error(`HTTP error! status: ${res.status}`)
-        }
-        // принимаем массив обьектов с даными статей уже от сервера СРАЗУ ПАЧКОЙ а может надо ...
+        if (!res.ok) {throw new Error(`HTTP error! status: ${res.status}`)};
         const data = await res.json();
         mass_data_after_parsing.value = data;
-        console.log(data)
     } catch (err) {
         console.error(err)
     } finally {
-        // Показываем что загрузка завершена 
-        loading.value = false;
-        // открываем следующую таблицу (шапку пока данных нет)
         show_list_parsed_data.value = true;
+        loading.value = false;
     }
 };
 
@@ -155,7 +138,7 @@ async function downloadFile(file_name: string, file_data: string) {
 
         <TheHeader
             link_origin_site="https://www.virtual-economics.eu/index.php/VE/issue/archive"
-            :start_btn="show_btn_parse_archives"
+            :start_btn="show_btn_start"
             :fn_parsePageArchives="parsePageArchives"
         >
             <template v-slot:titleSite>
@@ -169,43 +152,42 @@ async function downloadFile(file_name: string, file_data: string) {
             </template>
         </TheHeader>
 
-
         <div v-if="loading">Загрузка...</div>
 
-        <!--table Archives-->
+        <!--table-->
         <table
-            v-if="show_table_archives"
+            v-if="show_table"
             class="table-auto border-separate border border-gray-400 mx-auto min-w-80 sm:min-w-130"
         >
             <caption class="caption-top py-2">
-                <h1 class="underline text-2xl font-bold">Table: Archives</h1>
+                <h1 class="underline text-2xl font-bold">Table: {{ title_table }}</h1>
                 <div class="flex flex-col sm:flex-row justify-between">
 
                     <div class="mt-3 *:font-bold *:px-2 sm:*:px-4 *:mx-1 *:cursor-pointer">
                         <button
-                            @click="parsePageViews"
-                            v-if="mass_data_selected_values_in_table_archives.length > 0"
+                            @click="getParseFn"
+                            v-if="mass_data_selected_values_in_table.length > 0"
                             class=" bg-green-500 hover:bg-green-400 py-2 border-b-4 border-green-700 hover:border-green-500 rounded"
                             id="btn-archives-submit"
                         >execute</button>
                         <button
                             @click="selectionValuesInTableArchives"
-                            v-if="mass_data_selected_values_in_table_archives.length !== mass_data_archives.length"
+                            v-if="mass_data_selected_values_in_table.length !== mass_data_displayed_in_table.length"
                             class=" bg-amber-500 hover:bg-amber-400 py-2 border-b-4 border-amber-700 hover:border-amber-500 rounded"
                             id="btn-archives-submit"
                         >select all</button>
                         <button
                             @click="resetValuesInTableArchives"
-                            v-if="mass_data_selected_values_in_table_archives.length > 0"
+                            v-if="mass_data_selected_values_in_table.length > 0"
                             class=" bg-red-500 hover:bg-red-400 py-2 border-b-4 border-red-700 hover:border-red-500 rounded"
                             id="btn-archives-reset"
                         >reset</button>
                     </div>
 
                     <div class="*:font-bold content-end mt-2">
-                        <span class="text-green-700 text-xl px-2">All: {{ mass_data_archives.length }}</span>
+                        <span class="text-green-700 text-xl px-2">All: {{ mass_data_displayed_in_table.length }}</span>
                         <span class="text-amber-500 text-xl px-2">Selected: {{
-                            mass_data_selected_values_in_table_archives.length }}</span>
+                            mass_data_selected_values_in_table.length }}</span>
                     </div>
 
                 </div>
@@ -214,13 +196,13 @@ async function downloadFile(file_name: string, file_data: string) {
             <thead>
                 <tr>
                     <th class="border border-gray-300 bg-gray-200">checkbox</th>
-                    <th class="border border-gray-300 bg-gray-200">Archives</th>
+                    <th class="border border-gray-300 bg-gray-200">{{ title_table }}</th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr
-                    v-for="res, idx in mass_data_archives"
+                    v-for="res, idx in mass_data_displayed_in_table"
                     :key="idx"
                 >
                     <td class="border border-gray-300 text-center py-1">
@@ -229,82 +211,10 @@ async function downloadFile(file_name: string, file_data: string) {
                             type="checkbox"
                             :value="res.url"
                             :id="idx.toString()"
-                            v-model="mass_data_selected_values_in_table_archives"
+                            v-model="mass_data_selected_values_in_table"
                         >
                     </td>
                     <td class="border border-gray-300 text-center">
-                        <a
-                            class="text-blue-500 underline hover:text-red-500 hover:no-underline"
-                            :href="res.url"
-                            target="_blank"
-                        >{{ res.title }}</a>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-
-        <!--table Views-->
-        <table
-            v-if="show_table_views"
-            class="table-auto border-separate border border-gray-400 mx-auto min-w-80 sm:min-w-130"
-        >
-            <caption class="caption-top py-2">
-                <h1 class="underline text-2xl font-bold">Table: Views</h1>
-                <div class="flex flex-col sm:flex-row justify-between">
-
-                    <div class="mt-3 *:font-bold *:px-2 sm:*:px-4 *:mx-1 *:cursor-pointer">
-                        <button
-                            @click="parseEveryOneView"
-                            v-if="mass_data_selected_values_in_table_views.length > 0"
-                            class="bg-green-500 hover:bg-green-400 py-2 border-b-4 border-green-700 hover:border-green-500 rounded"
-                            id="btn-archives-submit"
-                        >execute</button>
-                        <button
-                            v-if="mass_data_selected_values_in_table_views.length !== mass_data_views.length"
-                            @click="selectionValuesInTableViews"
-                            class="bg-amber-500 hover:bg-amber-400 py-2 border-b-4 border-amber-700 hover:border-amber-500 rounded"
-                            id="btn-archives-submit"
-                        >select all</button>
-                        <button
-                            v-if="mass_data_selected_values_in_table_views.length > 0"
-                            @click="resetValuesInTableViews"
-                            class="bg-red-500 hover:bg-red-400 py-2 border-b-4 border-red-700 hover:border-red-500 rounded"
-                            id="btn-archives-reset"
-                        >reset</button>
-                    </div>
-
-                    <div class="*:font-bold content-end mt-2">
-                        <span class="text-green-700 text-xl px-2">All: {{ mass_data_views.length }}</span>
-                        <span class="text-amber-500 text-xl px-2">Selected: {{
-                            mass_data_selected_values_in_table_views.length }}</span>
-                    </div>
-                </div>
-
-            </caption>
-            <thead>
-                <tr>
-                    <th class="border border-gray-300 bg-gray-200 *:m-2">
-                        checkbox
-                    </th>
-                    <th class="border border-gray-300 bg-gray-200">View</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr
-                    v-for="res, idx in mass_data_views"
-                    :key="idx"
-                >
-                    <td class="border border-gray-300 text-center py-1">
-                        <input
-                            class="scale-150 cursor-pointer"
-                            type="checkbox"
-                            :value="res.url"
-                            :id="idx.toString()"
-                            v-model="mass_data_selected_values_in_table_views"
-                        >
-                    </td>
-                    <td class="border border-gray-300">
                         <a
                             class="text-blue-500 underline hover:text-red-500 hover:no-underline"
                             :href="res.url"
@@ -345,7 +255,6 @@ async function downloadFile(file_name: string, file_data: string) {
                         </tr>
                     </tbody>
                 </table>
-                <!-- <pre class="pl-10">{{ res.str_data_out }}</pre> -->
             </details>
         </div>
 
