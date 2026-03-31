@@ -2,14 +2,13 @@
 
 import { ref } from 'vue'
 
-import { mass_updates_site } from '@/utils/updates-site.ts'
-import getVersionSite from '@/utils/utils.ts'
+import { mass_updates_site, getVersionSite } from '@/utils/updates-site.ts'
 
 import type { IParseUrl, IParsedData } from '@/types/global-types.ts';
 
 import { API_URL, EDataSite } from '@/constants/constants.ts';
 
-import ButtonParseArchives from '@/components/ui/ButtonParseArchives.vue';
+import TheHeader from '@/components/layout/TheHeader.vue';
 
 getVersionSite(mass_updates_site)
 
@@ -17,7 +16,7 @@ const loading = ref<boolean>(false);
 const show_btn_parse_archives = ref<boolean>(true);
 const show_table_archives = ref<boolean>(false);
 const show_table_views = ref<boolean>(false);
-const show_table_parsed_data = ref<boolean>(false);
+const show_list_parsed_data = ref<boolean>(false);
 
 // данные с сервера будут возвращаться вот сюда
 const mass_data_archives = ref<IParseUrl[]>([])
@@ -46,7 +45,6 @@ function selectionValuesInTableViews() {
 };
 
 async function parsePageArchives() {
-    console.log(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARCHIVES)
     // показываем загрузку
     loading.value = true
     mass_data_archives.value = [];
@@ -131,12 +129,11 @@ async function parseEveryOneView() {
         // Показываем что загрузка завершена 
         loading.value = false;
         // открываем следующую таблицу (шапку пока данных нет)
-        show_table_parsed_data.value = true;
+        show_list_parsed_data.value = true;
     }
 };
 
 async function downloadFile(file_name: string, file_data: string) {
-    // тип для обычного текста
     const mime_type = 'text/plain';
     const file_extension = 'rdf';
     const blob = new Blob([file_data], { type: mime_type });
@@ -156,19 +153,22 @@ async function downloadFile(file_name: string, file_data: string) {
 <template>
     <div class="container mx-auto">
 
-        <div class="flex flex-col justify-center">
-            <h1 class="text-center text-2xl my-2">Welcome to the article parsing page</h1>
-            <a
-                class="text-blue-500 underline hover:text-red-500 hover:no-underline text-center text-2xl"
-                href="https://www.virtual-economics.eu/index.php/VE/issue/archive"
-                target="_blank"
-            >virtual-economics.eu</a>
-            <!--Button for first load link Archives-->
-            <ButtonParseArchives
-                v-if="show_btn_parse_archives"
-                @click="parsePageArchives"
-            />
-        </div>
+        <TheHeader
+            link_origin_site="https://www.virtual-economics.eu/index.php/VE/issue/archive"
+            :start_btn="show_btn_parse_archives"
+            :fn_parsePageArchives="parsePageArchives"
+        >
+            <template v-slot:titleSite>
+                Welcome to the article parsing page
+            </template>
+            <template #txt-name-origin-site>
+                virtual-economics.eu
+            </template>
+            <template #txt-name-btn-upload>
+                Upload a table Archives
+            </template>
+        </TheHeader>
+
 
         <div v-if="loading">Загрузка...</div>
 
@@ -316,12 +316,12 @@ async function downloadFile(file_name: string, file_data: string) {
             </tbody>
         </table>
 
-        <!--table Parsed Data -->
+        <!--list Parsed Data -->
         <div
-            v-if="show_table_parsed_data"
+            v-if="show_list_parsed_data"
             class="mx-auto"
         >
-            <h1 class="text-center text-2xl font-bold underline py-2">ARTICLES</h1>
+            <h1 class="text-center text-2xl font-bold underline py-2">List: Articles</h1>
             <details
                 class="py-2 my-1 bg-amber-400"
                 v-for="res, idx in mass_data_after_parsing"
@@ -333,7 +333,8 @@ async function downloadFile(file_name: string, file_data: string) {
                         <button
                             @click="downloadFile(res.file_name, res.str_data_out)"
                             class="text-blue-500 underline font-bold hover:text-green-900 hover:no-underline text-sm cursor-pointer"
-                        >{{ res.file_name }}.rdf</button>
+                        >{{
+                            res.file_name }}.rdf</button>
                     </div>
                 </summary>
                 <table class="table-auto border-separate border border-black mx-3">
