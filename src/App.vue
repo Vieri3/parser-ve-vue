@@ -52,9 +52,7 @@ async function parsePageArchives() {
     loading.value = true
     mass_data_displayed_in_table.value = [];
     try {
-        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARCHIVES, {
-            method: 'POST',
-        });
+        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARCHIVES);
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
         const data = await res.json();
         mass_data_displayed_in_table.value = data;
