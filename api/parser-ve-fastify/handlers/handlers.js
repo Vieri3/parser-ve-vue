@@ -32,6 +32,31 @@ export async function parsePageArchives(reply) {
     };
 };
 
+export async function parseLazyPageArchives(stream) {
+    try {
+        // делаем запрос на сервер чтобы открыть страницу
+        const response = await axios.get("https://www.virtual-economics.eu/index.php/VE/issue/archive");
+        // из страницы HTML делаем объект cheerio
+        const $ = cheerio.load(response.data);
+        // Находим все ссылки на странице (можно уточнить селектор)
+        $("a.title").each((index, element) => {
+            // вытаскиваем ссылку 
+            const url = $(element).attr('href');
+            // вытаскиваем название
+            const title = $(element).text().trim();
+            // Отправляем в поток kаждый объект сразу после парсинга
+            stream.push(JSON.stringify({ title, url }) + '\n')
+        });
+            // Завершаем поток
+            stream.push(null)
+
+    } catch (error) {
+            console.error('Parsing error:', error)
+            stream.push(JSON.stringify({ error: error.message }) + '\n')
+            stream.push(null)
+    };
+};
+
 export async function parsePageViews(data, reply) {
     // принимаем данные в формате Array<{title: string, link: string}> (массив оъектов)
     // !!!!!!!!!!! вернуть ошибку на фронтенд

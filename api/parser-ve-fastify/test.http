@@ -1,5 +1,9 @@
-### POST Archives url
+### GET Archives url
 GET http://localhost:3000/api/parser-fastify/archives HTTP/1.1
+
+### GET Lazy Archives url
+GET http://localhost:3000/api/parser-fastify/archives-lazy HTTP/1.1
+
 
 ### POST Views url
 POST http://localhost:3000/api/parser-fastify/views HTTP/1.1
