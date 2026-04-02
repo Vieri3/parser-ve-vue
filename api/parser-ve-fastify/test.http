@@ -1,5 +1,5 @@
 ### POST Archives url
-POST http://localhost:3000/api/parser-fastify/archives HTTP/1.1
+GET http://localhost:3000/api/parser-fastify/archives HTTP/1.1
 
 ### POST Views url
 POST http://localhost:3000/api/parser-fastify/views HTTP/1.1

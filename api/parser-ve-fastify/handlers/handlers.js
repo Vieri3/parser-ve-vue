@@ -2,7 +2,7 @@ import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { parsePdfToTxt, convertingMouthFromNumToStr, getDecodedOutputStr } from '../utils/utils.js'
 
-export async function parsePageArchives(){
+export async function parsePageArchives(reply) {
     try {
         // делаем запрос на сервер чтобы открыть страницу
         const response = await axios.get("https://www.virtual-economics.eu/index.php/VE/issue/archive");
@@ -22,12 +22,17 @@ export async function parsePageArchives(){
         return data_urls;
 
     } catch (error) {
-        console.error('Ошибка при парсинге основной страницы:', error);
-        return [];
-    }
+        reply.status(404).send({
+            error: 'Not Found',
+            message: `Item with id ${response} not found`
+        }).status(500).send({
+            success: false,
+            error: error.message
+        });
+    };
 };
 
-export async function parsePageViews(data) {
+export async function parsePageViews(data, reply) {
     // принимаем данные в формате Array<{title: string, link: string}> (массив оъектов)
     // !!!!!!!!!!! вернуть ошибку на фронтенд
     if (!data) { throw createError({ statusCode: 400, message: 'URL is required' }) };
@@ -55,12 +60,17 @@ export async function parsePageViews(data) {
         return data_urls;
 
     } catch (error) {
-        console.error('Ошибка при парсинге основной страницы:', error.message);
-        return [];
+        reply.status(404).send({
+            error: 'Not Found',
+            message: `Item with id ${response} not found`
+        }).status(500).send({
+            success: false,
+            error: error.message
+        });
     }
 };
 
-export async function parsePageView(data) {
+export async function parsePageView(data, reply) {
     // принимаем данные в формате Array<{title: string, link: string}> (массив оъектов)
     // !!!!!!!!!!! вернуть ошибку на фронтенд
     if (!data) { throw createError({ statusCode: 400, message: 'URL is required' }) };
@@ -166,8 +176,14 @@ export async function parsePageView(data) {
         return array_of_parsed_articles
 
     } catch (error) {
-        console.error('Ошибка при парсинге основной страницы:', error.message);
-        return [];
+        reply.status(404).send({
+            error: 'Not Found',
+            message: `Item with id ${response} not found`
+        }).status(500).send({
+            success: false,
+            error: error.message
+        });
     }
-
+    // console.error('Ошибка при парсинге основной страницы:', error.message);
+    // return [];
 };
