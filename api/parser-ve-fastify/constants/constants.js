@@ -1,0 +1,9 @@
+export const SUBDIRECTORY_SITE_API_NAME = '/api/parser-fastify';
+
+export const START_PARSE_URL_SITE = 'https://www.virtual-economics.eu/index.php/VE/issue/archive';
+
+export const RES_GET_ARCHIVES = '/archives';
+export const RES_GET_ARCHIVES_LAZY = '/archives-lazy';
+export const RES_POST_ARTICLES = '/articles';
+export const RES_POST_ARTICLE = '/article';
+

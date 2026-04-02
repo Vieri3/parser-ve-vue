@@ -3,12 +3,11 @@ import swagger from '@fastify/swagger'
 import fastifySwaggerUi from '@fastify/swagger-ui'
 import cors from '@fastify/cors'
 import { useRoutes } from './routes/routes.js'
+import { SUBDIRECTORY_SITE_API_NAME } from './constants/constants.js'
 
 const fastify = Fastify({
     logger: true
 });
-
-
 
 const start = async () => {
     try {
@@ -27,7 +26,7 @@ const start = async () => {
             }
         })
         await fastify.register(cors)
-        await fastify.register(useRoutes, { prefix: '/api/parser-fastify' })
+        await fastify.register(useRoutes, { prefix: SUBDIRECTORY_SITE_API_NAME })
         // запускаем и считываем 
         await fastify.ready()
         fastify.swagger()

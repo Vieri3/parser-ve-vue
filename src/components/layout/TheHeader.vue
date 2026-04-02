@@ -11,7 +11,7 @@ defineProps<{
 
 <template>
 
-    <div class="flex flex-col justify-center">
+    <div class="flex flex-col justify-center" v-if="container_start_btn">
         <h1 class="text-center text-2xl my-2">
             <slot name="titleSite"></slot>
         </h1>
@@ -22,7 +22,7 @@ defineProps<{
         >
             <slot name="txt-name-origin-site"></slot>
         </a>
-        <div class="mx-auto *:mx-1" v-if="container_start_btn">
+        <div class="mx-auto *:mx-1">
             <!--Button for first load links Archives-->
             <button
                 @click="fn_parsePageArchives"

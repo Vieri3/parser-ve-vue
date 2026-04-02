@@ -9,6 +9,7 @@
 Приложение находится в тестовой работе на сайте `https://vieri.xapp.one/parser-ve-vue/`
 
 ## Contributing:
+Чтобы ознакомится с API документацией, swagger-ui: `http://localhost:3000/documentation`
 
 ## License:
 

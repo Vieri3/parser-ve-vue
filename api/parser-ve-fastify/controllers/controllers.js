@@ -1,4 +1,4 @@
-import { parsePageArchives, parsePageViews, parsePageView, parseLazyPageArchives } from '../handlers/handlers.js'
+import { parsePageArchives, parsePageArticles, parsePageArticle, parseLazyPageArchives } from '../handlers/handlers.js'
 import { Readable } from 'stream'
 
 export async function getControllerArchives(req, reply) {
@@ -25,12 +25,12 @@ export async function getLazyControllerArchives(req, reply) {
 
 };
 
-export async function getControllerViews(req, reply) {
-    const result = await parsePageViews(req.body);
+export async function getControllerArticles(req, reply) {
+    const result = await parsePageArticles(req.body);
     reply.send(result)
 };
 
-export async function getControllerView(req, reply) {
-    const result = await parsePageView(req.body);
+export async function getControllerArticle(req, reply) {
+    const result = await parsePageArticle(req.body);
     reply.send(result)
 };

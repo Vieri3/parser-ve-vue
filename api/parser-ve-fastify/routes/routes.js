@@ -1,14 +1,15 @@
-import { getControllerArchives, getControllerViews, getControllerView, getLazyControllerArchives } from '../controllers/controllers.js'
-import { getSchemaArchives } from '../shemas/schemas.js';
+import { getControllerArchives, getControllerArticles, getControllerArticle, getLazyControllerArchives } from '../controllers/controllers.js'
+import { getSchemaArchives } from '../schemas/schemas.js';
+import { RES_GET_ARCHIVES, RES_GET_ARCHIVES_LAZY, RES_POST_ARTICLE, RES_POST_ARTICLES } from '../constants/constants.js'
 
 export function useRoutes(fastify, options, done) {
 
-    fastify.get('/archives', getSchemaArchives, getControllerArchives);
-    fastify.get('/archives-lazy', getSchemaArchives, getLazyControllerArchives);
+    fastify.get(RES_GET_ARCHIVES, getSchemaArchives, getControllerArchives);
+    fastify.get(RES_GET_ARCHIVES_LAZY, getSchemaArchives, getLazyControllerArchives);
 
-    fastify.post('/views', getControllerViews);
+    fastify.post(RES_POST_ARTICLES, getControllerArticles);
 
-    fastify.post('/view', getControllerView);
+    fastify.post(RES_POST_ARTICLE, getControllerArticle);
     
     done();
 

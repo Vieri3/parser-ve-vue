@@ -18,7 +18,7 @@ const show_btn_start = ref<boolean>(true);
 const loading = ref<boolean>(false);
 // скрывает/показывает БЛОК с Table
 const show_table = ref<boolean>(false);
-// archives or views реактивно выводим название таблиц
+// archives or articles реактивно выводим название таблиц
 const title_table = ref<string>('');
 // скрывает/показывает БЛОК с Articles
 const show_list_parsed_data = ref<boolean>(false);
@@ -39,11 +39,11 @@ function selectionValuesInTableArchives() {
 };
 
 function getParseFn() {
-    if (title_table.value === 'Archives') {
-        parsePageViews()
+    if (title_table.value === EDataSite.NAME_TABLE_ARCHIVES) {
+        parsePageArticles()
     }
-    if (title_table.value === 'Views') {
-        parseEveryOneView()
+    if (title_table.value === EDataSite.NAME_TABLE_ARTICLES) {
+        parseEveryOneArticle()
     }
 }
 
@@ -60,7 +60,7 @@ async function parsePageArchives() {
     } catch (err) {
         console.error(err)
     } finally {
-        title_table.value = 'Archives'
+        title_table.value = EDataSite.NAME_TABLE_ARCHIVES;
         show_table.value = true;
         loading.value = false;
     }
@@ -70,6 +70,8 @@ async function parseLazyPageArchives() {
     show_btn_start.value = false;
     loading.value = true
     mass_data_displayed_in_table.value = [];
+    title_table.value = EDataSite.NAME_TABLE_ARCHIVES;
+    show_table.value = true;
     try {
         const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_GET_ARCHIVES_LAZY);
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
@@ -93,18 +95,16 @@ async function parseLazyPageArchives() {
     } catch (err) {
         console.error(err)
     } finally {
-        title_table.value = 'Archives'
-        show_table.value = true;
         loading.value = false;
     }
 };
 
-async function parsePageViews() {
+async function parsePageArticles() {
     show_table.value = false;
     loading.value = true;
     mass_data_displayed_in_table.value = [];
     try {
-        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_VIEWS, {
+        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARTICLES, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -119,18 +119,18 @@ async function parsePageViews() {
     } finally {
         // очищаем массив предыдущих выбранных элементов
         mass_data_selected_values_in_table.value = [];
-        title_table.value = 'Views';
+        title_table.value = EDataSite.NAME_TABLE_ARTICLES;
         show_table.value = true;
         loading.value = false;
     }
 };
 
-async function parseEveryOneView() {
+async function parseEveryOneArticle() {
     show_table.value = false;
     loading.value = true;
     mass_data_displayed_in_table.value = [];
     try {
-        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_VIEW, {
+        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARTICLE, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -250,7 +250,7 @@ async function downloadFile(file_name: string, file_data: string) {
                             v-model="mass_data_selected_values_in_table"
                         >
                     </td>
-                    <td class="border border-gray-300 text-center">
+                    <td class="border border-gray-300" :class="title_table == EDataSite.NAME_TABLE_ARCHIVES ? 'text-center' : ''">
                         <a
                             class="text-blue-500 underline hover:text-red-500 hover:no-underline"
                             :href="res.url"
@@ -267,7 +267,7 @@ async function downloadFile(file_name: string, file_data: string) {
             v-if="show_list_parsed_data"
             class="mx-auto"
         >
-            <h1 class="text-center text-2xl font-bold underline py-2">List: Articles</h1>
+            <h1 class="text-center text-2xl font-bold underline py-2">List: {{ title_table }}</h1>
             <details
                 class="py-2 my-1 bg-amber-400"
                 v-for="res, idx in mass_data_after_parsing"

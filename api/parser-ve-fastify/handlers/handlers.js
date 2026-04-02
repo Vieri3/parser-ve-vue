@@ -1,11 +1,12 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { parsePdfToTxt, convertingMouthFromNumToStr, getDecodedOutputStr } from '../utils/utils.js'
+import { START_PARSE_URL_SITE } from '../constants/constants.js'
 
 export async function parsePageArchives(reply) {
     try {
         // делаем запрос на сервер чтобы открыть страницу
-        const response = await axios.get("https://www.virtual-economics.eu/index.php/VE/issue/archive");
+        const response = await axios.get(START_PARSE_URL_SITE);
         // из страницы HTML делаем объект cheerio
         const $ = cheerio.load(response.data);
 
@@ -35,7 +36,7 @@ export async function parsePageArchives(reply) {
 export async function parseLazyPageArchives(stream) {
     try {
         // делаем запрос на сервер чтобы открыть страницу
-        const response = await axios.get("https://www.virtual-economics.eu/index.php/VE/issue/archive");
+        const response = await axios.get(START_PARSE_URL_SITE);
         // из страницы HTML делаем объект cheerio
         const $ = cheerio.load(response.data);
         // Находим все ссылки на странице (можно уточнить селектор)
@@ -56,7 +57,7 @@ export async function parseLazyPageArchives(stream) {
     };
 };
 
-export async function parsePageViews(data, reply) {
+export async function parsePageArticles(data, reply) {
     // принимаем данные в формате Array<{title: string, link: string}> (массив оъектов)
     // !!!!!!!!!!! вернуть ошибку на фронтенд
     if (!data) { throw createError({ statusCode: 400, message: 'URL is required' }) };
@@ -64,9 +65,9 @@ export async function parsePageViews(data, reply) {
     try {
         let data_urls = [];
 
-        for (const issue_view_url of data) {
+        for (const issue_article_url of data) {
             // делаем запрос на сервер чтобы открыть страницу
-            const response = await axios.get(issue_view_url);
+            const response = await axios.get(issue_article_url);
             // из страницы HTML делаем объект cheerio
             const $ = cheerio.load(response.data);
             // Находим все ссылки на странице (можно уточнить селектор)
@@ -94,7 +95,7 @@ export async function parsePageViews(data, reply) {
     }
 };
 
-export async function parsePageView(data, reply) {
+export async function parsePageArticle(data, reply) {
     // принимаем данные в формате Array<{title: string, link: string}> (массив оъектов)
     // !!!!!!!!!!! вернуть ошибку на фронтенд
     if (!data) { throw createError({ statusCode: 400, message: 'URL is required' }) };
@@ -103,9 +104,9 @@ export async function parsePageView(data, reply) {
 
         let array_of_parsed_articles = [];
 
-        for (const article_view_url of data) {
+        for (const article_url of data) {
             // делаем запрос на сервер чтобы открыть страницу
-            const response = await axios.get(article_view_url);
+            const response = await axios.get(article_url);
             // из страницы HTML делаем объект cheerio
             const $ = cheerio.load(response.data);
 
