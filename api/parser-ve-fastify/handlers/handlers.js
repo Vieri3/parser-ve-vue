@@ -49,7 +49,6 @@ export async function parseLazyPageArchives(stream) {
         });
             // Завершаем поток
             stream.push(null)
-
     } catch (error) {
             console.error('Parsing error:', error)
             stream.push(JSON.stringify({ error: error.message }) + '\n')

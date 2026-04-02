@@ -13,7 +13,8 @@ export const enum EDataSite {
 
     //response 
     // для удобства здесь описываем RES- отправка POST - тип отправки ARCHIVES - имя 
-    RES_POST_ARCHIVES = 'archives',
+    RES_GET_ARCHIVES = 'archives',
+    RES_GET_ARCHIVES_LAZY = 'archives-lazy',
     RES_POST_VIEWS = 'views',
     RES_POST_VIEW = 'view'
 };

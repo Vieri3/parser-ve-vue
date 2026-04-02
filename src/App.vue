@@ -47,15 +47,49 @@ function getParseFn() {
     }
 }
 
+// получение данных полным пакетом
 async function parsePageArchives() {
     show_btn_start.value = false;
     loading.value = true
     mass_data_displayed_in_table.value = [];
     try {
-        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARCHIVES);
+        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_GET_ARCHIVES);
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
         const data = await res.json();
         mass_data_displayed_in_table.value = data;
+    } catch (err) {
+        console.error(err)
+    } finally {
+        title_table.value = 'Archives'
+        show_table.value = true;
+        loading.value = false;
+    }
+};
+// получение данных NDJSON потока
+async function parseLazyPageArchives() {
+    show_btn_start.value = false;
+    loading.value = true
+    mass_data_displayed_in_table.value = [];
+    try {
+        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_GET_ARCHIVES_LAZY);
+        if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
+
+        const reader = res.body!.getReader()
+        const decoder = new TextDecoder()
+
+        while (true) {
+            const { done, value } = await reader.read()
+            if (done) break
+            const chunk = decoder.decode(value)
+            const lines = chunk.split('\n').filter(line => line.trim())
+
+            for (const line of lines) {
+                const item = JSON.parse(line)
+                console.log('Получен объект:', item)
+                // Обрабатываем каждый объект по мере поступления
+                mass_data_displayed_in_table.value.push(item)
+            }
+        }
     } catch (err) {
         console.error(err)
     } finally {
@@ -103,7 +137,7 @@ async function parseEveryOneView() {
             },
             body: JSON.stringify(mass_data_selected_values_in_table.value)
         });
-        if (!res.ok) {throw new Error(`HTTP error! status: ${res.status}`)};
+        if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
         const data = await res.json();
         mass_data_after_parsing.value = data;
     } catch (err) {
@@ -136,8 +170,9 @@ async function downloadFile(file_name: string, file_data: string) {
 
         <TheHeader
             link_origin_site="https://www.virtual-economics.eu/index.php/VE/issue/archive"
-            :start_btn="show_btn_start"
+            :container_start_btn="show_btn_start"
             :fn_parsePageArchives="parsePageArchives"
+            :fn_parseLazyPageArchives="parseLazyPageArchives"
         >
             <template v-slot:titleSite>
                 Welcome to the article parsing page
@@ -147,6 +182,9 @@ async function downloadFile(file_name: string, file_data: string) {
             </template>
             <template #txt-name-btn-upload>
                 Upload a table Archives
+            </template>
+            <template #txt-name-btn-lazy-upload>
+                Lazy - upload a table Archives
             </template>
         </TheHeader>
 
