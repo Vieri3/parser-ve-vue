@@ -34,8 +34,11 @@ const start = async () => {
         const port = Number(process.env.PORT) || 3000;
         await fastify.listen({ port })
 
+        console.log('************************************************************');
         console.log(`Server running on http://localhost:${port}`);
+        console.log('************************************************************');
         console.log(`Swagger UI: http://localhost:${port}/documentation`);
+        console.log('************************************************************');
         
     } catch (err) {
         fastify.log.error(err)

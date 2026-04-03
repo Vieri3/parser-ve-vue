@@ -2,16 +2,16 @@
 GET http://localhost:3000/api/parser-fastify/archives HTTP/1.1
 
 
-### POST Views url
-POST http://localhost:3000/api/parser-fastify/views HTTP/1.1
+### POST Articles url
+POST http://localhost:3000/api/parser-fastify/articles HTTP/1.1
 content-type: application/json
 
 [ 
     "https://www.virtual-economics.eu/index.php/VE/issue/view/27" 
 ]
 
-### POST View url
-POST http://localhost:3000/api/parser-fastify/view HTTP/1.1
+### POST Article url
+POST http://localhost:3000/api/parser-fastify/article HTTP/1.1
 content-type: application/json
 
 [   

@@ -1,14 +1,17 @@
-import axios from 'axios'
 import * as cheerio from 'cheerio'
 import { parsePdfToTxt, convertingMouthFromNumToStr, getDecodedOutputStr } from '../utils/utils.js'
-import { START_PARSE_URL_SITE } from '../constants/constants.js'
+import { START_PARSE_URL_SITE, TIME_PARSE_ARTICLE } from '../constants/constants.js'
 
 export async function parsePageArchives(reply) {
     try {
         // делаем запрос на сервер чтобы открыть страницу
-        const response = await axios.get(START_PARSE_URL_SITE);
+        const res = await fetch(START_PARSE_URL_SITE);
+        // Проверяем, прошел ли сетевой запрос успешно
+        if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
+        // ответ — это HTML или текст
+        const htmlString = await res.text();
         // из страницы HTML делаем объект cheerio
-        const $ = cheerio.load(response.data);
+        const $ = cheerio.load(htmlString);
 
         const data_urls = [];
         // Находим все ссылки на странице (можно уточнить селектор)
@@ -23,27 +26,22 @@ export async function parsePageArchives(reply) {
         return data_urls;
 
     } catch (error) {
-        reply.status(404).send({
-            error: 'Not Found',
-            message: `Item with id ${response} not found`
-        }).status(500).send({
-            success: false,
-            error: error.message
-        });
+        console.error('Parsing error:', error)
+        return []
     };
 };
 
 export async function parsePageArticles(data, stream) {
-
-    if (!data) { throw createError({ statusCode: 400, message: 'URL is required' }) };
-
     try {
-
         for (const article_url of data) {
             // делаем запрос на сервер чтобы открыть страницу
-            const response = await axios.get(article_url);
+            const res = await fetch(article_url);
+            // Проверяем, прошел ли сетевой запрос успешно
+            if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
+            // ответ — это HTML или текст
+            const htmlString = await res.text();
             // из страницы HTML делаем объект cheerio
-            const $ = await cheerio.load(response.data);
+            const $ = cheerio.load(htmlString);
             // Находим все ссылки на странице (можно уточнить селектор)
             $("h3.title a").each((index, element) => {
                 // вытаскиваем ссылку 
@@ -66,20 +64,12 @@ export async function parsePageArticles(data, stream) {
 };
 
 export async function parsePageArticle(data, stream) {
-    // принимаем данные в формате Array<{title: string, link: string}> (массив оъектов)
-    // !!!!!!!!!!! вернуть ошибку на фронтенд
-    if (!data) { throw createError({ statusCode: 400, message: 'URL is required' }) };
-
     try {
-
-        let array_of_parsed_articles = [];
-
         for (const article_url of data) {
-            // делаем запрос на сервер чтобы открыть страницу
-            const response = await axios.get(article_url);
-            // из страницы HTML делаем объект cheerio
-            const $ = cheerio.load(response.data);
-
+            const res = await fetch(article_url);
+            if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
+            const htmlString = await res.text();
+            const $ = cheerio.load(htmlString);
             //Важно!!!
             // Парсим сылку PDF из <head> вот такого вот формата https://www.virtual-economics.eu/index.php/VE/article/download/457/199
             const link_pdf = $("meta[name='citation_pdf_url']").attr("content");
@@ -166,7 +156,7 @@ export async function parsePageArticle(data, stream) {
             stream.push(JSON.stringify({ file_name, str_data_out, table_data_out }) + '\n')
 
             // т.к. парсим не только страницу а и пдф поэтому в тестовом варианте для сбора корректных данных устанавливаем время
-            await new Promise(resolve => setTimeout(resolve, 4000));
+            await new Promise(resolve => setTimeout(resolve, TIME_PARSE_ARTICLE));
         }
 
         // Завершаем поток
