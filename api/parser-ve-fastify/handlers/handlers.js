@@ -65,7 +65,7 @@ export async function parsePageArticles(data, stream) {
     }
 };
 
-export async function parsePageArticle(data, reply) {
+export async function parsePageArticle(data, stream) {
     // принимаем данные в формате Array<{title: string, link: string}> (массив оъектов)
     // !!!!!!!!!!! вернуть ошибку на фронтенд
     if (!data) { throw createError({ statusCode: 400, message: 'URL is required' }) };
@@ -79,7 +79,6 @@ export async function parsePageArticle(data, reply) {
             const response = await axios.get(article_url);
             // из страницы HTML делаем объект cheerio
             const $ = cheerio.load(response.data);
-
 
             //Важно!!!
             // Парсим сылку PDF из <head> вот такого вот формата https://www.virtual-economics.eu/index.php/VE/article/download/457/199
@@ -163,22 +162,19 @@ export async function parsePageArticle(data, reply) {
                 ["Handle:", `RePEc:aid:journl:v:${volume}:y:${year}:i:${issue}:p:${pages}`]
             );
 
-            array_of_parsed_articles.push({ file_name, str_data_out, table_data_out })
-            // т.к. парсим не только страницу а и пдф 
+            // Отправляем в поток kаждый объект сразу после парсинга
+            stream.push(JSON.stringify({ file_name, str_data_out, table_data_out }) + '\n')
+
+            // т.к. парсим не только страницу а и пдф поэтому в тестовом варианте для сбора корректных данных устанавливаем время
             await new Promise(resolve => setTimeout(resolve, 4000));
         }
 
-        return array_of_parsed_articles
+        // Завершаем поток
+        stream.push(null)
 
     } catch (error) {
-        reply.status(404).send({
-            error: 'Not Found',
-            message: `Item with id ${response} not found`
-        }).status(500).send({
-            success: false,
-            error: error.message
-        });
+        console.error('Parsing error:', error)
+        stream.push(JSON.stringify({ error: error.message }) + '\n')
+        stream.push(null)
     }
-    // console.error('Ошибка при парсинге основной страницы:', error.message);
-    // return [];
 };

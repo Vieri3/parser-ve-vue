@@ -7,12 +7,12 @@ export async function getControllerArchives(req, reply) {
 };
 
 export async function getControllerArticles(req, reply) {
-// Каждая строка - JSON
-    reply.header('Content-Type', 'application/x-ndjson'); 
+    // Каждая строка - JSON
+    reply.header('Content-Type', 'application/x-ndjson');
     // Валидируется каждый раз
-    reply.header('Cache-Control', 'no-cache'); 
+    reply.header('Cache-Control', 'no-cache');
     // не закрываем поток сразу
-    reply.header('Connection', 'keep-alive'); 
+    reply.header('Connection', 'keep-alive');
     // Создаем читаемый поток
     const stream = new Readable({
         objectMode: true,
@@ -25,6 +25,13 @@ export async function getControllerArticles(req, reply) {
 };
 
 export async function getControllerArticle(req, reply) {
-    const result = await parsePageArticle(req.body);
-    reply.send(result)
+    reply.header('Content-Type', 'application/x-ndjson');
+    reply.header('Cache-Control', 'no-cache');
+    reply.header('Connection', 'keep-alive');
+    const stream = new Readable({
+        objectMode: true,
+        read() { }
+    });
+    parsePageArticle(req.body, stream)
+    return reply.send(stream)
 };

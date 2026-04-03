@@ -51,28 +51,33 @@ function getParseFn() {
 
 // получение данных полным пакетом
 async function parsePageArchives() {
+    // скрываем кнопку стартовой загрузки всех Archives
     show_btn_start.value = false;
-    loading.value = true
+    // Включаем визуально компонент загрузка
+    loading.value = true;
+    // очищаем основной массив (от предыдущих операций) где берутся данные для отображения 
     mass_data_displayed_in_table.value = [];
     try {
         const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_GET_ARCHIVES);
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
         const data = await res.json();
+        // заполняем массив для отображения таблицы
         mass_data_displayed_in_table.value = data;
     } catch (err) {
         console.error(err)
     } finally {
+        // выводим в шаблоне название таблицы
         title_table.value = EDataSite.NAME_TABLE_ARCHIVES;
+        // показываем компонент TABLE 
         show_table.value = true;
+        /// Выключаем визуально компонент загрузка
         loading.value = false;
     }
 };
-
+// получение данных STREAM потоком
 async function parsePageArticles() {
-    show_table.value = false;
     loading.value = true;
-    mass_data_displayed_in_table.value = [];
-    show_table.value = true;
+    mass_data_displayed_in_table.value = [];;
     try {
         const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARTICLES, {
             method: 'POST',
@@ -82,7 +87,7 @@ async function parsePageArticles() {
             body: JSON.stringify(mass_data_selected_values_in_table.value)
         });
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
-
+        // очищаем массив предыдущих выбранных элементов
         mass_data_selected_values_in_table.value = [];
 
         const reader = res.body!.getReader();
@@ -105,17 +110,20 @@ async function parsePageArticles() {
     } catch (err) {
         console.error(err)
     } finally {
-        // очищаем массив предыдущих выбранных элементов
-        mass_data_selected_values_in_table.value = [];
         title_table.value = EDataSite.NAME_TABLE_ARTICLES;
         loading.value = false;
     }
 };
 
 async function parseEveryOneArticle() {
+    // прячем таблицу ранее выбираеммых элементов
     show_table.value = false;
+    // показываем визуально компонент загрузки
     loading.value = true;
+    // очищаем основной массив (от предыдущих операций) где берутся данные для отображения 
     mass_data_displayed_in_table.value = [];
+    // показываем блок где будут появляться Articles
+    show_list_parsed_data.value = true;
     try {
         const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARTICLE, {
             method: 'POST',
@@ -125,12 +133,29 @@ async function parseEveryOneArticle() {
             body: JSON.stringify(mass_data_selected_values_in_table.value)
         });
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
-        const data = await res.json();
-        mass_data_after_parsing.value = data;
+        // очищаем массив предыдущих выбранных элементов
+        mass_data_selected_values_in_table.value = [];
+
+        const reader = res.body!.getReader();
+        const decoder = new TextDecoder();
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+
+            const chunk = decoder.decode(value);
+            const lines = chunk.split('\n').filter(line => line.trim());
+
+            for (const line of lines) {
+                const item = JSON.parse(line)
+                console.log('Получен объект:', item)
+                // Обрабатываем каждый объект по мере поступления
+                mass_data_after_parsing.value.push(item);
+            }
+        }
     } catch (err) {
         console.error(err)
     } finally {
-        show_list_parsed_data.value = true;
         loading.value = false;
     }
 };
@@ -220,7 +245,8 @@ async function downloadFile(file_name: string, file_data: string) {
             </thead>
             <tbody>
 
-                <tr class="scroll-line"
+                <tr
+                    class="scroll-line"
                     v-for="res, idx in mass_data_displayed_in_table"
                     :key="idx"
                 >
@@ -233,10 +259,7 @@ async function downloadFile(file_name: string, file_data: string) {
                             v-model="mass_data_selected_values_in_table"
                         >
                     </td>
-                    <td
-                        class="border border-gray-300"
-                        :class="title_table == EDataSite.NAME_TABLE_ARCHIVES ? 'text-center' : ''"
-                    >
+                    <td class="border border-gray-300">
                         <a
                             class="text-blue-500 underline hover:text-red-500 hover:no-underline"
                             :href="res.url"
