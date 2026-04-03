@@ -4,7 +4,7 @@ import { ref } from 'vue'
 
 import { mass_updates_site, getVersionSite } from '@/utils/updates-site.ts'
 
-// import { scrollToBottom } from '@/utils/utils.ts'
+import { downloadFile } from '@/utils/utils.ts'
 
 import type { IParsedData, IParseUrl } from '@/types/global-types.ts';
 
@@ -39,7 +39,7 @@ function resetValuesInTableArchives() {
 function selectionValuesInTableArchives() {
     mass_data_selected_values_in_table.value = mass_data_displayed_in_table.value.map(el => el.url)!
 };
-
+// функиця которая запускает оредлеленную функцию в зависимости от данных в таблице
 function getParseFn() {
     if (title_table.value === EDataSite.NAME_TABLE_ARCHIVES) {
         parsePageArticles()
@@ -49,7 +49,7 @@ function getParseFn() {
     }
 }
 
-// получение данных полным пакетом
+// получение данных полным пакетом все Archives
 async function parsePageArchives() {
     // скрываем кнопку стартовой загрузки всех Archives
     show_btn_start.value = false;
@@ -74,7 +74,7 @@ async function parsePageArchives() {
         loading.value = false;
     }
 };
-// получение данных STREAM потоком
+// получение данных Articles (STREAM потоком) из выбранных Archives
 async function parsePageArticles() {
     loading.value = true;
     mass_data_displayed_in_table.value = [];;
@@ -114,7 +114,7 @@ async function parsePageArticles() {
         loading.value = false;
     }
 };
-
+// получение данных Article (STREAM потоком) из выбранных Articles
 async function parseEveryOneArticle() {
     // прячем таблицу ранее выбираеммых элементов
     show_table.value = false;
@@ -159,21 +159,6 @@ async function parseEveryOneArticle() {
         loading.value = false;
     }
 };
-
-async function downloadFile(file_name: string, file_data: string) {
-    const mime_type = 'text/plain';
-    const file_extension = 'rdf';
-    const blob = new Blob([file_data], { type: mime_type });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = file_name + '.' + file_extension
-    // эмулируем клик и очищаем память
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url)
-}
 
 </script>
 
