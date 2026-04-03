@@ -4,7 +4,6 @@ defineProps<{
     link_origin_site: string
     container_start_btn: boolean
     fn_parsePageArchives: () => Promise<void>
-    fn_parseLazyPageArchives: () => Promise<void>
 }>()
 
 </script>
@@ -29,13 +28,6 @@ defineProps<{
                 class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-5 cursor-pointer rounded mx-auto"
             >
                 <slot name="txt-name-btn-upload"></slot>
-            </button>
-            <!--Button for first load-lazy links Archives-->
-            <button
-                @click="fn_parseLazyPageArchives"
-                class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mt-5 cursor-pointer rounded mx-auto"
-            >
-                <slot name="txt-name-btn-lazy-upload"></slot>
             </button>
         </div>
     </div>

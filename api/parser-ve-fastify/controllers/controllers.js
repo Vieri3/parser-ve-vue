@@ -1,4 +1,4 @@
-import { parsePageArchives, parsePageArticles, parsePageArticle, parseLazyPageArchives } from '../handlers/handlers.js'
+import { parsePageArchives, parsePageArticles, parsePageArticle } from '../handlers/handlers.js'
 import { Readable } from 'stream'
 
 export async function getControllerArchives(req, reply) {
@@ -6,28 +6,22 @@ export async function getControllerArchives(req, reply) {
     reply.send(result)
 };
 
-export async function getLazyControllerArchives(req, reply) {
-    // Устанавливаем заголовки для потоковой передачи
-    reply.header('Content-Type', 'application/x-ndjson') // Каждая строка - JSON
-    reply.header('Cache-Control', 'no-cache') // Валидируется каждый раз
-    reply.header('Connection', 'keep-alive')  // не закрываем поток сразу
-
+export async function getControllerArticles(req, reply) {
+// Каждая строка - JSON
+    reply.header('Content-Type', 'application/x-ndjson'); 
+    // Валидируется каждый раз
+    reply.header('Cache-Control', 'no-cache'); 
+    // не закрываем поток сразу
+    reply.header('Connection', 'keep-alive'); 
     // Создаем читаемый поток
     const stream = new Readable({
         objectMode: true,
         read() { }
-    })
-
+    });
     // Запускаем парсинг асинхронно
-    parseLazyPageArchives(stream)
+    parsePageArticles(req.body, stream)
 
     return reply.send(stream)
-
-};
-
-export async function getControllerArticles(req, reply) {
-    const result = await parsePageArticles(req.body);
-    reply.send(result)
 };
 
 export async function getControllerArticle(req, reply) {

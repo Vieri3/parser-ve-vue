@@ -4,6 +4,8 @@ import { ref } from 'vue'
 
 import { mass_updates_site, getVersionSite } from '@/utils/updates-site.ts'
 
+// import { scrollToBottom } from '@/utils/utils.ts'
+
 import type { IParsedData, IParseUrl } from '@/types/global-types.ts';
 
 import { API_URL, EDataSite } from '@/constants/constants.ts';
@@ -65,44 +67,12 @@ async function parsePageArchives() {
         loading.value = false;
     }
 };
-// получение данных NDJSON потока
-async function parseLazyPageArchives() {
-    show_btn_start.value = false;
-    loading.value = true
-    mass_data_displayed_in_table.value = [];
-    title_table.value = EDataSite.NAME_TABLE_ARCHIVES;
-    show_table.value = true;
-    try {
-        const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_GET_ARCHIVES_LAZY);
-        if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
-
-        const reader = res.body!.getReader()
-        const decoder = new TextDecoder()
-
-        while (true) {
-            const { done, value } = await reader.read()
-            if (done) break
-            const chunk = decoder.decode(value)
-            const lines = chunk.split('\n').filter(line => line.trim())
-
-            for (const line of lines) {
-                const item = JSON.parse(line)
-                console.log('Получен объект:', item)
-                // Обрабатываем каждый объект по мере поступления
-                mass_data_displayed_in_table.value.push(item)
-            }
-        }
-    } catch (err) {
-        console.error(err)
-    } finally {
-        loading.value = false;
-    }
-};
 
 async function parsePageArticles() {
     show_table.value = false;
     loading.value = true;
     mass_data_displayed_in_table.value = [];
+    show_table.value = true;
     try {
         const res = await fetch(API_URL + EDataSite.SUBDIRECTORY_SITE_API_NAME + EDataSite.RES_POST_ARTICLES, {
             method: 'POST',
@@ -112,15 +82,32 @@ async function parsePageArticles() {
             body: JSON.stringify(mass_data_selected_values_in_table.value)
         });
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
-        const data = await res.json();
-        mass_data_displayed_in_table.value = data;
+
+        mass_data_selected_values_in_table.value = [];
+
+        const reader = res.body!.getReader();
+        const decoder = new TextDecoder();
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+
+            const chunk = decoder.decode(value);
+            const lines = chunk.split('\n').filter(line => line.trim());
+
+            for (const line of lines) {
+                const item = JSON.parse(line)
+                console.log('Получен объект:', item)
+                // Обрабатываем каждый объект по мере поступления
+                mass_data_displayed_in_table.value.push(item);
+            }
+        }
     } catch (err) {
         console.error(err)
     } finally {
         // очищаем массив предыдущих выбранных элементов
         mass_data_selected_values_in_table.value = [];
         title_table.value = EDataSite.NAME_TABLE_ARTICLES;
-        show_table.value = true;
         loading.value = false;
     }
 };
@@ -172,7 +159,6 @@ async function downloadFile(file_name: string, file_data: string) {
             link_origin_site="https://www.virtual-economics.eu/index.php/VE/issue/archive"
             :container_start_btn="show_btn_start"
             :fn_parsePageArchives="parsePageArchives"
-            :fn_parseLazyPageArchives="parseLazyPageArchives"
         >
             <template v-slot:titleSite>
                 Welcome to the article parsing page
@@ -182,9 +168,6 @@ async function downloadFile(file_name: string, file_data: string) {
             </template>
             <template #txt-name-btn-upload>
                 Upload a table Archives
-            </template>
-            <template #txt-name-btn-lazy-upload>
-                Lazy - upload a table Archives
             </template>
         </TheHeader>
 
@@ -237,7 +220,7 @@ async function downloadFile(file_name: string, file_data: string) {
             </thead>
             <tbody>
 
-                <tr
+                <tr class="scroll-line"
                     v-for="res, idx in mass_data_displayed_in_table"
                     :key="idx"
                 >
@@ -250,7 +233,10 @@ async function downloadFile(file_name: string, file_data: string) {
                             v-model="mass_data_selected_values_in_table"
                         >
                     </td>
-                    <td class="border border-gray-300" :class="title_table == EDataSite.NAME_TABLE_ARCHIVES ? 'text-center' : ''">
+                    <td
+                        class="border border-gray-300"
+                        :class="title_table == EDataSite.NAME_TABLE_ARCHIVES ? 'text-center' : ''"
+                    >
                         <a
                             class="text-blue-500 underline hover:text-red-500 hover:no-underline"
                             :href="res.url"

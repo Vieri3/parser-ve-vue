@@ -2,7 +2,7 @@
   "name": "parser-ve",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
+  "license": "MIT",
   "author": "vieri",
   "type": "module",
   "main": "index.js",

@@ -33,65 +33,35 @@ export async function parsePageArchives(reply) {
     };
 };
 
-export async function parseLazyPageArchives(stream) {
-    try {
-        // делаем запрос на сервер чтобы открыть страницу
-        const response = await axios.get(START_PARSE_URL_SITE);
-        // из страницы HTML делаем объект cheerio
-        const $ = cheerio.load(response.data);
-        // Находим все ссылки на странице (можно уточнить селектор)
-        $("a.title").each((index, element) => {
-            // вытаскиваем ссылку 
-            const url = $(element).attr('href');
-            // вытаскиваем название
-            const title = $(element).text().trim();
-            // Отправляем в поток kаждый объект сразу после парсинга
-            stream.push(JSON.stringify({ title, url }) + '\n')
-        });
-            // Завершаем поток
-            stream.push(null)
-    } catch (error) {
-            console.error('Parsing error:', error)
-            stream.push(JSON.stringify({ error: error.message }) + '\n')
-            stream.push(null)
-    };
-};
+export async function parsePageArticles(data, stream) {
 
-export async function parsePageArticles(data, reply) {
-    // принимаем данные в формате Array<{title: string, link: string}> (массив оъектов)
-    // !!!!!!!!!!! вернуть ошибку на фронтенд
     if (!data) { throw createError({ statusCode: 400, message: 'URL is required' }) };
 
     try {
-        let data_urls = [];
 
-        for (const issue_article_url of data) {
+        for (const article_url of data) {
             // делаем запрос на сервер чтобы открыть страницу
-            const response = await axios.get(issue_article_url);
+            const response = await axios.get(article_url);
             // из страницы HTML делаем объект cheerio
-            const $ = cheerio.load(response.data);
+            const $ = await cheerio.load(response.data);
             // Находим все ссылки на странице (можно уточнить селектор)
             $("h3.title a").each((index, element) => {
                 // вытаскиваем ссылку 
                 const url = $(element).attr('href');
                 // вытаскиваем название
                 const title = $(element).text().trim();
-                data_urls.push({ title, url });
+                // Отправляем в поток kаждый объект сразу после парсинга
+                stream.push(JSON.stringify({ title, url }) + '\n')
             });
-            // Небольшая задержка, чтобы не перегружать сервер
-            await new Promise(resolve => setTimeout(resolve, 1000));
         };
 
-        return data_urls;
+        // Завершаем поток
+        stream.push(null)
 
     } catch (error) {
-        reply.status(404).send({
-            error: 'Not Found',
-            message: `Item with id ${response} not found`
-        }).status(500).send({
-            success: false,
-            error: error.message
-        });
+        console.error('Parsing error:', error)
+        stream.push(JSON.stringify({ error: error.message }) + '\n')
+        stream.push(null)
     }
 };
 

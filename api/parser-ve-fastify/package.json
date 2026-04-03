@@ -1,6 +1,6 @@
 {
   "name": "api-parser-ve-fastify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "server.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "vieri",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Vieri3/parser-ve-vue/issues"
   },

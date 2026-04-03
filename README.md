@@ -12,6 +12,7 @@
 Чтобы ознакомится с API документацией, swagger-ui: `http://localhost:3000/documentation`
 
 ## License:
+Licensed under MIT
 
 ## Contacts:
 egordohlyj4@gmail.com

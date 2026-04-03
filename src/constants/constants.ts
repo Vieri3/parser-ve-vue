@@ -14,7 +14,6 @@ export const enum EDataSite {
     //response 
     // для удобства здесь описываем RES- отправка POST - тип отправки ARCHIVES - имя 
     RES_GET_ARCHIVES = '/archives',
-    RES_GET_ARCHIVES_LAZY = '/archives-lazy',
     RES_POST_ARTICLES = '/articles',
     RES_POST_ARTICLE = '/article',
 

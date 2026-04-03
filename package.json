@@ -1,15 +1,27 @@
 {
   "name": "parser-ve-vue",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.1",
   "type": "module",
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vieri3/parser-ve-vue.git"
+  },
+  "keywords": [],
+  "author": "vieri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vieri3/parser-ve-vue/issues"
+  },
+  "homepage": "https://github.com/Vieri3/parser-ve-vue#readme",
+  "description": "api on fastify for parser site ve",
+  "engines": {
+    "node": "24.14.0"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
