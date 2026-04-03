@@ -1,0 +1,244 @@
+<ici-import>
+	<journal issn="0030-6657"/>
+	<issue number="1" volume="72" year="2018" publicationDate="2018-02-28" coverDate="styczeń-luty 2018" coverUrl="https://otolaryngologypl.com/test/cover1.jpg" numberOfArticles="2">
+		<article gicid="01.3001.0011.5913" externalId="167252">
+			<type>ORIGINAL_ARTICLE</type>
+			<languageVersion externalId="123456" language="pl">
+				<title>Raport z realizacji Programu Powszechnych Przesiewowych Badań Słuchu u Noworodków w Polsce w 2016 roku</title>
+				<abstract>Program Powszechnych Przesiewowych Badań Słuchu u Noworodków (PPPBSuN) działa na terenie całej Polski od 14 lat. Jego głównym założeniem jest przeprowadzenie badania przesiewowego słuchu w 2.–3. dobie życia dziecka oraz zebranie informacji na temat czynników ryzyka wystąpienia niedosłuchu. Łącznie w PPPBSuN na trzech poziomach referencyjności, bierze udział 496 ośrodków. Do 22 sierpnia 2017 roku w Centralnej Bazie Danych (CDB) PPPBSuN zarejestrowanych zostało 5 458 114 dzieci. Najczęściej występującym typem niedosłuchu u dzieci był obustronny niedosłuch czuciowo-nerwowy, który został zdiagnozowany w 2016 roku u 260 dzieci. W poniższym raporcie przedstawione są najważniejsze wyniki oraz wnioski płynące z funkcjonowania PPPBSuN w 2016 roku.</abstract>
+				<pdfFileUrl>https://otolaryngologypl.com/test/111111.pdf</pdfFileUrl>
+				<publicationDate>2018-02-28</publicationDate>
+				<pageFrom>1</pageFrom>
+				<pageTo>4</pageTo>
+				<doi>10.5604/01.3001.0011.5913</doi>
+				<keywords>
+					<keyword>badania przesiewowe słuchu u noworodków</keyword>
+					<keyword>czynniki ryzyka uszkodzenia słuchu</keyword>
+					<keyword>niedosłuch</keyword>
+				</keywords>
+			</languageVersion>
+			<languageVersion externalId="123457" language="en">
+				<title>The report of the Polish Universal Neonatal Hearing Screening Program in 2016</title>
+				<abstract>The Polish Universal Neonatal Hearing Screening Program (PUNHSP) has been carried out in Poland for 14 years. The main aim of this Program is to organize hearing screening tests and to gather the information about risk factors of hearing loss in almost all newborns in Poland. It consists of 496 centers at 3 referral levels. A total of 5 458 114 children had been registered in the Central Database (CDB) of PUNHSP by the 22nd of August 2017. Bilateral sensorineural hearing loss was the most frequently appearing hearing impairment in children. It was diagnosed in 260 cases in 2016. This report presents the most important results and conclusions concerning the running of the PUNHSP in 2016.</abstract>
+				<pdfFileUrl>https://otolaryngologypl.com/api/files/download/319278.pdf</pdfFileUrl>
+				<publicationDate>2018-02-28</publicationDate>
+				<pageFrom>1</pageFrom>
+				<pageTo>4</pageTo>
+				<doi>10.5604/01.3001.0011.5913</doi>
+				<keywords>
+					<keyword>newborn hearing screening</keyword>
+					<keyword>risk factors of hearing loss</keyword>
+					<keyword>hearing loss</keyword>
+				</keywords>
+			</languageVersion>
+			<authors>
+				<author>
+					<name>Monika</name>
+					<surname>Zych</surname>
+					<polishAffiliation>true</polishAffiliation>
+					<order>1</order>
+					<instituteAffiliation>Department of Otolaryngology Head and Neck Surgery, Poznan University of Medical Sciences, Poland</instituteAffiliation>
+					<role>AUTHOR</role>
+				</author>
+				<author>
+					<name>Grażyna</name>
+					<surname>Greczka</surname>
+					<polishAffiliation>true</polishAffiliation>
+					<order>2</order>
+					<instituteAffiliation>Department of Otolaryngology Head and Neck Surgery, Poznan University of Medical Sciences, Poland</instituteAffiliation>
+					<role>AUTHOR</role>
+				</author>
+				<author>
+					<name>Piotr</name>
+					<surname>Dąbrowski</surname>
+					<polishAffiliation>true</polishAffiliation>
+					<order>3</order>
+					<instituteAffiliation>Department of Otolaryngology Head and Neck Surgery, Poznan University of Medical Sciences, Poland</instituteAffiliation>
+					<role>AUTHOR</role>
+				</author>
+				<author>
+					<name>Maciej</name>
+					<surname>Wróbel</surname>
+					<polishAffiliation>true</polishAffiliation>
+					<order>4</order>
+					<instituteAffiliation>Department of Otolaryngology Head and Neck Surgery, Poznan University of Medical Sciences, Poland</instituteAffiliation>
+					<role>AUTHOR</role>
+				</author>
+				<author>
+					<name>Joanna</name>
+					<surname>Szyftrt-Harris</surname>
+					<polishAffiliation>true</polishAffiliation>
+					<order>5</order>
+					<instituteAffiliation>Department of Otolaryngology Head and Neck Surgery, Poznan University of Medical Sciences, Poland</instituteAffiliation>
+					<role>AUTHOR</role>
+				</author>
+				<author>
+					<name>Witold</name>
+					<surname>Szyfter</surname>
+					<polishAffiliation>true</polishAffiliation>
+					<order>6</order>
+					<instituteAffiliation>Department of Otolaryngology Head and Neck Surgery, Poznan University of Medical Sciences, Poland</instituteAffiliation>
+					<role>AUTHOR</role>
+				</author>
+			</authors>
+			<references>
+				<reference>
+					<unparsedContent>American Academy of Pediatrics JCIH, Year 2007 position statement: principles and guidelines for early hearing detection and intervention programs. Pediatrics 120. 2007: 898–921. </unparsedContent>
+					<order>1</order>
+				</reference>
+				<reference>
+					<unparsedContent>Szyfter W., Wróbel M., Radziszewska-Konopka M., Szyfter-Harris J., Karlik M.: Polish universal neonatal hearing screening program – 4-year experience (2003–2006). Int. J. Pediatr. Otorhinolaryngol. 2008; 72 (12): 1783–1787</unparsedContent>
+					<order>2</order>
+					<doi>10.1016/j.ijporl.2008.08.015</doi>
+				</reference>
+				<reference>
+					<unparsedContent>Greczka G., Wróbel M., Dąbrowski P., Mikołajczak K., Szyfter W.: Universal Neonatal Hearing Screening Program in Poland – 10-year summary. Otolaryngol. Pol. 2015; 69 (3): 1–5</unparsedContent>
+					<order>3</order>
+					<doi>10.5604/00306657.1156325</doi>
+				</reference>
+				<reference>
+					<unparsedContent>Greczka G., Wróbel M., Dąbrowski P., Szyfter-Harris J., Szyfter W.: Rola lekarza pediatry w Programie Powszechnych Przesiewowych Badań Słuchu u Noworodków w Polsce. Stand. Med. 2016; 13: 112–116</unparsedContent>
+					<order>4</order>
+				</reference>
+				<reference>
+					<unparsedContent> Sloot F., Hoeve H.L.J., de Kroon M.L.A., Goedegebure A., Carlton J., Griffiths H.J. et al.: Inventory of current EU paediatric vision and hearing screening programmes. J. Med. Screen. 2015; 22 (2): 55–64. </unparsedContent>
+					<order>5</order>
+					<doi>10.1177/0969141315572403</doi>
+				</reference>
+				<reference>
+					<unparsedContent>Szyfter W., Wróbel M.J., Szyfter-Harris J., Greczka G.: Hearing impairment in Polish infants. Epidemiol. Camb. Mass. 2013; 24 (2): 333. </unparsedContent>
+					<order>6</order>
+					<doi>10.1097/ede.0b013e31827b23a3 </doi>
+				</reference>
+				<reference>
+					<unparsedContent>Wróbel M.J., Greczka G., Szyfter W.: The risk factor profile of children covered by the Polish universal neonatal hearing screening program and its impact on hearing loss incidence. Int. J. Pediatr. Otorhinolaryngol. 2014; 78 (2): 209–213</unparsedContent>
+					<order>7</order>
+					<doi>10.1016/j.ijporl.2013.10.052</doi>
+				</reference>
+				<reference>
+					<unparsedContent>Szyfter W., Wróbel M., Karlik M., Greczka G.: Polish Universal Neonatal Hearing Screening Program – 10-years of experience: Early Intervention – The Benefits and Why „Early” Is Still Not a Standard Practice. Audiol Neurotol. 2013; 3–5</unparsedContent>
+					<order>8</order>
+				</reference>
+				<reference>
+					<unparsedContent>Centers for Disease Control and Prevention. Summary of diagnosis and loss to follow-up/loss to documentation in 2013. Data Source: 2013 CDC EHDI Hearing Screening &amp; Follow-up Survey (HSFS), www.cdc.gov/ncbddd/hearingloss/ehdi-data.html (2016, accessed 8 March 2016)</unparsedContent>
+					<order>9</order>
+				</reference>
+				<reference>
+					<unparsedContent>Vos B., Lagasse R., Leveque A.: Main outcomes of a newborn hearing screening program in Belgium over six years. Int. J. Pediatr. Otorhinolaryngol. 2014; 78: 1496–1502. </unparsedContent>
+					<order>10</order>
+					<doi>10.1016/j.ijporl.2014.06.019</doi>
+				</reference>
+				<reference>
+					<unparsedContent>Rohlfs A.-K., Wiesner T., Drews H. et al.: Interdisciplinary approach to design, performance, and quality management in a multicenter newborn hearing screening project. Discussion of the results of newborn hearing screening in Hamburg (part II). Eur J Pediatr 2010; 169: 1453–1463</unparsedContent>
+					<order>11</order>
+					<doi>10.1007/s00431-010-1229-0</doi>
+				</reference>
+				<reference>
+					<unparsedContent>van Dommelen P., van Straaten H.L.M., Verkerk P.H. et al.: Ten-year quality assurance of the nationwide hearing screening programme in Dutch neonatal intensive care units. Acta Paediatr. 2011; 100: 1097–1103</unparsedContent>
+					<order>12</order>
+					<doi>10.1111/j.1651-2227.2011.02230.x </doi>
+				</reference>
+				<reference>
+					<unparsedContent>Greczka G., Zych M., Wróbel M, Dąbrowski P., Szyfter Harris J., Szyfter W. :Analysis of follow-up at the diagnostic level in the Polish Universal Neonatal Hearing Screening Programme. J. Med. Screen, 2017 </unparsedContent>
+					<order>13</order>
+					<doi>10.1177/0969141317695848 </doi>
+				</reference>
+			</references>
+		</article>
+		<article gicid="01.0000.0000.0000" externalId="A0000000000">
+			<type>ORIGINAL_ARTICLE</type>
+			<languageVersion externalId="B0000000001" language="pl">
+				<title>Tytuł publikacji</title>
+				<abstract>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</abstract>
+				<pdfFileUrl>https://journalwebsite.edu/PublicationFullTextPL.pdf</pdfFileUrl>
+				<publicationDate>2018-02-28</publicationDate>
+				<pageFrom>10</pageFrom>
+				<pageTo>20</pageTo>
+				<doi>10.5604/PublicationDoiNumberWithPrefix</doi>
+				<keywords>
+					<keyword>Słowo kluczowe</keyword>
+					<keyword>Publikacja</keyword>
+				</keywords>
+			</languageVersion>
+			<languageVersion externalId="B0000000001" language="en">
+				<title>English Title</title>
+				<abstract>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</abstract>
+				<pdfFileUrl>https://journalwebsite.edu/api/files/download/319278en.pdf</pdfFileUrl>
+				<publicationDate>2018-02-28</publicationDate>
+				<pageFrom>10</pageFrom>
+				<pageTo>20</pageTo>
+				<doi>10.5604/PublicationDoiNumberWithPrefix</doi>
+				<keywords>
+					<keyword>keyword</keyword>
+					<keyword>Publication</keyword>
+				</keywords>
+			</languageVersion>
+			<authors>
+				<author>
+					<name>John</name>
+					<name2>Samuel</name2>
+					<surname>Smith</surname>
+					<email>john.smith@journalwebsite.edu</email>
+					<polishAffiliation>false</polishAffiliation>
+					<order>1</order>
+					<instituteAffiliation>Lorem ipsum dolor sit amet, consectetur adipiscing elit</instituteAffiliation>
+					<role>LEAD_AUTHOR</role>
+					<ORCID>https://orcid.org/0000-0000-0000-0000</ORCID>
+				</author>
+				<author>
+					<name>Jan</name>
+					<name2>Henryk</name2>
+					<surname>Kowalski</surname>
+					<email>jan.kowalski@journalwebsite.edu</email>
+					<polishAffiliation>true</polishAffiliation>
+					<order>2</order>
+					<instituteAffiliation>Politechnika Warszawska</instituteAffiliation>
+					<role>LEAD_AUTHOR</role>
+					<ORCID>https://orcid.org/9999-0000-0000-0000</ORCID>
+				</author>
+			</authors>
+			<references>
+				<reference>
+					<unparsedContent>American Academy of Pediatrics JCIH, Year 2007 position statement: principles and guidelines for early hearing detection and intervention programs. Pediatrics 120. 2007: 898–921. </unparsedContent>
+					<order>1</order>
+				</reference>
+				<reference>
+					<unparsedContent>Szyfter W., Wróbel M., Radziszewska-Konopka M., Szyfter-Harris J., Karlik M.: Polish universal neonatal hearing screening program – 4-year experience (2003–2006). Int. J. Pediatr. Otorhinolaryngol. 2008; 72 (12): 1783–1787</unparsedContent>
+					<order>2</order>
+					<doi>10.1016/j.ijporl.2008.08.015</doi>
+				</reference>
+				<reference>
+					<unparsedContent>Greczka G., Wróbel M., Dąbrowski P., Mikołajczak K., Szyfter W.: Universal Neonatal Hearing Screening Program in Poland – 10-year summary. Otolaryngol. Pol. 2015; 69 (3): 1–5</unparsedContent>
+					<order>3</order>
+					<doi>10.5604/00306657.1156325</doi>
+				</reference>
+			</references>
+		</article>
+	</issue>
+	<issue number="2" volume="72" year="2018" publicationDate="2018-04-28" numberOfArticles="1">
+		<article externalId="0011">
+			<type>ORIGINAL_ARTICLE</type>
+			<languageVersion language="en">
+				<title>Publication</title>
+				<abstract> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min</abstract>
+				<pageFrom>123</pageFrom>
+				<pageTo>234</pageTo>
+				<keywords>
+					<keyword>keyword</keyword>
+				</keywords>
+			</languageVersion>
+			<authors>
+				<author>
+					<name>John</name>
+					<surname>Smith</surname>
+					<order>1</order>
+				</author>
+				<author>
+					<name>Jan</name>
+					<surname>Kowalski</surname>
+					<order>2</order>
+				</author>
+			</authors>
+		</article>
+	</issue>
+</ici-import>
