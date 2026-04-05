@@ -1,9 +1,9 @@
 ### GET Archives url
-GET http://localhost:3000/api/parser-fastify/archives HTTP/1.1
+GET http://localhost:3000/api/parser/journales HTTP/1.1
 
 
 ### POST Articles url
-POST http://localhost:3000/api/parser-fastify/articles HTTP/1.1
+POST http://localhost:3000/api/parser/articles HTTP/1.1
 content-type: application/json
 
 [ 
@@ -11,7 +11,7 @@ content-type: application/json
 ]
 
 ### POST Article url
-POST http://localhost:3000/api/parser-fastify/article HTTP/1.1
+POST http://localhost:3000/api/parser/article HTTP/1.1
 content-type: application/json
 
 ["https://www.virtual-economics.eu/index.php/VE/article/view/322"]

@@ -2,9 +2,9 @@
   "name": "api-parser-ve-fastify",
   "version": "1.0.1",
   "type": "module",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
