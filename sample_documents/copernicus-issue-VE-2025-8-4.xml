@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ici-import xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://journals.indexcopernicus.com/ic-import.xsd">
+  <journal issn="2657-4047"/>
+  <issue number="4" volume="8" year="2025" publicationDate="2025-12-31" numberOfArticles="5">
+    <article>
+      <type>ORIGINAL_ARTICLE</type>
+      <languageVersion language="en">
+        <title>Determinants of Audience Engagement among Virtual YouTubers</title>
+        <abstract>Developments in the digital space have enabled VTubers to emerge as a transformative force in digital entertainment; this they achieve by combining the concepts of virtual avatars, live streaming, and community-driven content creation. Their ability to engage audiences is critical for loyalty creation and continued entertainment. Nonetheless, the engagement of traditional influencers has been studied and elaborated upon in many studies, and relatively few studies exist that examine the interacting factors of engagement wholly within the unique VTuber ecosystem. Therefore, this study explored the determining factors of audience engagement by VTubers, and to which extent they achieve it. A conceptual framework was developed borrowing from Cultural Studies Theory, Social Presence Theory, Uses and Gratification Theory, and Thai contextual factors. The study adopted a quantitative methodology utilizing primary data collected from VTuber fans. A sample of 433 respondents was used. The data was analysed using structural equation modelling to evaluate the set hypotheses. The results revealed that VTubers’ audience engagement was significantly and positively influenced by content quality, interactivity, language proficiency, cultural relevance, localised humour, community involvement, and perceived entertainment. The results also indicated that perceived entertainment mediated the effect of VTuber personality, interactivity, language proficiency, localised humour, virtual aesthetic appeal, and community involvement on audience engagement. The study recommended that VTubers and other content creators should consider developing engaging, emotionally stimulating content. They should also invest in language adaptability. VTubers should also leverage community involvement as an extension beyond the visual aesthetic.</abstract>
+        <publicationDate>2025-12-31</publicationDate>
+        <pageFrom>7</pageFrom>
+        <pageTo>28</pageTo>
+        <doi>10.34021/ve.2025.08.04(1)</doi>
+        <keywords>
+          <keyword>Vtubers</keyword>
+          <keyword>audience engagement</keyword>
+          <keyword>perceived entertainment</keyword>
+          <keyword>content quality</keyword>
+          <keyword>Vtuber personality</keyword>
+        </keywords>
+      </languageVersion>
+      <authors>
+        <author>
+          <name>Bilal</name>
+          <surname>Khalid</surname>
+          <email>bilal.kh@kmitl.ac.th</email>
+          <order>1</order>
+          <instituteAffiliation>KMITL Business School, King Mongkut’s Institute of Technology Ladkrabang, Bangkok, Thailand</instituteAffiliation>
+          <role>AUTHOR</role>
+        </author>
+      </authors>
+      <references>
+        <reference>
+          <unparsedContent>Jin, S. V., &amp; Ryu, E. (2020). I'll buy what she's wearing: The roles of envy toward and parasocial interaction with influencers in Instagram celebrity-based brand endorsement and social commerce. Journal of Retailing and Consumer Services, 55, Article 102121. https://doi.org/10.1016/j.jretconser.2020.102121  </unparsedContent>
+          <order>1</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kim, A. J., &amp; Ko, E. (2012). Do social media marketing activities enhance customer equity? An empirical study of luxury fashion brand. Journal of Business Research, 65(10), 1480–1486. https://doi.org/10.1016/j.jbusres.2011.10.014  </unparsedContent>
+          <order>2</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Xu, Y., &amp; Niu, N. (2023). Understanding Vtuber Live Streaming: Exploration of psychological attributes of viewers. Highlights in Business Economics and Management, 14, 166–172. https://doi.org/10.54097/hbem.v14i.8983 </unparsedContent>
+          <order>3</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hashimoto, K. (2025). VTuber talent agencies are turning virtual idols into global streaming superstars. Yahoo Entertainment. </unparsedContent>
+          <order>4</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Toccoli, A. (2022). VTuber in Japan: What are they &amp; who is the most popular? VOYAPON. https://voyapon.com/vtuber-phenomenon-japan/ </unparsedContent>
+          <order>5</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zhang, M. (2024). Vlog-based efl teaching model for university students: impact on speaking skills and engagement. PUPIL: International Journal of Teaching, Education and Learning. https://doi.org/10.20319/ictel.2024.146147 </unparsedContent>
+          <order>6</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Aolia, F., &amp; Widianingtyas, N. (2024). Online Persona of Vtuber Ayunda Risu Ch: Sociolinguistic study. PRIMACY Journal of English Education and Literacy, 3(1), 1-17. https://doi.org/10.33592/primacy.v3i1.3497  </unparsedContent>
+          <order>7</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Chinchilla, P., &amp; Kim, J. (2024). VTuber for streamers: Exploring the role of social presence in the visual representation of streamers. Communication Studies, 75(6), 844-860. https://doi.org/10.1080/10510974.2024.2337955 </unparsedContent>
+          <order>8</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Abidin, C. (2021). Mapping internet celebrity on TikTok: Exploring attention economies and visibility labours. Cultural Science Journal, 12(1), 77-104. https://sciendo.com/article/10.5334/csci.140  </unparsedContent>
+          <order>9</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hamilton, W. A., Garretson, O., &amp; Kerne, A. (2014). Streaming on Twitch: fostering participatory communities of play within live mixed media. In Proceedings of the SIGCHI conference on human factors in computing systems (pp. 1315-1324). https://doi.org/10.1145/2556288.2557048 </unparsedContent>
+          <order>10</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Chen, C.-P., &amp; Lin, Y.-J. (2021). The impact of parasocial interaction on online video content engagement: The moderating role of content type. Telematics and Informatics, 56, Article 101490. https://doi.org/10.1016/j.tele.2020.101490  </unparsedContent>
+          <order>11</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Tang, J. (2025). Broadcasting your virtual self: Exploring the authenticity construction and subjectivity of VTubers in China. Global Media and China, 0(0). https://doi.org/10.1177/20594364251350656</unparsedContent>
+          <order>12</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Wan, Q., &amp; Lu, Z. (2024). Investigating vtubing as a reconstruction of streamer self-presentation: Identity, performance, and gender. Proceedings of the ACM on Human-Computer Interaction, 8(CSCW1), 1–22. https://doi.org/10.1145/3637357  </unparsedContent>
+          <order>13</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Katz, E., Blumler, J. G., &amp; Gurevitch, M. (1973). Uses and gratifications research. The Public Opinion Quarterly, 37(4), 509-523. </unparsedContent>
+          <order>14</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Korfiatis, N., García-Bariocanal, E., &amp; Sánchez-Alonso, S. (2012). Evaluating content quality and helpfulness of online product reviews: The interplay of review helpfulness vs. review content. Electronic Commerce Research and Applications, 11(3), 205-217. https://doi.org/10.1016/j.elerap.2011.10.003 </unparsedContent>
+          <order>15</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Moran, G., Muzellec, L., &amp; Johnson, D. (2020). Message content features and social media engagement: evidence from the media industry. Journal of Product &amp; Brand Management, 29(5), 533-545. https://doi.org/10.1108/JPBM-09-2018-2014  </unparsedContent>
+          <order>16</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kim, D. Y., &amp; Yoo, H. S. (2021). A comparative study of user experience according to one person media Virtual YouTuber (VTuber) and General YouTuber. Asia-Pacific Journal of Convergent Research Interchange, 7(5), 1-10. </unparsedContent>
+          <order>17</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hsu, K.L., &amp; Hung, W.H. (2024). The impact of VTuber endorsements on consumer satisfaction and brand loyalty in digital marketing. In Li, E.Y. et al. (Eds.) In Proceedings of The International Conference on Electronic Business, 24(6) 450-457. </unparsedContent>
+          <order>18</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hermawan, H., Subarkah, P., Utomo, A. T., Ilham, F., &amp; Saputra, D. I. S. (2024). VTuber Personas in Digital Wayang: A Review of Innovative Cultural Promotion for Indonesian Heritage. Jurnal Pilar Nusa Mandiri, 20(2), 165-175. https://doi.org/10.33480/pilar.v20i2.5921  </unparsedContent>
+          <order>19</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Onofrei, G., Filieri, R., &amp; Kennedy, L. (2022). Social media interactions, purchase intention, and behavioural engagement: The mediating role of source and content factors. Journal of Business Research, 142, 100-112. https://doi.org/10.1016/j.jbusres.2021.12.031  </unparsedContent>
+          <order>20</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Short, J., Williams, E., &amp; Christie, B. (1976). The social psychology of telecommunications. John Wiley &amp; Sons.</unparsedContent>
+          <order>21</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Weidlich, J., Kreijns, K., Rajagopal, K., &amp; Bastiaens, T. (2018). What social presence is, what it isn’t, and how to measure it: A work in progress. In EdMedia+ Innovate Learning (pp. 2142-2150). Association for the Advancement of Computing in Education (AACE). https://www.learntechlib.org/primary/p/184456/</unparsedContent>
+          <order>22</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Xu, A., Liu, H., Gou, L., Akkiraju, R., Mahmud, J., Sinha, V., Hu, Y., &amp; Qiao, M. (2021). Predicting Perceived Brand Personality with Social Media. Proceedings of the International AAAI Conference on Web and Social Media, 10(1), 436-445. https://doi.org/10.1609/icwsm.v10i1.14733</unparsedContent>
+          <order>23</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Ahn, J. (2024). An exploratory study on virtual YouTuber consumption: Focusing on the worldview, appearance, voice, and personality of virtual Youtuber. Journal of the Korean HCI Society, 19(4), 47-58. https://doi.org/10.17210/jhsk.2024.12.19.4.47 </unparsedContent>
+          <order>24</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hall, S. (1980). Encoding/decoding. In S. Hall, D. Hobson, A. Lowe, &amp; P. Willis (Eds.), Culture, Media, Language (pp. 128–138). London: Hutchinson.</unparsedContent>
+          <order>25</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hu, S., Torphy, K. T., &amp; Opperman, A. (2019). Culturally relevant curriculum materials in the age of social media and curation. Teachers College Record, 121(14), 1-22. https://doi.org/10.1177/016146811912101409 </unparsedContent>
+          <order>26</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Ferreira, J. C. V., Regis, R. D. D., Gonçalves, P., Diniz, G. R., &amp; Tavares, V. P. D. S. C. (2022, October). VTuber concept review: The new frontier of virtual entertainment. In Proceedings of the 24th Symposium on virtual and augmented reality (pp. 83-96). https://dl.acm.org/doi/10.1145/3604479.3604523 </unparsedContent>
+          <order>27</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Tsai, W.-H. S., &amp; Men, L. R. (2017). Consumer engagement with brands on social network sites: A cross-cultural comparison of China and the US. Journal of Marketing Communications, 23(1), 2–21. https://doi.org/10.1080/13527266.2014.1003381   </unparsedContent>
+          <order>28</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hoffmann, S., Schwarz, U., Dalicho, L., &amp; Hutter, K. (2014). Humor in cross-cultural advertising: A content analysis and test of effectiveness in German and Spanish print advertisements. Procedia-Social and Behavioral Sciences, 148, 94-101. https://doi.org/10.1016/j.sbspro.2014.07.022   </unparsedContent>
+          <order>29</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Lee, S., &amp; Lee, J. (2023). “Ju. T’aime” my idol, my streamer: A case study on fandom experience as audiences and creators of vtuber concert. IEEE Access, 11, 31125–31142. https://doi.org/10.1109/ACCESS.2023.3252563  </unparsedContent>
+          <order>30</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kembau, A. S., Kolondam, A., &amp; Mandey, N. H. J. (2024). Virtual Influencers and Digital Engagement: Key Insights from Indonesia's Younger Consumers. Jurnal Manajemen Pemasaran, 18(2), 123-136. https://doi.org/10.9744/pemasaran.18.2.123-136</unparsedContent>
+          <order>31</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Wohn, D. Y., Freeman, G., &amp; McLaughlin, C. (2018). Explaining viewers' emotional, instrumental, and financial support provision for live streamers. In Proceedings of the 2018 CHI conference on human factors in computing systems (pp. 1-13). https://doi.org/10.1145/3173574.3174048  </unparsedContent>
+          <order>32</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kim, H. Y., &amp; Suh, J. (2024). Big data analysis of ‘vtuber’ perceptions in South Korea: Insights for the virtual YouTuber industry. Journalism and Media, 5(4), 1723–1748. https://doi.org/10.3390/journalmedia5040105  </unparsedContent>
+          <order>33</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Vorderer, P., Klimmt, C., &amp; Ritterfeld, U. (2004). Enjoyment: At the heart of media entertainment. Communication Theory, 14(4), 388-408.  https://doi.org/10.1111/j.1468-2885.2004.tb00321.x</unparsedContent>
+          <order>34</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hair, J. F., Hult, G. T. M., Ringle, C. M., &amp; Sarstedt, M. (2017). A primer on partial least squares structural equation modeling (PLS-SEM) (2nd ed.). Thousand Oaks, CA: Sage.</unparsedContent>
+          <order>35</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Brown, S. C., &amp; Greene, J. A. (2006). The wisdom development scale: Translating the conceptual to the concrete. Journal of College Student Development, 47(1), 1- 19.</unparsedContent>
+          <order>36</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hu, L. T., &amp; Bentler, P. M. (1999). Cutoff criteria for fit indexes in covariance structure analysis: Conventional criteria versus new alternatives. Structural Equation Modeling: A Multidisciplinary Journal, 6(1), 1-55.</unparsedContent>
+          <order>37</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Bentler, P. M., &amp; Bonett, D. G. (1980). Significance tests and goodness of fit in the analysis of covariance structures. Psychological Bulletin, 88(3), 588–606.</unparsedContent>
+          <order>38</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Byrne, B. M. (1998). Structural equation modeling with LISREL, PRELIS, and SIMPLIS: Basic concepts, applications, and programming. Lawrence Erlbaum Associates Publishers.</unparsedContent>
+          <order>39</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Fornell, C., &amp; Larcker, D. F. (1981). Evaluating structural equation models with unobservable variables and measurement error. Journal of Marketing Research, 18(1), 39-50.   </unparsedContent>
+          <order>40</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Bagozzi, R. P., &amp; Yi, Y. (1988). On the evaluation of structural equation models. Journal of the Academy of Marketing Science, 16(1), 74-94. http://dx.doi.org/10.1007/BF02723327</unparsedContent>
+          <order>41</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Igarashi, R., Bhoumik, K., &amp; Thompson, J. (2024). Investigating the effectiveness of virtual influencers in prosocial marketing. Psychology &amp; Marketing, 41(9), 2121-2135. https://onlinelibrary.wiley.com/doi/pdf/10.1002/mar.22031 </unparsedContent>
+          <order>42</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Yu, Y., &amp; Tek-Jin, N. (2017). Products with a sense of humor: Case study of humorous products with Giggle Popper. International Journal of Design, 11(1), Article 79. https://www.ijdesign.org/index.php/IJDesign/article/view/2717</unparsedContent>
+          <order>43</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hariadi, A. H., &amp; Budiwaspada, A. E. (2023). Pengaruh self-congruity dan celebrity attachment penonton vtuber terhadap consumer engagement di Youtube. Ekonomi dan Bisnis: Berkala Publikasi Gagasan Konseptual, Hasil Penelitian, Kajian, dan Terapan Teori, 27(2), 72-82. </unparsedContent>
+          <order>44</order>
+          <doi/>
+        </reference>
+      </references>
+    </article>
+    <article>
+      <type>ORIGINAL_ARTICLE</type>
+      <languageVersion language="en">
+        <title>Exploring the Demographic and Economic Dimensions of Virtual Reality Technologies in Tourism</title>
+        <abstract>The tourism industry is increasingly adopting digital innovations to enhance consumer engagement and improve communication. Virtual reality (VR) has attracted attention as a tool capable of delivering immersive experiences and supporting cost effective destination promotion. Despite this growing interest, empirical evidence on demographic differences in the use and perception of VR in tourism remains limited, particularly in large international and cross-continental samples. This study examines how gender, age, and continent of residence influence experience with VR technologies and attitudes towards their use in tourism. The analysis focus on user experience, satisfaction, and willingness to adopt VR-based tools instead of traditional methods. Potential economic and sustainability implications are also considered. The study is based on an international online survey of 2,003 respondents. Data were collected using Likert-scale items, with nonparametric statistical methods applied in the analysis. The results indicate significant differences related to continent of residence and age in prior VR experience and preferences for VR-based tourism tools, while gender differences are less pronounced. Overall, the findings suggest that VR may contribute to more effective tourism promotion. The study has several limitations, including convenience sampling, possible self-selection bias, and the use of single-item measures. The paper provides empirical insights into the role of VR in tourism promotion and highlights directions for future research, particularly the need to include behavioural and economic performance indicators such as conversion rates, efficiency measures, cost-benefit analysis, and sustainability outcomes.</abstract>
+        <publicationDate>2025-12-31</publicationDate>
+        <pageFrom>29</pageFrom>
+        <pageTo>47</pageTo>
+        <doi>10.34021/ve.2025.08.04(2)</doi>
+        <keywords>
+          <keyword>virtual reality</keyword>
+          <keyword>VR</keyword>
+          <keyword>digital innovation</keyword>
+          <keyword>economic impact</keyword>
+          <keyword>destination choice</keyword>
+          <keyword>consumer behaviour</keyword>
+        </keywords>
+      </languageVersion>
+      <authors>
+        <author>
+          <name>Anita</name>
+          <surname>Andziak</surname>
+          <email>anita.andziak@ssbm.ch</email>
+          <order>1</order>
+          <instituteAffiliation>SSBM Geneva - Swiss School of Business and Management, Geneva, Switzerland</instituteAffiliation>
+          <role>AUTHOR</role>
+          <ORCID>https://orcid.org/0009-0008-1671-1356</ORCID>
+        </author>
+        <author>
+          <name>Ivana</name>
+          <surname>Bestvina Bukvic</surname>
+          <email>ivana@efos.hr</email>
+          <order>2</order>
+          <instituteAffiliation>Faculty of Economics and Business, Josip Juraj Strossmayer University of Osijek, Osijek, Croatia</instituteAffiliation>
+          <role>AUTHOR</role>
+          <ORCID>https://orcid.org/0000-0002-9157-1479</ORCID>
+        </author>
+        <author>
+          <name>Iva</name>
+          <surname>Buljubasic</surname>
+          <email>ibuljuba@aukos.hr</email>
+          <order>3</order>
+          <instituteAffiliation>Academy of Arts and Culture, Josip Juraj Strossmayer University of Osijek, Osijek, Croatia</instituteAffiliation>
+          <role>AUTHOR</role>
+          <ORCID>https://orcid.org/0000-0003-3582-0060</ORCID>
+        </author>
+      </authors>
+      <references>
+        <reference>
+          <unparsedContent>Tussyadiah, I. P., Wang, D., Jung, T. H., &amp; Tom Dieck, M. C. (2018). Virtual reality, presence, and attitude change: Empirical evidence from tourism. Tourism management, 66, 140 – 154. https://doi.org/10.1016/j.tourman.2017.12.003 </unparsedContent>
+          <order>1</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Polechoński, J. &amp; Tomik, R. (2019). Can immersive virtual reality travel experience replace real travel? Folia Turistica, 52,11 – 30. https://doi.org/10.5604/01.3001.0013.2639 </unparsedContent>
+          <order>2</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Ding, Y., Li, Y. &amp; Cheng, L. (2020). Application of Internet of Things and Virtual Reality Technology in College Physical Education in 2020 IEEE Access, 8, 96065 – 96074. https://doi.org/10.1016/S0160-7383(00)00006-2 </unparsedContent>
+          <order>3</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zhang, S.N., Li, Y.Q., Ruan, W.Q. &amp; Liu, C.H., (2022). Would you enjoy virtual travel? The characteristics and causes of virtual sentiment under the influence of the COVID-19 pandemic. Tourism management, 88, 104429. https://doi.org/10.1016/j.tourman.2021.104429</unparsedContent>
+          <order>4</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Korinth, B. (2020). Virtual reality in the context of tourism-selected theoretical aspects and contemporary tourism space. In 2019Zeszyty Naukowe, Wyższa Szkoła Turystyki i Ekologii w Suchej Beskidzkiej. (pp. 60 – 72). https://zn.wste.edu.pl/images/zn16.pdf#page=60</unparsedContent>
+          <order>5</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Tom - Dieck, M.C. &amp; Jung, T.H. (2017). Value of augmented reality at cultural heritage sites: A stakeholder approach. Journal of destination marketing &amp; management, 6(2), 110 – 117. https://doi.org/10.1016/j.jdmm.2017.03.002 </unparsedContent>
+          <order>6</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Neuburger, L., Beck, J. &amp; Egger, R. (2018). he Phygital’tourist experience: The use of augmented and virtual reality in destination marketing. In M. A. Camilleri (Ed.), Tourism planning and destination marketing (pp. 183 – 202). Emerald Publishing Limited Leeds. https://doi.org/10.1108/978-1-78756-291-220181009</unparsedContent>
+          <order>7</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Jung, K., Nguyen, V.T., Piscarac, D. &amp; Yoo, S.C. (2020). Meet the virtual jeju dol harubang - The mixed VR/Ar application for cultural immersion in Korea’s main heritage. International Journal of Geo-Information, 9(6), 367. https://doi.org/10.3390/ijgi9060367 </unparsedContent>
+          <order>8</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Wei, W. (2019). Research progress on virtual reality (VR) and augmented reality (AR) in tourism and hospitality: A critical review of publications from 2000 to 2018. ISPRS Journal of Hospitality and Tourism Technology, 10(4), 539 – 570. https://doi.org/10.1108/JHTT-04-2018-0030/full/html </unparsedContent>
+          <order>9</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kinasz D. (2017). Virtual Reality experiences becoming big part of tourism campaigns. http://www.travelweek.ca/news/virtual-reality-experiences-becoming-big-part-tourism-campaigns/ </unparsedContent>
+          <order>10</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kosiński, R. (2021). Cosmic tourism in virtual reality. Selected problems of the modern world in an interdisciplinary perspective. https://www.archaegraph.pl/lib/l231bv/Ksiega_Wybrane-problemy-w-ujeciu-interdyscyplinarnym_druk-kucums8o.pdf </unparsedContent>
+          <order>11</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Griffin, T., Giberson, J., Lee, S. H., Guttentag, D., Kandaurova, M., Sergueeva, K. &amp; Dimanche, F. (2017). Virtual reality and implications for destination marketing. Travel and Tourism Research Association: Advancing Tourism Research Globally, 29, 14 – 18. https://hdl.handle.net/20.500.14394/48893 </unparsedContent>
+          <order>12</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kask, S. (2018). Virtual reality in support of sustainable tourism. Experiences from Eastern Europe (Doctoral dissertation, Eesti Maaülikool). http://doi.org/10.15159/emu.35</unparsedContent>
+          <order>13</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Prodan, S.G. &amp; Egresi, I. (2023). Virtual Reality in Destination Marketing: The Why, The Who and The When. Studia Universitatis Babeș - Bolyai Geographia, 68(2), 95 – 138.  https://doi.org/10.24193/subbgeogr.2023.2.06</unparsedContent>
+          <order>14</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Gibson, A. &amp; O’Rawe, M. (2018). Virtual Reality as a Travel Promotional Tool: Insights from a Consumer Travel Fair. In: Jung, T., tom Dieck, M. (Ed), Augmented Reality and Virtual Reality. Springer, Cham. https://doi.org/10.1007/978-3-319-64027-3_7</unparsedContent>
+          <order>15</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Yung, R., Khoo - Lattimore, C. &amp; Potter, L.E. (2021). Virtual reality and tourism marketing: Conceptualizing a framework on presence, emotion, and intention. Current Issues in Tourism, 24(11), 1505 – 1525. https://doi.org/10.1080/13683500.2020.1820454</unparsedContent>
+          <order>16</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Li, Y., Li, C., Cui, J. &amp; Gao, Y. (2024). Application and Reflection of Virtual Reality in Digital Tourism Development. Applied Mathematics and Nonlinear Sciences, 9(1), 1 – 13. https://doi.org/10.2478/amns-2024-0841</unparsedContent>
+          <order>17</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Cipresso, P., Giglioli, I.A.C., Raya, M.A. &amp; Riva, G. (2018). The Past, Present, and Future of Virtual and Augmented Reality Research: A Network and Cluster Analysis of the Literature. Frontiers in Psychology, 9, 2086. https://doi.org/10.3389/fpsyg.2018.02086</unparsedContent>
+          <order>18</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Keshner, E.A., Weiss, P.T., Geifman, D. &amp; Raban, D. (2019). Tracking the evolution of virtual reality applications to rehabilitation as a field of study. Journal of NeuroEngineering and Rehabilitation 16, (76), 1 – 19. https://doi.org/10.1186/s12984-019-0552-6</unparsedContent>
+          <order>19</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Epple, C. (2018). From Hype to Value. Virtual Reality Tools in the Tourism Industry and Their Influence on Booking Behaviour. GRIN Verlag. </unparsedContent>
+          <order>20</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Choi, E., Kim, C., &amp; Lee, K. C. (2021). Consumer decision-making creativity and its relation to exploitation–exploration activities: Eye-tracking approach. Frontiers in Psychology, 11, 557292. https://doi.org/10.3389/fpsyg.2020.557292</unparsedContent>
+          <order>21</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Beck, J. &amp; Egger, R. (2018). Emotionalise me: Self-reporting and arousal measurements in virtual tourism environments. In Information and Communication Technologies in Tourism 2018: Proceedings of the International Conference, Sweden, 3 – 15. https://doi.org/10.1007/978-3-319-72923-7_1</unparsedContent>
+          <order>22</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Merkx, C. &amp; Nawijn, J. (2021). Virtual reality tourism experiences: Addiction and isolation. Tourism Management, 87, 104394. https://doi.org/10.1016/j.tourman.2021.104394</unparsedContent>
+          <order>23</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Manhas, S., Khan, M.S., Abdullah, O., Chaudhary, N., Khasanov, O. and Torejanov, U., 2024, November. Economic Impact of Virtual Reality Adoption in the Tourism Sector: A Case Study of Uzbekistan. In 2024 4th International Conference on Technological Advancements in Computational Sciences (ICTACS) (pp. 960-964). IEEE.</unparsedContent>
+          <order>24</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Statista. (2024). Hotel industry worldwide. [online] Published by Statista Research Department, 19 April. Available at: https://www-statista-com.ezproxy.nsk.hr/statistics/1463771/leading-travel-tech-investments-worldwide/ </unparsedContent>
+          <order>25</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Mbryonic (2023). 10 best uses of virtual reality in marketing. https://mbryonic.com/best-vr-marketing/ (Retrieved October 2023).</unparsedContent>
+          <order>26</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Barnes, E. (2016). Minority body: A theory of disability. Oxford University pp.17-42. </unparsedContent>
+          <order>27</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Klein, L.R. (2003). Creating virtual product experiences: The role of telepresence. Journal of interactive Marketing, 17(1), 41 – 55. https://doi.org/10.1002/dir.10046</unparsedContent>
+          <order>28</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Rainoldi, M., Driescher, V., Lisnevska, A., Zvereva, D., Stavinska, A., Relota, J., &amp; Egger, R. (2018). Virtual reality: an innovative tool in destination marketing. The Gaze: Journal of Tourism and Hospitality, 9, 53 – 68. https://doi.org/10.3126/gaze.v9i0.19721 </unparsedContent>
+          <order>29</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Oncioiu, I. &amp; Priescu, I. (2022). The use of virtual reality in tourism destinations as a tool to develop tourist behavior perspective. Sustainability, 14(7), 4191 – 4205. https://dx.doi.org/10.3390/su14074191</unparsedContent>
+          <order>30</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zhang, S.N., Li, Y.Q., Ruan, W.Q. &amp; Liu, C.H. (2022). Would you enjoy virtual travel? The characteristics and causes of virtual sentiment under the influence of the COVID-19 pandemic. Tourism management, 88, 104429. https://doi.org/10.1016/j.tourman.2021.104429</unparsedContent>
+          <order>31</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Pestek, A. &amp; Sarvan, M., (2020). Virtual reality and modern tourism. Journal of Tourism Futures, 7(2), 245 – 250. https://doi.org/10.1108/JTF-01-2020-0004</unparsedContent>
+          <order>32</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Lu, J. Xiao, X., Xu, Z., Wang, C., Zhang, M., &amp; Zhou, Y. (2021). The potential of virtual tourism in the recovery of tourism industry during the COVID-19 pandemic, Current Issues in Tourism, 25(3), 441 – 457. https://doi.org/10.1080/13683500.2021.1959526.</unparsedContent>
+          <order>33</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Huang, Y.C., Backman, S.J., Backman, K.F. &amp; Moore, D., (2013). Exploring user acceptance of 3D virtual worlds in travel and tourism marketing. Tourism Management, 36, 490 – 501. https://doi.org/10.1016/j.tourman.2012.09.009</unparsedContent>
+          <order>34</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Fransen, M.L., Verlegh, P.W., Kirmani, A. &amp; Smit, E.G., (2015). A typology of consumer strategies for resisting advertising, and a review of mechanisms for countering them. International Journal of Advertising, 34(1), 6 – 16. https://doi.org/10.1080/02650487.2014.995284  </unparsedContent>
+          <order>35</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Alcañiz, M., Bigné, E. &amp; Guixeres, J. (2019). Virtual reality in marketing: a framework, review, andresearch agenda. Frontiers in Psychology, 10, 1530.  https://doi.org/10.3389/fpsyg.2019.01530. </unparsedContent>
+          <order>36</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Yung, R., Khoo-Lattimore, C. &amp; Potter, L.E. (2021). Virtual reality and tourism marketing: Conceptualizing a framework on presence, emotion, and intention. Current Issues in Tourism, 24(11), 1505 – 1525. https://doi.org/10.1080/13683500.2020.1820454</unparsedContent>
+          <order>37</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Ozdemir, M.A., 2021. Virtual reality (VR) and augmented reality (AR) technologies for accessibility and marketing in the tourism industry. In ICT tools and applications for accessible tourism (pp. 277-301). IGI Global Scientific Publishing.</unparsedContent>
+          <order>38</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Tussyadiah, I.P., Wang, D. &amp; Jia, C. (2017). Virtual reality and attitudes toward tourism destinations. In Information and Communication Technologies in Tourism 2017: Proceedings of the International Conference in Rome, Italy, 229 – 239. https://doi.org/10.1007/978-3-319-51168-9_17 </unparsedContent>
+          <order>39</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hollister, J. M., &amp; Lee, J. (2022). An Exploratory Study on Virtual Reality and Related Technologies in Terminal LIS Degree Programs in the United States and South Korea. International Journal of Knowledge Content Development &amp; Technology, 12, 85 – 106.  https://journals.sfu.ca/ijkcdt/index.php/ijkcdt/article/view/771 </unparsedContent>
+          <order>40</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hoang, S.D., Dey, S.K., Tučková, Z. &amp; Pham, T.P., (2023). Harnessing the power of virtual reality: Enhancing telepresence and inspiring sustainable travel intentions in the tourism industry. Technology in Society, 75, 102378. https://doi.org/10.1016/j.techsoc.2023.102378</unparsedContent>
+          <order>41</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Ortet, C., Veloso, A., &amp; Costa, L. (2022). Cycling through 360° Virtual Reality Tourism for Senior Citizens: Empirical Analysis of an Assistive Technology. Sensors, 22(16), 6169. https://doi.org/doi.org/10.3390/s22166169</unparsedContent>
+          <order>42</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Augusrini, N., Suzana, Y., Handayani, N. &amp; Putri, R.T. (2023). Virtual Tour Method as an Alternative Tourism Experience During the Covid-19 Pandemic (Case Study of Villages Nglanggeran, Yogyakarta). International Journal of Travel, Hospitality and Events, 2(3), 286 - 295.                                                                                    DOI: https://doi.org/10.56743/ijothe.v2i3.296</unparsedContent>
+          <order>43</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Huang, Y.C., Backman, K.F., Backman, S.J. &amp; Chang, L.L. (2016). Exploring the implications of virtual reality technology in tourism marketing: An integrated research framework. International Journal of Tourism Research, 18(2), 116 – 128. https://doi.org/10.1002/jtr.2038</unparsedContent>
+          <order>44</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Bogicevic, V., Seo, S., Kandampully, J.A., Liu, S.Q. &amp; Rudd, N.A., (2019). Virtual reality presence as a preamble of tourism experience: The role of mental imagery.  Tourism Management, 74, 55 – 64. https://doi.org/10.1016/j.tourman.2019.02.009</unparsedContent>
+          <order>45</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Skard, S., Knudsen, E.S., Sjåstad, H. &amp; Thorbjørnsen, H. (2021). How virtual reality influences travel intentions: The role of mental imagery and happiness forecasting. Tourism Management, 87, 104360 – 104372. https://doi.org/10.1016/j.tourman.2021.104360</unparsedContent>
+          <order>46</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Preece, C. &amp; Skandalis, A. (2024). Time to imagine an escape: investigating the consumer timework at play in augmented reality. European Journal of Marketing, 58(1), 92 - 118. https://doi.org/10.1108/EJM-09-2021-0695</unparsedContent>
+          <order>47</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>MassInteract. (2021). 8 Surprising Virtual Tour Statistics to Blow Your Mind in 2021. [online] Available at: https://www.massinteract.com/blog/8-surprising-virtual-tour-statistics-to-blow-your-mind-in-2021 [Accessed 18 Aug. 2025].</unparsedContent>
+          <order>48</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Martey, R.M., Stromer-Galley, J., Banks, J., Wu, J. &amp; Consalvo, M. (2014). The strategic female: Gender-switching and player behaviour in online games. Information, Communication &amp; Society, 17(3), 286 – 303. https://doi.org/ .1080/1369118X.2013.874493</unparsedContent>
+          <order>49</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Pröbster, M. &amp; Marsden, N. (2021). Real gender barriers to virtual realities? Proceedings of the IEEE International Conference on Engineering, Technology and Innovation (ICE/ITMC). https://doi.org/10.1109/ice/itmc52061.2021.9570270</unparsedContent>
+          <order>50</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Redl, T., Frank, S., L., de Swart, P. &amp; de Hoop, H. (2020). The male bias of a generically intended personal pronoun in language processing. PsyArXiv Preprints. https://doi.org/10.31234/osf.io/3hc69 </unparsedContent>
+          <order>51</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Liu, Q., Wang, Y., Tang, Q. &amp; Liu, Z. (2020). Do you feel the same as I do? Differences in virtual reality technology experience and acceptance between elderly adults and college students. Frontiers in Psychology, 11, 573673. https://doi.org/10.3389/fpsyg.2020.573673</unparsedContent>
+          <order>52</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Rockcastle, S., Danell, M., Calabrese, E., Sollom – Brotherton, G., Mahic, A., Van de Wymelenberg, Davis, R. (2021). Comparing perceptions of a dimmable LED lighting system between a real space and a virtual reality display. Lighting Research &amp; Technology, 53(8), 701 – 725. https://doi.org/10.1177/1477153521990039</unparsedContent>
+          <order>53</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Javanmardi, S., Javanmardi, E. &amp; Bucci, A. (2024). Quantifying drivers of virtual reality acceptance in tourism planning using a grey system theory-based approach. Journal of Hospitality and Tourism Insights, 8(4), 1308 – 1327. https://doi.org/10.1108/JHTI-04-2024-0367</unparsedContent>
+          <order>54</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Latoschik, M.E., Kern, F., Stauffert, J.-P., Bartl, A., Botsch, M. &amp; Lugrin, J., L. (2019). Not alone here?! Scalability and user experience of embodied ambient crowds in distributed social virtual reality. In IEEE Transactions on Visualization and Computer Graphics, 25(5), 2134 – 2144. https://doi.org/10.1109/TVCG.2019.2899250</unparsedContent>
+          <order>55</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Nawaz, I. Y. (2020). Characteristics of Millennials and Technology Adoption in the Digital Age. In S. Dadwal (Ed.), Handbook of Research on Innovations in Technology and Marketing for the Connected Consumer (pp. 241-262). IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-7998-0131-3.ch012 </unparsedContent>
+          <order>56</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Sanjeev, M.A., Khademizadeh, S., Arumugam, T. &amp;Tripathi, D.K. (2022). Generation Z and intention to use the digital library: does personality matter? The Electronic Library, 40(1/2), 18 – 37. http://doi.org/10.1108/EL-04-2021-0082</unparsedContent>
+          <order>57</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Heydari Khajehpour, S. &amp; Seyed Esfahani, M. (2020). The barriers of accepting Virtual Reality in Healthcare by older generation. The ISPIM Innovation Conference – Innovating in Times of Crisis, Virtual, 1 – 13. https://eprints.bournemouth.ac.uk/34262/</unparsedContent>
+          <order>58</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Losheniuk, I., Kabanova, O., Berher, A., Karpenko, V. &amp; Didyk, D. (2023). The future of virtual reality in marketing and advertising: benefits and challenges for business. Futurity Economics &amp; Law, 3(3), 176 – 189. </unparsedContent>
+          <order>59</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Griffin, T., Guttentag, D., Lee, S.H., Giberson, J. &amp; Dimanche, F. (2023). Is VR always better for destination marketing? Comparing different media and styles. Journal of Vacation The greatest Castles of Wales Marketing, 29(1), 119 – 140. https://doi.org/10.1177/13567667221078252</unparsedContent>
+          <order>60</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>de Moura, A.C., Gosling, M.S., Christino, J.M.M. &amp; Macedo, S.B. (2017). Acceptance and use of technology by older adults for choosing a tourism destination: a study using UTAUT2. Brazilian Journal of Tourism Research, 11(2), 239 – 269. http://dx.doi.org/10.7784/rbtur.v11i2.1277</unparsedContent>
+          <order>61</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Sousa, N., Jorge, F., Teixeira, M.S., Losada, N., Alén, E., &amp; Guttentag, D. (2024). Does technological innovativeness influence users' experiences with virtual reality tourism? International Journal of Tourism Research 26(4), 1 – 12. https://doi.org/10.1002/jtr.2730</unparsedContent>
+          <order>62</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Abid, R. (2025). Exploring the Virtual Reality in Tourism Marketing for Improving Efficiency and Better Consumer Experience. Business Perspective Review, 7(1), 15 – 31. https://doi.org/10.38157/bpr.v7i1.664</unparsedContent>
+          <order>63</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kim, M., Lee, C-K., &amp; Jung, T. (2018). Exploring Consumer Behavior in Virtual Reality Tourism Using an Extended Stimulus – Organism - Response Model. Journal of Travel Research, 59(1). 69 – 89.  https://doi.org/10.1177/00472875188189</unparsedContent>
+          <order>64</order>
+          <doi/>
+        </reference>
+      </references>
+    </article>
+    <article>
+      <type>ORIGINAL_ARTICLE</type>
+      <languageVersion language="en">
+        <title>Introducing Perceived Prospects of Development in Virtual Reality Tourism Adoption: Evidence from PLS-SEM in an Emerging Market</title>
+        <abstract>The rapid advancement of virtual reality (VR) technology has expanded its applications in tourism, yet adoption remains uneven across emerging markets. Prior research on VR tourism largely relies on the Technology Acceptance Model (TAM) and, more recently, its integration with the Technology Readiness Index (TRI). While these approaches explain how cognitive evaluations and readiness traits influence adoption, most studies emphasise immediate usability and performance perceptions, with limited attention to future-oriented beliefs regarding the developmental trajectory of VR tourism, particularly in contexts where the technology is still nascent. Addressing this gap, the present study develops and tests an integrated TRI-TAM framework that incorporates perceived prospects of development, conceptualised as a belief in the future viability and diffusion of VR tourism within the industry. The study aims to examine how readiness traits shape cognitive evaluations and how both present utility perceptions and developmental expectations influence the intention to adopt VR tourism. Survey data were collected from 450 domestic tourists in Ho Chi Minh City who had prior VR experience. The model was analysed using Partial Least Squares Structural Equation Modelling (PLS-SEM). The results indicate that perceived usefulness is the strongest predictor of adoption intention, followed by perceived ease of use and perceived prospects of development. Optimism and innovativeness positively influence cognitive beliefs, whereas discomfort and insecurity show no significant effects. Perceived usefulness also strengthens perceived prospects of development, suggesting that current utility assessments foster confidence in VR tourism’s future development. These findings extend the technology adoption model by introducing a future-oriented belief dimension into the TRI-TAM framework and provide empirical evidence from an emerging tourism market. The study highlights the importance of communicating functional value and developmental potential to support digital transformation in tourism. Future research should examine demographic heterogeneity and evolving immersive technologies to refine the understanding of VR adoption dynamics.</abstract>
+        <publicationDate>2025-12-31</publicationDate>
+        <pageFrom>48</pageFrom>
+        <pageTo>68</pageTo>
+        <doi>10.34021/ve.2025.08.04(3)</doi>
+        <keywords>
+          <keyword>virtual reality</keyword>
+          <keyword>virtual reality tourism</keyword>
+          <keyword>technology acceptance model</keyword>
+          <keyword>technology readiness index</keyword>
+          <keyword>perceived prospects of development</keyword>
+          <keyword>emerging tourism markets</keyword>
+        </keywords>
+      </languageVersion>
+      <authors>
+        <author>
+          <name>Tuyen</name>
+          <surname>Tran</surname>
+          <email>tuyentran@hcmussh.edu.vn</email>
+          <order>1</order>
+          <instituteAffiliation>University of Social Sciences and Humanities, Ho Chi Minh City, Vietnam; Vietnam National University, Ho Chi Minh City, Vietnam</instituteAffiliation>
+          <role>AUTHOR</role>
+          <ORCID>https://orcid.org/0000-0002-7960-5234</ORCID>
+        </author>
+      </authors>
+      <references>
+        <reference>
+          <unparsedContent>Verma, S., Warrier, L., Bolia, B., &amp; Mehta, S. (2022). Past, present, and future of virtual tourism-a literature review. International Journal of Information Management Data Insights, 2(2), 100085. https://doi.org/10.1016/J.JJIMEI.2022.100085</unparsedContent>
+          <order>1</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Omran, W., Ramos, R. F., &amp; Casais, B. (2024). Virtual reality and augmented reality applications and their effect on tourist engagement: a hybrid review. Journal of Hospitality and Tourism Technology, 15(4), 497 – 518. https://doi.org/10.1108/JHTT-11-2022-0299</unparsedContent>
+          <order>2</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Çolakoğlu, Ü., Anış, E., Esen, Ö., &amp; Tuncay, C. S. (2024). The evaluation of tourists’ virtual reality experiences in the transition process to Metaverse. Journal of Hospitality and Tourism Insights, 7(3), 1475–1500. https://doi.org/10.1108/JHTI-09-2022-0426</unparsedContent>
+          <order>3</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Beck, J., Rainoldi, M., &amp; Egger, R. (2019). Virtual reality in tourism: a state-of-the-art review. Tourism Review, 74(3), 586–612. https://doi.org/10.1108/TR-03-2017-0049</unparsedContent>
+          <order>4</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Yung, R., &amp; Khoo-Lattimore, C. (2019). New realities: a systematic literature review on virtual reality and augmented reality in tourism research. Current Issues in Tourism, 22(17), 2056–2081. https://doi.org/10.1080/13683500.2017.1417359</unparsedContent>
+          <order>5</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Nguyen, Thich Van, Nguyen, Tho Van, &amp; Nguyen, D. Van. (2024). Exploring the Influence of Virtual Reality and Augmented Reality on User Satisfaction in Virtual Tourism. Journal of Distribution Science, 22(6), 33–44. https://doi.org/10.15722/JDS.22.06.202406.33</unparsedContent>
+          <order>6</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hoang, S. D., Dey, S. K., Tučková, Z., &amp; Pham, T. P. (2023). Harnessing the power of virtual reality: Enhancing telepresence and inspiring sustainable travel intentions in the tourism industry. Technology in Society, 75, 102378. https://doi.org/10.1016/J.TECHSOC.2023.102378</unparsedContent>
+          <order>7</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Parasuraman, A., &amp; Colby, C. L. (2015). An Updated and Streamlined Technology Readiness Index: TRI 2.0. Journal of Service Research, 18(1), 59–74. https://doi.org/10.1177/1094670514539730</unparsedContent>
+          <order>8</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. MIS Quarterly: Management Information Systems, 13(3), 319–339. https://doi.org/10.2307/249008</unparsedContent>
+          <order>9</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Yang, C., Yan, S., Wang, J., &amp; Xue, Y. (2022). Flow Experiences and Virtual Tourism: The Role of Technological Acceptance and Technological Readiness. Sustainability (Switzerland), 14(9). https://doi.org/10.3390/SU14095361</unparsedContent>
+          <order>10</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zheng, C., Chen, Z., Zhang, Y., &amp; Guo, Y. (2021). Does Vivid Imagination Deter Visitation? The Role of Mental Imagery Processing in Virtual Tourism on Tourists’ Behavior. Journal of Travel Research, 61(7), 1528–1541. https://doi.org/10.1177/00472875211042671</unparsedContent>
+          <order>11</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kim, M. J., Lee, C.-K., &amp; Jung, T. (2020). Exploring Consumer Behavior in Virtual Reality Tourism Using an Extended Stimulus-Organism-Response Model. Journal of Travel Research, 59(1), 69–89. https://doi.org/10.1177/0047287518818915</unparsedContent>
+          <order>12</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Jude, O. C., &amp; Ukekwe, C. (2020). Tourism and virtual reality (VR) in developing nations. African Journal of Hospitality, Tourism and Leisure, 9(2), 1–16.</unparsedContent>
+          <order>13</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Tan, K.-L., Hii, I. S. H., Zhu, W., Leong, C.-M., &amp; Lin, E. (2023). The borders are re-opening! Has virtual reality been a friend or a foe to the tourism industry so far? Asia Pacific Journal of Marketing and Logistics, 35(7), 1639–1662. https://doi.org/10.1108/APJML-05-2022-0417</unparsedContent>
+          <order>14</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Huang, Y.-C., Li, L.-N., Lee, H.-Y., Browning, M. H. E. M., &amp; Yu, C.-P. (2023). Surfing in virtual reality: An application of extended technology acceptance model with flow theory. Computers in Human Behavior Reports, 9. https://doi.org/10.1016/j.chbr.2022.100252</unparsedContent>
+          <order>15</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Sinha, N., Dhingra, S., Sehrawat, R., Jain, V., &amp; Himanshu, H. (2025). Customers’ intention to use virtual reality in tourism: a comprehensive analysis of influencing factors. Tourism Review, 80(3), 742 – 766. https://doi.org/10.1108/TR-07-2023-0488</unparsedContent>
+          <order>16</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Huang, W.-J., Zhang, J., Lin, S., &amp; Zhang, X. (2023). Traveling virtually amid the pandemic: antecedents and moderating effects of past visitation experience. Asia Pacific Journal of Tourism Research, 28(7), 745–762. https://doi.org/10.1080/10941665.2023.2264970</unparsedContent>
+          <order>17</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Chin, C.-H., Wong, W. P.-M., &amp; Ngian, E.-T. (2024). The Behavioral Intention of Young Travelers to Use Virtual Reality Technology in Cultural Tourism Destinations: An Application of Technology Acceptance Model. Pakistan Journal of Commerce and Social Sciences, 18(3), 552–570. https://jes.ac.pk/index.php/jes/article/view/29</unparsedContent>
+          <order>18</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Vishwakarma, P., Mukherjee, S., &amp; Datta, B. (2020). Antecedents of Adoption of Virtual Reality in Experiencing Destination: A Study on the Indian Consumers. Tourism Recreation Research, 45(1), 42 – 56. https://doi.org/10.1080/02508281.2019.1638565</unparsedContent>
+          <order>19</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Dewi, K. C., &amp; Ayuni, N. W. D. (2020). Factors affecting acceptance of e-marketplace based on hybrid model of modified TAM-TRI. 2020 5th International Conference on Informatics and Computing, ICIC 2020. https://doi.org/10.1109/ICIC50835.2020.9288626</unparsedContent>
+          <order>20</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Cimbaljević, M., Demirović Bajrami, D., Kovačić, S., Pavluković, V., Stankov, U., &amp; Vujičić, M. (2023). Employees’ technology adoption in the context of smart tourism development: the role of technological acceptance and technological readiness. European Journal of Innovation Management, 27(8), 2457–2482. https://doi.org/10.1108/EJIM-09-2022-0516 </unparsedContent>
+          <order>21</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Özekici, Y. K., &amp; Küçükergin, K. G. (2023). The role of COVID-19 anxiety and social contact within technology readiness and acceptance model for virtual reality. Journal of Vacation Marketing, 29(4), 498–521. https://doi.org/10.1177/13567667221109268</unparsedContent>
+          <order>22</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zhang, Y., &amp; Hwang, J. (2024). Dawn or Dusk? Will Virtual Tourism Begin to Boom? An Integrated Model of AIDA, TAM, and UTAUT. Journal of Hospitality and Tourism Research, 48(6), 991–1005. https://doi.org/10.1177/10963480231186656</unparsedContent>
+          <order>23</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Teng, Y.-M., Wu, K.-S., &amp; Kuo, F.-J. (2024). Virtual reality tourism: intention to use mediated by perceived usefulness, attitude and desire. Tourism Review, 80(8), 1515-1534. https://doi.org/10.1108/TR-02-2024-0133</unparsedContent>
+          <order>24</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Sox, C. B., &amp; Campbell, J. M. (2018). Virtually impossible? Assessing factors for technology acceptance within the meeting environment. Event Management, 22(4), 655–670. https://doi.org/10.3727/152599518X15299559637608</unparsedContent>
+          <order>25</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Venkatesh, V., &amp; Davis, F. D. (2000). A Theoretical Extension of the Technology Acceptance Model: Four Longitudinal Field Studies. Management Science, 46(2), 186–204. https://doi.org/10.1287/MNSC.46.2.186.11926</unparsedContent>
+          <order>26</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Rogers, E. M., Singhal, A., &amp; Quinlan, M. M. (2008). Diffusion of Innovations. In An Integrated Approach to Communication Theory and Research, pp. 432–448. Routledge. https://doi.org/10.4324/9780203887011</unparsedContent>
+          <order>27</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Jia, S., Chi, O. H., Martinez, S. D., &amp; Lu, L. (2023). When “Old” Meets “New”: Unlocking the Future of Innovative Technology Implementation in Heritage Tourism. Journal of Hospitality and Tourism Research, 49(3), 640–661. https://doi.org/10.1177/10963480231205767</unparsedContent>
+          <order>28</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Abdul Waheed, K., &amp; Panneerselvam, T. (2025). Adoption of virtual reality in secondary school education: extending the diffusion of innovation theory. International Journal of Educational Management, 39(4), 937–953. https://doi.org/10.1108/IJEM-07-2024-0399 </unparsedContent>
+          <order>29</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Aljaroodi, H. M., Aldawood, H., &amp; Aldarazi, A. I. (2023). Work-in-Progress: Investigating intention to use virtual environments using Technology Readiness Index: A quantitative study in Saudi Arabia. 2023 3rd International Conference on Computing and Information Technology, ICCIT 2023, 457–461. https://doi.org/10.1109/ICCIT58132.2023.10273964</unparsedContent>
+          <order>30</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Putra, Z., Amin, H., Harmen, H., Achmad, S., &amp; Rafiie, K. (2025). The Receptiveness of The Teuku Umar Islamic Leadership Style Among Indonesian Young Leaders. Journal of Applied Structural Equation Modeling, 9(1), 1–23. https://doi.org/10.47263/JASEM.9(1)05</unparsedContent>
+          <order>31</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hair, J., Hult, G. T. M., Ringle, C. M., &amp; Sarstedt, M. (2021). A primer on partial least squares structural equation modeling (PLS-SEM) (3rd ed.). SAGE Publications.</unparsedContent>
+          <order>32</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Ali Memon, M., Thurasamy, R., Ting, H., &amp; Cheah, J.-H. (2025). Convenience Sampling: A Review and Guidelines for Quantitative Research. Journal of Applied Structural Equation Modeling, 9(2), 1–15. https://doi.org/10.47263/JASEM.9(2)01</unparsedContent>
+          <order>33</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Sancho-Esper, F., Ostrovskaya, L., Rodriguez-Sanchez, C., &amp; Campayo-Sanchez, F. (2022). Virtual reality in retirement communities: Technology acceptance and tourist destination recommendation. Journal of Vacation Marketing, 29(2), 275–290. https://doi.org/10.1177/13567667221080567</unparsedContent>
+          <order>34</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Li, Y., Liang, J., Huang, J., Yang, M., Li, R., &amp; Bai, H. (2022). Would You Accept Virtual Tourism? The Impact of COVID-19 Risk Perception on Technology Acceptance from a Comparative Perspective. Sustainability, 14(19), 12693. https://doi.org/10.3390/SU141912693</unparsedContent>
+          <order>35</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Wibisono, N., Rafdinal, W., Setiawati, L., &amp; Senalasari, W. (2023). Predicting the Adoption of Virtual Reality Tourism in the Post COVID-19 Pandemic Era. African Journal of Hospitality, Tourism and Leisure, 12(1), 239 – 256. https://doi.org/10.46222/ajhtl.19770720.365</unparsedContent>
+          <order>36</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Al Khalifah, E., Hammady, R., Abdelrahman, M., Al-Shamaileh, O., Marghany, M., El-Jarn, H., Darwish, A., &amp; Kurt, Y. (2025). Technology Anxiety in Virtual Reality Adoption: Examining the Impact of Age, Past Experience, and Cybersickness. IEEE Access, 13, 71858–71879. https://doi.org/10.1109/ACCESS.2025.3562383</unparsedContent>
+          <order>37</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Senalasari, W., Setiawati, L., &amp; Wibisono, N. (2022). The Role of Technology Acceptance and Readiness on Intention to Adopt Virtual Tourism Technology during The New Normal Era. Proceedings of the International Conference on Applied Science and Technology on Social Science 2022 (ICAST-SS 2022), 212–217. https://doi.org/10.2991/978-2-494069-83-1_38</unparsedContent>
+          <order>38</order>
+          <doi/>
+        </reference>
+      </references>
+    </article>
+    <article>
+      <type>ORIGINAL_ARTICLE</type>
+      <languageVersion language="en">
+        <title>Are Trust and Its Dimensions Important in Influencing Gen Z's Impulse Buying in Live-Streaming Commerce? A Trust Transfer Theory Perspective</title>
+        <abstract>Live streaming within short-video applications has emerged as a major social commerce channel integrating entertainment, real-time interaction, and product discovery. Generation Z demonstrates strong engagement with live-streaming shopping. However, although trust is a key predictor of impulsive buying, trust transfer mechanisms in this context remain underexplored. Hence, grounded in Trust Transfer Theory, this study aims to investigate the relationships among platform trust, streamer trustworthiness, and impulsive buying intentions in live-streaming commerce on short-video applications. This research employed a quantitative methodology to collect responses from 272 Generation Z consumers in Malaysia, aged 18–25, all of whom had direct or indirect experience with live-stream shopping. Data collection was carried out via a bilingual online survey using purposive sampling. Reliability and validity were established through measurement model evaluation, and the hypothesised relationships were tested via Structural Equation Modelling (SEM) using SmartPLS 4. Results reveal that platform trust significantly enhances both streamer trustworthiness and impulsive buying intentions. However, streamer trustworthiness was found to have no significant direct effect on impulsive buying intentions and did not serve as a mediator in the relationship between platform trust and impulsive buying. The study contributes to the theoretical understanding of trust transfer in the interactive digital economy and offers practical implications for platform-level trust strategies aimed at fostering consumer engagement and stimulating impulsive purchases.</abstract>
+        <publicationDate>2025-12-31</publicationDate>
+        <pageFrom>69</pageFrom>
+        <pageTo>81</pageTo>
+        <doi>10.34021/ve.2025.08.04(4)</doi>
+        <keywords>
+          <keyword>Generation Z</keyword>
+          <keyword>iimpulsive buying intentions</keyword>
+          <keyword>live streaming</keyword>
+          <keyword>short-video applications</keyword>
+          <keyword>trust transfer theory</keyword>
+        </keywords>
+      </languageVersion>
+      <authors>
+        <author>
+          <name>Xiu Jing</name>
+          <surname>Siow</surname>
+          <email>siowxiujing.official@gmail.com</email>
+          <order>1</order>
+          <instituteAffiliation>Universiti Malaysia Sabah, Sabah, Malaysia</instituteAffiliation>
+          <role>AUTHOR</role>
+          <ORCID>https://orcid.org/0009-0001-0768-659X</ORCID>
+        </author>
+        <author>
+          <name>Ing Grace</name>
+          <surname>Phang</surname>
+          <email>gracep@ums.edu.my</email>
+          <order>2</order>
+          <instituteAffiliation>Universiti Malaysia Sabah, Sabah, Malaysia</instituteAffiliation>
+          <role>AUTHOR</role>
+          <ORCID>https://orcid.org/0000-0002-0260-5148</ORCID>
+        </author>
+      </authors>
+      <references>
+        <reference>
+          <unparsedContent>Shou, M., Yu, J., &amp; Dai, R. (2023). Identify the effect of government regulations on the live streaming e-commerce. Industrial Management and Data Systems, 123(11), 2909–2928. https://doi.org/10.1108/IMDS-10-2022-0655</unparsedContent>
+          <order>1</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Wang, B., Tong, C., Chen, T., Yang, J., &amp; Cong, G. (2024). Evaluation of China’s live streaming e-commerce industry policies based on a three-dimensional analysis framework. PLOS ONE, 19(5), Article e0301451. https://doi.org/10.1371/journal.pone.0301451</unparsedContent>
+          <order>2</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Azhar, M., Akhtar, M. J., Rahman, M. N., &amp; Khan, F. A. (2023). Measuring buying intention of generation Z on social networking sites: an application of social commerce adoption model. Journal of Economic and Administrative Sciences, 41(3), 979–1001. https://doi.org/10.1108/jeas-02-2022-0047</unparsedContent>
+          <order>3</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Al-kfairy, M., Shuhaiber, A., Al-khatib, A. W., Alrabaee, S., &amp; Khaddaj, S. (2024). Understanding Trust Drivers of S-commerce. Heliyon, 10(1), Article e23332. https://doi.org/10.1016/j.heliyon.2023.e23332</unparsedContent>
+          <order>4</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Thangavel, P., Pathak, P., &amp; Chandra, B. (2022). Consumer Decision-making Style of Gen Z: A Generational Cohort Analysis. Global Business Review, 23(3), 710-728. https://doi.org/10.1177/0972150919880128</unparsedContent>
+          <order>5</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Rahman, S. U., Khan, M. A., &amp; Iqbal, N. (2018). Motivations and barriers to purchasing online: understanding consumer responses. South Asian Journal of Business Studies, 7(1), 111–128. https://doi.org/10.1108/SAJBS-11-2016-0088</unparsedContent>
+          <order>6</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>LI, X., Huang, D., Dong, G., &amp; Wang, B. (2024). Why consumers have impulsive purchase behavior in live streaming: the role of the streamer. BMC Psychology, 12, Article 129. https://doi.org/10.1186/s40359-024-01632-w</unparsedContent>
+          <order>7</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Adelaar, T., Chang, S., Lancendorfer, K. M., Lee, B., &amp; Morimoto, M. (2003). Effects of media formats on emotions and impulse buying intent. Journal of Information Technology, 18(4), 247–266. https://doi.org/10.1080/0268396032000150799</unparsedContent>
+          <order>8</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Han, M. C. (2023). Checkout button and online consumer impulse-buying behavior in social commerce: A trust transfer perspective. Journal of Retailing and Consumer Services, 74, 103431. https://doi.org/10.1016/j.jretconser.2023.103431</unparsedContent>
+          <order>9</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Stewart, K. J. (2003). Trust transfer on the World Wide Web. Organization Science, 14(1), 5-17. https://doi.org/10.1287/orsc.14.1.5.12810</unparsedContent>
+          <order>10</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Chen, X., Huang, Q., Davison, R. M., &amp; Hua, Z. (2015). What Drives Trust Transfer? The Moderating Roles of Seller-Specific and General Institutional Mechanisms. International Journal of Electronic Commerce, 20(2), 261–289. https://doi.org/10.1080/10864415.2016.1087828</unparsedContent>
+          <order>11</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Almahdi, M. H., Alsayed, N., &amp; Alabbas, A. (2022). In Influencers We Trust? A Model of Trust Transfer in Social Media Influencer Marketing. In A. Hamdan, A. Harraf, P. Arora, B. Alareeni, &amp; R. Khamis Hamdan (Eds.), Future of Organizations and Work After the 4th Industrial Revolution. Studies in Computational Intelligence, vol 1037 (pp. 159–173). Springer, Cham. https://doi.org/10.1007/978-3-030-99000-8_9</unparsedContent>
+          <order>12</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zhang, Y., Albattat, A., Rehman, A. U., &amp; Azam, S. M. F. (2025). Investigating the trust entities that influence consumers’ purchase intention in livestream e-commerce from trust transfer perspective: using analysis of SEM and fsQCA. Cogent Business and Management, 12(1), Article 2582220. https://doi.org/10.1080/23311975.2025.2582220</unparsedContent>
+          <order>13</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Ashiq, R., &amp; Hussain, A. (2024). Exploring the effects of e-service quality and e-trust on consumers’ e-satisfaction and e-loyalty: insights from online shoppers in Pakistan. Journal of Electronic Business &amp; Digital Economics, 3(2), 117–141. https://doi.org/10.1108/jebde-09-2023-0019</unparsedContent>
+          <order>14</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Tedjakusuma, A. P., Silalahi, A. D. K., Eunike, I. J., Phuong, D. T. T., &amp; Riantama, D. (2025). The trust-driven path to consumer engagement behaviors: Exploring the role of streamer and platform characteristics in live-streaming E-commerce. Digital Business, 5(1), Article 100115. https://doi.org/10.1016/j.digbus.2025.100115</unparsedContent>
+          <order>15</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hung, K., Li, S., &amp; Tse, D. (2011). Interpersonal trust and platform credibility in a chinese multibrand online community: Effects on brand variety seeking and time spent. Journal of Advertising, 40(3), 99-112. https://doi.org/10.2753/JOA0091-3367400308</unparsedContent>
+          <order>16</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Shao, Z., Ho, J. S. Y., Tan, G. W., Ooi, K., &amp; Dennis, C. (2024). Will social media celebrities drive me crazy? Exploring the effects of celebrity endorsement on impulsive buying behavior in social commerce. International Journal of Consumer Studies, 48(3) Article e13047. https://doi.org/10.1111/ijcs.13047 </unparsedContent>
+          <order>17</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Duong, N. T., Lin, H.-H., Wu, T.-L., &amp; Wang, Y.-S. (2024). Understanding Consumer Trust Dynamics and Purchase Intentions in a Multichannel Live Streaming E-Commerce Context: A Trust Transfer Perspective. International Journal of Human–Computer Interaction, 41(14), 9123-9136. https://doi.org/10.1080/10447318.2024.2423332</unparsedContent>
+          <order>18</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zhang, M., Liu, Y., Wang, Y., &amp; Zhao, L. (2022). How to retain customers: Understanding the role of trust in live streaming commerce with a socio-technical perspective. Computers in Human Behavior, 127, Article 107052. https://doi.org/10.1016/j.chb.2021.107052</unparsedContent>
+          <order>19</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Pham, T. T. H., &amp; Tran, N. H. A. (2024). E-trust in social commerce: A comprehensive review. In Proceedings of the 11th International Conference on Emerging Challenges: Smart Business and Digital Economy 2023 (ICECH 2023) (pp. 99–113). Atlantis Press. https://doi.org/10.2991/978-94-6463-348-1_10</unparsedContent>
+          <order>20</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Jadil, Y., Rana, N. P., &amp; Dwivedi, Y. K. (2022). Understanding the drivers of online trust and intention to buy on a website: An emerging market perspective. International Journal of Information Management Data Insights, 2(1), Article 100065. https://doi.org/10.1016/j.jjimei.2022.100065</unparsedContent>
+          <order>21</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Putri, N., Prasetya, Y., Handayani, P. W., &amp; Fitriani, H. (2024). TikTok Shop: How trust and privacy influence generation Z’s purchasing behaviors. Cogent Social Sciences, 10(1), Article 2292759. https://doi.org/10.1080/23311886.2023.2292759</unparsedContent>
+          <order>22</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Koay, K. Y., Cheung, M. L., Soh, P. C. H., &amp; Teoh, C. W. (2022). Social media influencer marketing: the moderating role of materialism. European Business Review, 34(2), 224–243. https://doi.org/10.1108/EBR-02-2021-0032</unparsedContent>
+          <order>23</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Douglas, S., &amp; Craig, S. S. (2007). Collaborative and Iterative Translation: An Alternative Approach to Instrument Translation. Journal of International Marketing, 15(1), 30–43. https://doi.org/10.2139/ssrn.946274</unparsedContent>
+          <order>24</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Patil, P., Tamilmani, K., Rana, N. P., &amp; Raghavan, V. (2020). Understanding consumer adoption of mobile payment in India: Extending Meta-UTAUT model with personal innovativeness, anxiety, trust, and grievance redressal. International Journal of Information Management, 54, Article 102144. https://doi.org/10.1016/j.ijinfomgt.2020.102144</unparsedContent>
+          <order>25</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Wiedmann, K.-P., &amp; Mettenheim, W. von. (2020). Attractiveness, trustworthiness and expertise – social influencers’ winning formula? Journal of Product and Brand Management, 30(5), 707–725. https://doi.org/10.1108/JPBM-06-2019-2442</unparsedContent>
+          <order>26</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zhu, Y. Q., Amelina, D., &amp; Yen, D. C. (2020). Celebrity endorsement and impulsive buying intentions in social commerce - The case of instagram in Indonesia: Celebrity endorsement. Journal of Electronic Commerce in Organizations, 18(1), 1401–1419. https://doi.org/10.4018/JECO.2020010101</unparsedContent>
+          <order>27</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Memon, M. A., Ting, H., Cheah, J.-H., Thurasamy, R., Chuah, F., &amp; Cham, T. H. (2020). Sample Size for Survey Research: Review and Recommendations. Journal of Applied Structural Equation Modeling, 4(2), i–xx. https://doi.org/10.47263/jasem.4(2)01</unparsedContent>
+          <order>28</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hair, J. F., Hult, G. T. M., Ringle, C. M., &amp; Sarstedt, M. (2022). A Primer on Partial Least Squares Structural Equation Modeling (PLS-SEM) (3rd Edition). SAGE Publications Inc.</unparsedContent>
+          <order>29</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Men, J., Zheng, X., &amp; Davison, R. M. (2024). The role of vicarious learning strategies in shaping consumers’ uncertainty: the case of live-streaming shopping. Internet Research, 34(3), 891–916. https://doi.org/10.1108/INTR-06-2022-0415</unparsedContent>
+          <order>30</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Henseler, J., Ringle, C. M., &amp; Sarstedt, M. (2016). Testing measurement invariance of composites using partial least squares. International Marketing Review, 33(3), 405–431. https://doi.org/10.1108/IMR-09-2014-0304</unparsedContent>
+          <order>31</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kock, N. (2015). Common method bias in PLS-SEM: A full collinearity assessment approach. International Journal of E-Collaboration, 11(4), 1–10. https://doi.org/10.4018/ijec.2015100101</unparsedContent>
+          <order>32</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Vo, V. B., Nguyen, G. Do, Dao, T. H. T., &amp; Ho, T. C. N. (2023). The dual role of online trust: a study of Generation Z through online purchase intentions in Vietnam. Journal for International Business and Entrepreneurship Development, 15(1), 4-28. https://doi.org/10.1504/jibed.2023.131473</unparsedContent>
+          <order>33</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Wang, D., Shen, C.-C., &amp; Loverio, J. P. (2025). How to use live streaming platforms to elicit impulse purchases of tourism and hospitality products from consumers? Journal of Open Innovation: Technology, Market, and Complexity, 11(1), Article 100477. https://doi.org/10.1016/j.joitmc.2025.100477</unparsedContent>
+          <order>34</order>
+          <doi/>
+        </reference>
+      </references>
+    </article>
+    <article>
+      <type>ORIGINAL_ARTICLE</type>
+      <languageVersion language="en">
+        <title>Electronic Waste, Globalisation, and ICT Development: Insights from a Global Perspective </title>
+        <abstract>Globalisation has undoubtedly enabled notable progress in global digitalisation. A digitally connected world is necessary to meet several of the Sustainable Development Goals (SDGs). However, this progress is not without consequences, as the increasing use of electronic devices affects the environment. This issue remains underexplored in previous studies, particularly from regional and global perspectives. With an emphasis on its relationship to globalisation and the advancement of information and communication technologies (ICT), this study examines the widespread concern surrounding the generation of electronic waste (e-waste). The study employs panel dynamic ordinary least squares (DOLS) and fully modified ordinary least squares (FMOLS) using data from 179 countries between 2013 and 2022. Key variables include globalisation and ICT indicators, while the control variables are based on the Environmental Kuznets Curve (EKC) and IPAT (environmental Impact of Population, Affluence, and Technology) hypotheses. The results indicate that e-waste generation, ICT development, and globalisation interact in a complex manner. The traditional EKC hypothesis is challenged by the finding that mobile phones reduce e-waste, whereas fixed telephone lines and internet usage are associated with increased e-waste. This suggests that environmental degradation may be exacerbated by globalisation as a component of economic growth, indicating that the EKC hypothesis may be overly simplistic for global environmental issues such as e-waste. The positive relationship between internet usage, fixed telephony, and e-waste highlights the necessity of implementing strong recycling initiatives. Conversely, the mitigating effects of mobile phones provide support for the EKC hypothesis in the context of mobile devices, indicating potential reductions in e-waste due to improved waste management and technological advancements. The findings also highlight income inequality among the selected countries, suggesting that many emerging economies have yet to reach the estimated turning point of GDP per capita (US$79,705.88). Based on these findings, the study recommends, among other measures, the development of environmentally sustainable designs for internet and fixed telecommunication equipment, the establishment of extensive recycling infrastructure, and the implementation of regulations related to extended producer responsibility (EPR).</abstract>
+        <publicationDate>2025-12-31</publicationDate>
+        <pageFrom>82</pageFrom>
+        <pageTo>103</pageTo>
+        <doi>10.34021/ve.2025.08.04(5)</doi>
+        <keywords>
+          <keyword>digitalisation</keyword>
+          <keyword>electronic waste</keyword>
+          <keyword>environmental degradation</keyword>
+          <keyword>environmental Kuznets curve</keyword>
+          <keyword>globalisation</keyword>
+          <keyword>ICT development</keyword>
+        </keywords>
+      </languageVersion>
+      <authors>
+        <author>
+          <name>Afees Oluwashina</name>
+          <surname>Noah</surname>
+          <email>noahafees@gmail.com</email>
+          <order>1</order>
+          <instituteAffiliation>Faculty of Economic and Management Sciences, North-West University, Vanderbijlpark, South Africa</instituteAffiliation>
+          <role>AUTHOR</role>
+          <ORCID>https://orcid.org/0000-0003-4075-0976</ORCID>
+        </author>
+        <author>
+          <name>Oladipo Olalekan</name>
+          <surname>David</surname>
+          <email>Olalekan.David@nwu.ac.za</email>
+          <order>2</order>
+          <instituteAffiliation>Faculty of Economic and Management Sciences, North-West University, Vanderbijlpark, South Africa</instituteAffiliation>
+          <role>AUTHOR</role>
+          <ORCID>https://orcid.org/0000-0002-9922-9504</ORCID>
+        </author>
+      </authors>
+      <references>
+        <reference>
+          <unparsedContent>Orisakwe, O. E., Frazzoli, C., Ilo, C. E., &amp; Oritsemuelebi, B. (2020). Public health burden of E-waste in Africa.  Journal of Health and Pollution, 9(22), 1–12. https://doi.org/10.5696/2156-9614-9.22.190610</unparsedContent>
+          <order>1</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Oteng-Ababio, M., van der Velden, M., &amp; Taylor, M. B. (2020). Building policy coherence for sound waste electrical and electronic equipment management in a developing country. Journal of Environment and Development, 29(3), 306–328. https://doi.org/10.1177/1070496519898218 </unparsedContent>
+          <order>2</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Ssewanyana, J., &amp; Busler, M. (2007). Adoption and usage of ICT in developing countries : Case of Ugandan firms Michael Busler. International Journal of Education and Development Using Information and Technology, 3(3), 49–59.</unparsedContent>
+          <order>3</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Forti, V., Baldé, C. P., Kuehr, R., Bel, G. (2020). The Global E-waste Monitor 2020: Quantities, Flows, and Resources. United Nations University (UNU) / United Nations Institute for Training and Research (UNITAR) / SCYCLE Programme, International Telecommunication Union (ITU) &amp; International Solid Waste Association (ISWA).</unparsedContent>
+          <order>4</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Noah, A. O., David, O. O. &amp; Osakwe, C. N. (2025). Electronic waste effects of ICT: Does income level matter? Discover Sustainability 6(1), 1-15. https://doi.org/10.1007/s43621-025-01194-w</unparsedContent>
+          <order>5</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Nwagwu, W., &amp; Okuneye, M. (2016). Awareness and attitudes of small-scale information technology business operators in Lagos, Nigeria toward e-waste hazards. Journal of Global Information Technology Management, 19(4), 267–282. https://doi.org/10.1080/1097198X.2016.1246934</unparsedContent>
+          <order>6</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Balde, C. P., Kuehr, R., Blumenthal, K., Fondeur Gill, S., Kern, M., Micheli, P., Magpantay, E., &amp; Huisman, J. (2015). E-waste statistics: Guidelines on classifications, reporting and indicators. United Nations University, IAS - SCYCLE.</unparsedContent>
+          <order>7</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Baldé, C. P., Forti V., Gray, V., Kuehr, R., &amp; Stegmann,P. (2017). The Global E-waste Monitor – 2017. United Nations University (UNU), International Telecommunication Union (ITU) &amp; International Solid Waste Association (ISWA). </unparsedContent>
+          <order>8</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Shittu, O. S., Williams, I. D., &amp; Shaw, P. J. (2021). Global E-waste management: Can WEEE make a difference? A review of e-waste trends, legislation, contemporary issues and future challenges. Waste Management, 120, 549–563. https://doi.org/10.1016/j.wasman.2020.10.016</unparsedContent>
+          <order>9</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Lundgren, K. (2012). The global impact of e-waste: Addressing the challenge. International Labour Organization.</unparsedContent>
+          <order>10</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Lepawsky, J. (2018). Reassembling rubbish: Worlding electronic waste (illustrate). The MIT Press. https://doi.org/10.7551/mitpress/11111.001.0001</unparsedContent>
+          <order>11</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Maphosa, V., &amp; Maphosa, M. (2020). E-waste management in Sub-Saharan Africa: A systematic literature review. Cogent Business and Management, 7(1), 1–20. https://doi.org/10.1080/23311975.2020.1814503</unparsedContent>
+          <order>12</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Sajid, M., Syed, J. H., Iqbal, M., Abbas, Z., Hussain, I., &amp; Baig, M. A. (2019). Assessing the generation, recycling and disposal practices of electronic/electrical-waste (E-Waste ) from major cities in Pakistan. Waste Management, 84, 394–401. https://doi.org/10.1016/j.wasman.2018.11.026</unparsedContent>
+          <order>13</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Lin, S., Ali, M. U., Zheng, C., Cai, Z., &amp; Wong, M. H. (2022). Toxic chemicals from uncontrolled e-waste recycling: Exposure, body burden, health impact. Journal of Hazardous Materials, 426, 1–12. https://doi.org/10.1016/j.jhazmat.2021.127792</unparsedContent>
+          <order>14</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Parvez, S. M., Jahan, F., Brune, M. N., Gorman, J. F., Rahman, M. J., Carpenter, D., Islam, Z., Rahman, M., Aich, N., Knibbs, L. D., &amp; Sly, P. D. (2021). Health consequences of exposure to e-waste: an updated systematic review. The Lancet Planetary Health, 5(12), e905–e920. https://doi.org/10.1016/S2542-5196(21)00263-1</unparsedContent>
+          <order>15</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Bhaskar, K., &amp; Kumar, B. (2019). Electronic waste management and sustainable development goals: Is there a business case for linking the two? Journal of Indian Business Research, 11(2), 120–137. https://doi.org/10.1108/JIBR-01-2018-0051</unparsedContent>
+          <order>16</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Gaur, T. S., Yadav, V., Mittal, S., &amp; Sharma, M. K. (2023). A systematic review on sustainable E-waste management: challenges, circular economy practices, and a conceptual framework. Management of Environmental Quality: An International Journal, 34(4), 858–884. https://doi.org/10.1108/MEQ-05-2023-0139</unparsedContent>
+          <order>17</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Melaré, A. V. de S., González, S. M., Faceli, K., &amp; Casadei, V. (2017). Technologies and decision support systems to aid solid-waste management: A systematic review. Waste Management, 59, 567–584. https://doi.org/10.1016/j.wasman.2016.10.045</unparsedContent>
+          <order>18</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Hermanto, I. R., Widyarini, L. A., &amp; Darma, D. C. (2024). Digitalization impact on sustainable firm performance of small, medium, and large businesses. Virtual Economics, 7(1), 7–24. https://doi.org/10.34021/ve.2024.07.01(1)</unparsedContent>
+          <order>19</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Noah, A. O. &amp; David, O. O. (2025). Does ICT adoption moderate the impact of entrepreneurship on economic growth in Africa? Administrative Sciences, 15(3), 1-23. https://doi.org/10.3390/admsci15030088</unparsedContent>
+          <order>20</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Delcea, C., Craciun, L., Ioanas, C., Ferruzzi, G., &amp; Cotfas, L. A. (2020). Determinants of  individuals’ e-waste recycling decision: A case study from Romania. Sustainability (Switzerland), 12(7), 1–28. https://doi.org/10.3390/su12072753</unparsedContent>
+          <order>21</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kwilinski, A. (2023). The relationship between sustainable development and digital transformation: Bibliometric analysis. Virtual Economics, 6(3), 56–69. https://doi.org/10.34021/ve.2023.06.03(4)</unparsedContent>
+          <order>22</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kumar, A. (2019). Exploring young adults’ e-waste recycling behaviour using an extended theory of planned behaviour model: A cross-cultural study. Resources, Conservation and Recycling, 141, 378–389. https://doi.org/10.1016/j.resconrec.2018.10.013</unparsedContent>
+          <order>23</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Mor, R. S., Sangwan, K. S., Singh, S., Singh, A., &amp; Kharub, M. (2021). E-waste management for environmental sustainability: An exploratory study. Procedia CIRP Conference on Life Cycle Engineering, 98, 193–198. https://doi.org/10.1016/j.procir.2021.01.029</unparsedContent>
+          <order>24</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kalia, P., Zia, A., &amp; Mladenović, D. (2022). Examining country development indicators and e-waste under the moderating effect of country development levels and e-waste policy. International Journal of Quality and Reliability Management, 39(7), 1601–1616. https://doi.org/10.1108/IJQRM-09-2021-0335</unparsedContent>
+          <order>25</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Yilmaz, R., &amp; Koyuncu, C. (2023). The impact of globalization on the rate of e-waste recycling: Evidence from European countries. Amfiteatru Economic, 25(62), 180–195. https://doi.org/10.24818/EA/2023/62/180</unparsedContent>
+          <order>26</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zhang, Z., &amp; Meng, X. (2019). Internet penetration and the environmental Kuznets curve: A cross-national analysis. Sustainability (Switzerland), 11(5), 1–12. https://doi.org/10.3390/su1105135</unparsedContent>
+          <order>27</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Lau, L. S., Ng, C. F., Cheah, S. P., &amp; Choong, C. K. (2019). Panel data analysis (Stationarity, cointegration, and causality). In B. Özcan, and I. Öztürk (Eds.), Environmental Kuznets Curve (EKC): A Manual (pp. 101-113). Elsevier. https://doi.org/10.1016/B978-0-12-816797-7.00009-6</unparsedContent>
+          <order>28</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Dumitrescu, E., &amp; Hurlin, C. (2012). Testing for Granger non-causality in heterogeneous panels. Economic Modeling, 29(4), 1450–1460. https://doi.org/https://doi.org/10.1016/j.econmod.2012.02.014</unparsedContent>
+          <order>29</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Grossman, G. M., &amp; Krueger, A. B. (1991). Environmental impacts of a North American free trade agreement (Working Paper 3914). National Bureau of Economic Research. https://doi.org/10.3386/w3914</unparsedContent>
+          <order>30</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Ehrlich, P. R. &amp; Holdren, J. P. (1971). Impact of population growth. Science, 171, 1212–1217.         http://dx.doi.org/10.1126/science.171.3977.1212</unparsedContent>
+          <order>31</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Dietz, T., &amp; Rosat, E. A. (1997). Effects of population and affluence on CO2 emissions. Proceedings of the National Academy of Sciences of the United States of America, 94(1), 175–179.</unparsedContent>
+          <order>32</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Boubellouta, B., &amp; Kusch-Brandt, S. (2022). Determinants of e-waste composition in the EU28 + 2 countries: a panel quantile regression evidence of the STIRPAT model. International Journal of Environmental Science and Technology, 19(11), 10493–10510. https://doi.org/10.1007/s13762-021-03892-0</unparsedContent>
+          <order>33</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Sarker, A., Baul, T. K., Nath, T. K., Karmakar, S., &amp; Paul, A. (2024). Household solid waste management in a recently established municipality of Bangladesh: Prevailing practices, residents’ perceptions, attitude and awareness. World Development Sustainability, 4, 1–12. https://doi.org/10.1016/j.wds.2023.100120</unparsedContent>
+          <order>34</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Wang, A., Chen, X., Wang, X., Wei, J., &amp; Song, L. (2022). Determinants of satisfaction with solid waste management services, International Journal of Environmental Resaerch and Public Health, 19(8), Article 4610. https://doi.org/10.3390/ijerph19084610</unparsedContent>
+          <order>35</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Zambrano-Monserrate, M. A., Ruano, M. A., &amp; Ormeño-Candelario, V. (2021). Determinants of municipal solid waste: A global analysis by countries’ income level. Environmental Science and Pollution Research, 28(44), 62421–62430. https://doi.org/10.1007/s11356-021-15167-9</unparsedContent>
+          <order>36</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Osibanjo, O., &amp; Nnorom, I. C. (2007). The challenge of electronic waste (e-waste) management in developing countries. Waste Management and Research, 25(6), 489–501. https://doi.org/10.1177/0734242X07082028 </unparsedContent>
+          <order>37</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Omobowale, A. O. (2013). Tokunbo ICT: Symbolic-rationality of second-hand ICT utilization in Nigeria. International Journal of Sociology and Social Policy, 33(7), 509–523. https://doi.org/10.1108/IJSSP-05-2012-0042</unparsedContent>
+          <order>38</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Petridis, K., Petridis, N., Stiakakis, E., &amp; Dey, P. (2017). Investigating the factors that affect the time of maximum rejection rate of e-waste using survival analysis. Computers and Industrial Engineering, 108, 15–26. https://doi.org/10.1016/j.cie.2017.03.014</unparsedContent>
+          <order>39</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Boubellouta, B., &amp; Kusch-Brandt, S. (2020). Testing the environmental Kuznets Curve hypothesis for E-waste in the EU28+2 countries. Journal of Cleaner Production, 277, 1–11. https://doi.org/10.1016/j.jclepro.2020.123371</unparsedContent>
+          <order>40</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Vishwakarma, S., Kumar, V., Arya, S., Tembhare, M., Rahul, Dutta, D., &amp; Kumar, S. (2022). E-waste in information and communication technology sector: Existing scenario, management schemes and initiatives. Environmental Technology and Innovation, 27, Article 102797. https://doi.org/10.1016/j.eti.2022.102797</unparsedContent>
+          <order>41</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Otto, S., Kibbe, A., Henn, L., Hentschke, L., &amp; Kaiser, F. G. (2018). The economy of E-waste collection at the individual level: A practice oriented approach of categorizing determinants of E-waste collection into behavioral costs and motivation. Journal of Cleaner Production, 204, 33–40. https://doi.org/10.1016/j.jclepro.2018.08.293</unparsedContent>
+          <order>42</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Xavier, L. H., Giese, E. C., Ribeiro-Duthie, A. C., &amp; Lins, F. A. F. (2021). Sustainability and the circular economy: A theoretical approach focused on e-waste urban mining. Resources Policy, 74, 1–9. https://doi.org/10.1016/j.resourpol.2019.101467</unparsedContent>
+          <order>43</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Andeobu, L., Wibowo, S., &amp; Grandhi, S. (2023). Informal E-waste recycling practices and environmental pollution in Africa: What is the way forward? International Journal of Hygiene and Environmental Health, 252, Article 114192. https://doi.org/https://doi.org/10.1016/j.ijheh.2023.114192</unparsedContent>
+          <order>44</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Davis, J.-M. (2021). A model to rapidly assess informal e-waste systems. Waste Management &amp; Research: The Journal for a Sustainable Circular Economy, 39(1), 101-107. https://doi.org/10.1177/0734242X20932225</unparsedContent>
+          <order>45</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Rudolph, A., &amp; Figge, L. (2017). Determinants of ecological footprints: What is the role of globalization? Ecological Indicators, 81, 348–361. https://doi.org/10.1016/j.ecolind.2017.04.060</unparsedContent>
+          <order>46</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Nguyen, T. C. Van, &amp; Le, Q. H. (2020). Impact of globalization on CO2 emissions in Vietnam: An autoregressive distributed lag approach. Decision Science Letters, 9, 257–270. https://doi.org/10.5267/j.dsl.2019.10.001</unparsedContent>
+          <order>47</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Feng, Y., Sabir, S. A., Quddus, A., Wang, J., &amp; Abbas, S. (2024). Do the grey clouds of geopolitical risk and political globalization exacerbate environmental degradation? Evidence from resource-rich countries. Resources Policy, 89(1), Article 104533. https://doi.org/10.1016/j.resourpol.2023.104533</unparsedContent>
+          <order>48</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Qamruzzaman, M. D. (2022). Does globalization augment environmental degradation through the channel energy and FDI? Evidence from BRI initiatives. World Journal of Advanced Research and Reviews, 15(3), 037–054. https://doi.org/10.30574/wjarr.2022.15.3.0880</unparsedContent>
+          <order>49</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Rahman, M. M. (2020). Environmental degradation: The role of electricity consumption, economic growth and globalisation. Journal of Environmental Management, 253, Article 109742 https://doi.org/10.1016/j.jenvman.2019.109742</unparsedContent>
+          <order>50</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Shahbaz, M., Shahzad, S. J. H., Mahalik, M. K., &amp; Hammoudeh, S. (2018). Does globalisation worsen environmental quality in developed economies? Environmental Modeling and Assessment, 23(2), 141–156. https://doi.org/10.1007/s10666-017-9574-2</unparsedContent>
+          <order>51</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Gao, Y., Chen, H., Tauni, M. Z., Alnafrah, I., &amp; Yu, J. (2024). Unpacking the impact of financialization and globalization on environmental degradation in BRICS economies. Resources Policy, 88, 1–11. https://doi.org/10.1016/j.resourpol.2023.104497</unparsedContent>
+          <order>52</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>David, O. O., &amp; Grobler, W. (2020). Information and communication technology penetration level as an impetus for economic growth and development in Africa. Economic Research-Ekonomska Istrazivanja, 33(1), 1394–1418. ttps://doi.org/10.1080/1331677X.2020.1745661</unparsedContent>
+          <order>53</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Noah, A. O., &amp; David, O. O. (2024). Pathway for infrastructure progress in Sub-Saharan African countries: Physical and social capital perspective. Iranian Economic Review, 49.       https://doi.org/10.22059/IER.2024.372333.1007930</unparsedContent>
+          <order>54</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Noah, A. O. (2021). Examining the state of infrastructure development in Sub-Saharan Africa. The Journal of Economic Research &amp; Business Administration, 135(1), 88–102. https://doi.org/10.26577/be.2021.v135.i1.09</unparsedContent>
+          <order>55</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Baldé, C. P., Kuehr, R., Yamamoto, T., McDonald, R., Althaf, S., Bel, G., Deubzer, O., Fernandez-Cubillo, E., Forti, V., Gray, V., Herat, S., Honda, S., Iattoni, G., Khetriwal, D. S., &amp; Luda di Cortemiglia, V. (2024). The Global E-Waste Monitor 2024. https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx</unparsedContent>
+          <order>56</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Stern, D. I., Common, M. S., &amp; Barbier, E. B. (1996). Economic growth and environmental degradation: The environmental Kuznets Curve and sustainable development. World Development, 24(7), 1151–1160. https://doi.org/10.1016/0305-750X(96)00032-0</unparsedContent>
+          <order>57</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Jebli, M. Ben, Youssef, S. Ben, &amp; Ozturk, I. (2016). Testing environmental Kuznets curve hypothesis: The role of renewable and non-renewable energy consumption and trade in OECD countries. Ecological Indicators, 60, 824–831. https://doi.org/10.1016/j.ecolind.2015.08.031</unparsedContent>
+          <order>58</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Liu, X., Zhang, S., &amp; Bae, J. (2017). The impact of renewable energy and agriculture on carbon dioxide emissions: Investigating the environmental Kuznets curve in four selected ASEAN countries. Journal of Cleaner Production, 164, 1239–1247. https://doi.org/10.1016/j.jclepro.2017.07.086</unparsedContent>
+          <order>59</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Boubellouta, B., &amp; Kusch-Brandt, S. (2021). Cross-country evidence on environmental Kuznets Curve in waste electrical and electronic equipment for 174 countries. Sustainable Production and Consumption, 25, 136–151. https://doi.org/10.1016/j.spc.2020.08.006</unparsedContent>
+          <order>60</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kao, C., &amp; Chiang, M. H. (2000). On the estimation and inference of a cointegrated regression in panel data. In B. H. Baltagi, T. B. Fomby, &amp; R. C. Hill (Eds.),  Advances in Econometrics Advances in Econometrics: Nonstationary Panels, Panel Cointegration, and Dynamic PanelsAvailable to Purchase. Emerald Group Publishing Limited. https://doi.org/10.1016/S0731-9053(00)15007-8</unparsedContent>
+          <order>61</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Kusch, S., &amp; Hills, C. D. (2017). The link between e-waste and GDP: New insights from data from the pan-European region. Resources, 6(2), Article 15. https://doi.org/10.3390/resources6020015</unparsedContent>
+          <order>62</order>
+          <doi/>
+        </reference>
+        <reference>
+          <unparsedContent>Chatti, W., &amp; Majeed, M. T. (2022). Information communication technology (ICT), smart urbanization, and environmental quality: Evidence from a panel of developing and developed economies. Journal of Cleaner Production, 366, Article 132925. https://doi.org/10.1016/j.jclepro.2022.132925</unparsedContent>
+          <order>63</order>
+          <doi/>
+        </reference>
+      </references>
+    </article>
+  </issue>
+</ici-import>
