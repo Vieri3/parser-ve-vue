@@ -64,7 +64,6 @@ async function parseEveryOneArticle(url_article: string) {
                     <button
                         @click="parseEveryOneArticle(res.url)"
                         class="text-amber-700 underline hover:text-amber-500 hover:no-underline text-sm cursor-pointer"
-                        target="_blank"
                     >file.rdf</button>
                 </td>
             </tr>

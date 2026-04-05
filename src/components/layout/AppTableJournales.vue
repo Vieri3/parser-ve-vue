@@ -7,6 +7,8 @@ import { fetchArticles } from '@/services/useService'
 const { ref_show_hide_table_journales, showHideTableJournales, showHideLoading, showHideTableArticles } = useGlobalSwitchers();
 const { mass_data_displayed_in_table, mass_data_selected_values_in_table, clearMassDataDisplayedInTable, selectionAllValuesInTable, pushMassDataDisplayedInTable, clearMassDataSelectedValuesInTable } = useGlobalStores();
 
+const showAlert = () => alert('Sorry!!! This functionality is under development.')
+
 // получение данных Articles (STREAM потоком) из выбранных Journale
 async function parsePageArticles() {
     showHideTableJournales();
@@ -113,12 +115,11 @@ async function parsePageArticles() {
                     >{{ res.title }}</a>
                 </td>
                 <td class="border border-gray-300">
-                    <a
-                        class="text-green-700 underline hover:text-green-500 hover:no-underline text-sm"
-                        href="#"
-                        target="_blank"
+                    <button
+                        @click="showAlert"
+                        class="text-green-700 underline hover:text-green-500 hover:no-underline text-sm cursor-pointer"
                     >{{
-                        res.title }}.xml</a>
+                        res.title }}.xml</button>
                 </td>
             </tr>
         </tbody>
