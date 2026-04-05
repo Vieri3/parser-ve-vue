@@ -1,6 +1,6 @@
 import * as cheerio from 'cheerio'
 import { parsePdfToTxt, convertingMouthFromNumToStr, getDecodedOutputStr } from '../utils/utils.js'
-import { START_PARSE_URL_SITE, TIME_PARSE_ARTICLE } from '../constants/constants.js'
+import { START_PARSE_URL_SITE } from '../constants/constants.js'
 
 export async function parsePageJournales() {
     try {
