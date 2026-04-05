@@ -1,7 +1,7 @@
 
-export const getSchemaArchives = {
+export const getSchemaJournales = {
     schema: {
-        summary: 'Парсим URL Archives',
+        summary: 'Парсим URL Journales',
         description: 'Посылаем на сервер запрос для выполнение парсинга ссылок',
         tags: ['URL Processor'],
         params: {},      // Нет параметров пути

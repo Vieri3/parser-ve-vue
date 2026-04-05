@@ -13,11 +13,8 @@ export const enum EDataSite {
 
     //response 
     // для удобства здесь описываем RES- отправка POST - тип отправки ARCHIVES - имя 
-    RES_GET_ARCHIVES = '/archives',
+    RES_GET_JOURNALES = '/journales',
     RES_POST_ARTICLES = '/articles',
     RES_POST_ARTICLE = '/article',
 
-    // name table
-    NAME_TABLE_ARCHIVES = 'Archives',
-    NAME_TABLE_ARTICLES = 'Articles',
-};
+}

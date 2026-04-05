@@ -14,7 +14,6 @@ content-type: application/json
 POST http://localhost:3000/api/parser-fastify/article HTTP/1.1
 content-type: application/json
 
-[   
-    "https://www.virtual-economics.eu/index.php/VE/article/view/521",
-    "https://www.virtual-economics.eu/index.php/VE/article/view/524"
-]
+["https://www.virtual-economics.eu/index.php/VE/article/view/322"]
+
+

@@ -1,10 +1,3 @@
-// export function scrollToBottom(name_selector_class: string) {
-//     const container = document.querySelector(name_selector_class)
-//     if (container) {
-//         container.scrollTop = container.scrollHeight
-//     }
-// }
-
 export async function downloadFile(file_name: string, file_data: string) {
     const mime_type = 'text/plain';
     const file_extension = 'rdf';
