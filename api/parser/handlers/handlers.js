@@ -167,8 +167,11 @@ export async function getJournaleXml(obj_jourlale) {
             let keywords = '<keywords>'
             $('meta[name="citation_keywords"]').each((idx, el) => {
                 const keyword = getDecodedXml($(el).attr('content') || '');
-                keywords += '<keyword>' + keyword + '</keyword>'
-            })
+                // для таких ситуаций как в https://www.virtual-economics.eu/index.php/VE/article/view/341
+                const keyword_mini_mass = keyword.split(';').forEach(kwd => {
+                    keywords += '<keyword>' + kwd.trim() + '</keyword>'
+                });
+            });
             // close tag <keywords>
             keywords += '</keywords>'
             language_version += keywords;
@@ -228,12 +231,10 @@ export async function getJournaleXml(obj_jourlale) {
         STR_DATA_XML += '</issue>';
         // close tag </ici-import>
         STR_DATA_XML += '</ici-import>';
-        // убираем слеши перед ' апострофом 
-        const STR_DATA_XML_OUT = STR_DATA_XML.replaceAll("\\'", "'");
         // формируем название файла
         const FILE_NAME = 'copernicus-issue-VE-' + year + '-' + issue_volume + '-' + issue_number;
 
-        return { FILE_NAME, STR_DATA_XML_OUT};
+        return { FILE_NAME, STR_DATA_XML};
 
     } catch (error) {
         console.error('Parsing error:', error)

@@ -15,15 +15,17 @@ export function getDecodedRdf(str) {
 // функции принимает строку и декодирует символы
 export function getDecodedXml(str) {
     return str
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&apos;")
         .replaceAll("&", "&amp;")
-        .replaceAll("'", "\\'")
-        .replaceAll("`", "\\`")
-        .replaceAll("<", "'<'")
-        .replaceAll(">", "'>'")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
 };
 // функция получает данные <refrence> без нумерации списка
 export function getDataWithoutNum(str) {
-    return str.replace(/^[0-9.\s]*/, '');
+    return str
+        .replace(/^[0-9.\s]*/, '')
+        .trim()
 };
 
 // функция переводит из числового месяца в словарный 

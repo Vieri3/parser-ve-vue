@@ -32,7 +32,7 @@ async function getJournaleXml(obj_journale: any) {
         const res = await fetchJournaleXml(obj_journale);
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
         const data = await res.json();
-        downloadFile(data.FILE_NAME, data.STR_DATA_XML_OUT, 'xml')
+        downloadFile(data.FILE_NAME, data.STR_DATA_XML, 'xml')
     } catch (err) {
         console.error(err)
     } finally {
@@ -75,7 +75,7 @@ async function getJournaleXml(obj_journale: any) {
                     </td>
 
                     <td>
-                        <div class="border-b border-blue-500 my-2 p-1" v-for="article, idx in journale.array_urls_articles" :key="'article_' + idx">
+                        <div class=" my-2 p-1" v-for="article, idx in journale.array_urls_articles" :key="'article_' + idx">
                             <a
                                 class="text-green-500 underline hover:text-red-500 hover:no-underline"
                                 :href="article.url_article"
