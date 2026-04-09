@@ -1,19 +1,44 @@
-### GET Archives url
-GET http://localhost:3000/api/parser/journales HTTP/1.1
+### GET '/urls-journales-and-articles'
+GET http://localhost:3000/api/parser/urls-journales-and-articles HTTP/1.1
 
-
-### POST Articles url
-POST http://localhost:3000/api/parser/articles HTTP/1.1
+### POST '/document-article-rdf'
+POST http://localhost:3000/api/parser/document-article-rdf HTTP/1.1
 content-type: application/json
 
 [ 
-    "https://www.virtual-economics.eu/index.php/VE/issue/view/27" 
+    "https://www.virtual-economics.eu/index.php/VE/article/view/446" 
 ]
 
-### POST Article url
-POST http://localhost:3000/api/parser/article HTTP/1.1
+### POST '/document-journale-xml'
+POST http://localhost:3000/api/parser/document-journale-xml HTTP/1.1
 content-type: application/json
 
-["https://www.virtual-economics.eu/index.php/VE/article/view/322"]
+{
+    "title_journale":"Vol. 8 No. 4 (2025)",
+    "url_journale":"https://www.virtual-economics.eu/index.php/VE/issue/view/30",
+    "array_urls_articles":
+    [
+        {
+            "title_article":"Determinants of Audience Engagement among Virtual YouTubers",
+            "url_article":"https://www.virtual-economics.eu/index.php/VE/article/view/457"
+        },
+        {
+            "title_article":"Exploring the Demographic and Economic Dimensions of Virtual Reality Technologies in Tourism",
+            "url_article":"https://www.virtual-economics.eu/index.php/VE/article/view/446"
+        },
+        {
+            "title_article":"Introducing Perceived Prospects of Development in Virtual Reality Tourism Adoption: Evidence from PLS-SEM in an Emerging Market",
+            "url_article":"https://www.virtual-economics.eu/index.php/VE/article/view/440"
+        },
+        {
+            "title_article":"Are Trust and Its Dimensions Important in Influencing Gen Z's Impulse Buying in Live-Streaming Commerce? A Trust Transfer Theory Perspective",
+            "url_article":"https://www.virtual-economics.eu/index.php/VE/article/view/438"
+        },
+        {
+            "title_article":"Electronic Waste, Globalisation, and ICT Development: Insights from a Global Perspective",
+            "url_article":"https://www.virtual-economics.eu/index.php/VE/article/view/437"
+        }
+    ]
+}
 
 

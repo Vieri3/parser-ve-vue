@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
 body{
-    background-color: papayawhip;
+    background-color: black;
 }
+
+@import "tailwindcss";
+
+@theme{
+  --font-main: Courier, monospace;
+}
+
+.main-font {
+  font-weight: 600;
+  color: rgb(0, 255, 0);
+}
+

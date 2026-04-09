@@ -1,12 +1,8 @@
-import { parsePageJournales, parsePageArticles, parsePageArticle } from '../handlers/handlers.js'
+import { getJournalesAndArticlesUrls, getArticleRdf, getJournaleXml } from '../handlers/handlers.js'
 import { Readable } from 'stream'
 
-export async function getControllerJournales(req, reply) {
-    const result = await parsePageJournales();
-    reply.send(result)
-};
 
-export async function getControllerArticles(req, reply) {
+export async function getControllerJournalesAndArticlesUrls(_, reply) {
     // Каждая строка - JSON
     reply.header('Content-Type', 'application/x-ndjson');
     // Валидируется каждый раз
@@ -14,17 +10,22 @@ export async function getControllerArticles(req, reply) {
     // не закрываем поток сразу
     reply.header('Connection', 'keep-alive');
     // Создаем читаемый поток
-    const stream = new Readable({
+        const stream = new Readable({
         objectMode: true,
         read() { }
     });
-    // Запускаем парсинг асинхронно
-    parsePageArticles(req.body, stream)
+
+    await getJournalesAndArticlesUrls(stream); 
 
     return reply.send(stream)
+}
+
+export async function getControllerArticleRdf(req, reply) {
+    const result = await getArticleRdf(req.body);
+    reply.send(result)
 };
 
-export async function getControllerArticle(req, reply) {
-    const result = await parsePageArticle(req.body);
+export async function getControllerJournaleXml(req, reply) {
+    const result = await getJournaleXml(req.body);
     reply.send(result)
 };

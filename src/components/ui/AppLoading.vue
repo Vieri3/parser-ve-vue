@@ -8,7 +8,7 @@ const { ref_show_hide_loading } = useGlobalSwitchers();
 
 <template>
 
-<div v-if="ref_show_hide_loading" class="mx-auto">Загрузка...</div>
+<div v-if="ref_show_hide_loading" class="mx-auto text-red-500">Загрузка...</div>
 
 </template>
 

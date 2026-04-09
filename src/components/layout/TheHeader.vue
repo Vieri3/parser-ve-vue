@@ -1,34 +1,43 @@
 <script setup lang="ts">
 
-import { useGlobalSwitchers } from '@/composables/global-switches' 
-import { useGlobalStores } from '@/composables/global-stores'
-import { fetchJournales } from '@/services/useService'
+import { fetchJournalesAndArticlesUrls } from '@/services/useService.ts'
+import { useGlobalStores } from '@/composables/global-stores.ts'
+import { useGlobalSwitchers } from '@/composables/global-switches.ts'
 
-const { ref_hide_header, hideHeader, showHideLoading, showHideTableJournales } = useGlobalSwitchers();
-const { clearMassDataDisplayedInTable, clearMassDataSelectedValuesInTable, fillingMassDataDisplayedInTable } = useGlobalStores();
+const { getGlobalMassData } = useGlobalStores()
+const { ref_hide_header, hideHeader, showHideLoading, showTable } = useGlobalSwitchers()
 
-// выводим на экран все Journale 
-async function parsePageJournales() {
-    // скрываем header
+// выводим на экран все  
+async function getJournalesAndArticlesUrls() {
     hideHeader();
-    // Включаем визуально компонент загрузка
     showHideLoading();
-    // очищаем основной массив (от предыдущих операций) где берутся данные для отображения 
-    clearMassDataDisplayedInTable();
-    // очищаем массив ранее выбранных элементов (от предыдущих операций) где брались данные для пересылки
-    clearMassDataSelectedValuesInTable();
     try {
-        const res = await fetchJournales();
+        const res = await fetchJournalesAndArticlesUrls()
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
-        const data = await res.json();
-        // заполняем массив для отображения таблицы
-        fillingMassDataDisplayedInTable(data);
+
+        const reader = res.body!.getReader();
+        const decoder = new TextDecoder();
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+
+            const chunk = decoder.decode(value);
+            const lines = chunk.split('\n').filter(line => line.trim());
+
+            for (const line of lines) {
+                const item = JSON.parse(line)
+                console.log('Получен объект:', item)
+                // Обрабатываем каждый объект по мере поступления
+                getGlobalMassData(item);
+            }
+        }
     } catch (err) {
         console.error(err)
     } finally {
         // показываем компонент TABLE 
-        showHideTableJournales();
-        /// Выключаем визуально компонент загрузка
+        showTable();
+        // Выключаем визуально компонент загрузка
         showHideLoading();
     }
 };
@@ -48,10 +57,9 @@ async function parsePageJournales() {
             <slot name="txt-name-origin-site"></slot>
         </a>
         <div class="mx-auto *:mx-1">
-            <!--Button for first load links Archives-->
             <button
-                @click="parsePageJournales"
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-5 cursor-pointer rounded mx-auto"
+                @click="getJournalesAndArticlesUrls"
+                class="hover:bg-gray-900 border-dashed border-2 py-2 px-4 mt-5 cursor-pointer hover:rounded mx-auto"
             >
                 <slot name="txt-name-btn-upload"></slot>
             </button>

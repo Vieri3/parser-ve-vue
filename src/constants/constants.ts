@@ -13,8 +13,8 @@ export const enum EDataSite {
 
     //response 
     // для удобства здесь описываем RES- отправка POST - тип отправки ARCHIVES - имя 
-    RES_GET_JOURNALES = '/journales',
-    RES_POST_ARTICLES = '/articles',
-    RES_POST_ARTICLE = '/article',
+    RES_GET_JOURNALES_AND_ARTICLES_URLS = '/urls-journales-and-articles',
+    RES_POST_ARTICLE_RDF = '/document-article-rdf',
+    RES_POST_JOURNALE_XML = '/document-journale-xml'
 
 }
