@@ -2,6 +2,7 @@
 
 ## Description:
 Парсер собирает данные 'article' на сайте `https://virtual-economics.eu/` и формирует их в отдельные файлы формата .rdf
+Парсер собирает данные 'journale' на сайте `https://virtual-economics.eu/` и формирует их в отдельные файлы формата .xml
 
 ## Installation:
 
