@@ -4,6 +4,7 @@ import { fetchJournalesAndArticlesUrls } from '@/services/useService.ts'
 import { useGlobalStores } from '@/composables/global-stores.ts'
 import { useGlobalSwitchers } from '@/composables/global-switches.ts'
 
+
 const { getGlobalMassData } = useGlobalStores()
 const { ref_hide_header, hideHeader, showHideLoading, showTable } = useGlobalSwitchers()
 

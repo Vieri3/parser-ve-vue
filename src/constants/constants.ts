@@ -18,5 +18,6 @@ export const enum EDataSite {
     RES_POST_JOURNALE_XML = '/document-journale-xml',
 
     // имя для сохранения в localstorage (обновление программы)
-    NAME_LOCALSTORAGE = 'siteParserVeVueVersion'
+    NAME_LOCALSTORAGE = 'siteParserVeVueVersion',
+    NAME_SESSIONSTORAGE = 'siteParserVeVueStore'
 }
