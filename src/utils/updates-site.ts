@@ -1,30 +1,22 @@
-export const mass_updates_site: Array<{number: string, description: string}> = [
-    {
-        number: "0.0.2",
-        description: "Внесены поправки стилей заголовков"
-    },
-    {
-        number: "1.0.0",
-        description: "Переход бэкенда c Express на Fastify"
-    },
-    {
-        number: "1.0.1",
-        description: "Модернизация и оптимизация программы"
-    },
-    // {
-    //     number: "0.0.3",
-    //     description: "ВОТ ТУТ ПИШЕМ"
-    // },
-];
+import { EDataSite } from '@/constants/constants.ts'
+import { useGlobalSwitchers } from '@/composables/global-switches.ts'
+import { useGlobalStores } from '@/composables/global-stores.ts'
+
+const { showHideModalUpdates } = useGlobalSwitchers();
+const { getTxtUpdates } = useGlobalStores()
+
 
 // функция для показа изменений на сайте 
-export function getVersionSite(mass_updates: Array<{number: string, description: string}>): void{
+export function getVersionSite(mass_updates: Array<{ number: string, description: string }>): void {
     const lastUpdates = mass_updates[mass_updates.length - 1]
-
     const CURRENT_VERSION = lastUpdates.number;
-    const SAVED_VERSION = localStorage.getItem("siteParserVeVueVersion");
-    if(SAVED_VERSION !== CURRENT_VERSION){
-        alert(lastUpdates.description)
-        localStorage.setItem("siteParserVeVueVersion", CURRENT_VERSION)
+    const SAVED_VERSION = localStorage.getItem(EDataSite.NAME_LOCALSTORAGE);
+    if (SAVED_VERSION !== CURRENT_VERSION) {
+        // открываем модальное окно
+        showHideModalUpdates()
+       // добавляем в него текст обновления
+        getTxtUpdates(lastUpdates.description)
+        localStorage.setItem(EDataSite.NAME_LOCALSTORAGE, CURRENT_VERSION)
     }
-}
+};
+

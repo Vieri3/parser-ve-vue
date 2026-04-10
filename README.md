@@ -12,6 +12,9 @@
 ## Contributing:
 Чтобы ознакомится с API документацией, swagger-ui: `http://localhost:3000/documentation`
 
+## Development:
+При внесении изменений можно об этом уведомить пользователя записав данные в файл **constants-updates.ts**
+
 ## License:
 Licensed under MIT
 

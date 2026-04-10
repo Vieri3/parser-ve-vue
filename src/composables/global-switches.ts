@@ -6,6 +6,8 @@ const ref_hide_header = ref<boolean>(true);
 const ref_show_hide_loading = ref<boolean>(false);
 // скрывает/показывает БЛОК с Table 
 const ref_show_hide_table = ref<boolean>(false);
+// скрывает/показывает модальное окно 
+const ref_show_hide_modal_updates = ref<boolean>(false)
 
 export function useGlobalSwitchers() {
 
@@ -18,14 +20,20 @@ export function useGlobalSwitchers() {
     function showTable() {
         ref_show_hide_table.value = !ref_show_hide_table.value
     };
+    function showHideModalUpdates() {
+        ref_show_hide_modal_updates.value = !ref_show_hide_modal_updates.value
+    };
+
 
     return {
         hideHeader,
         showHideLoading,
         showTable,
+        showHideModalUpdates,
         ref_hide_header,
         ref_show_hide_loading,
-        ref_show_hide_table
+        ref_show_hide_table,
+        ref_show_hide_modal_updates
     }
 
 }

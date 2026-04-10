@@ -15,6 +15,8 @@ export const enum EDataSite {
     // для удобства здесь описываем RES- отправка POST - тип отправки ARCHIVES - имя 
     RES_GET_JOURNALES_AND_ARTICLES_URLS = '/urls-journales-and-articles',
     RES_POST_ARTICLE_RDF = '/document-article-rdf',
-    RES_POST_JOURNALE_XML = '/document-journale-xml'
+    RES_POST_JOURNALE_XML = '/document-journale-xml',
 
+    // имя для сохранения в localstorage (обновление программы)
+    NAME_LOCALSTORAGE = 'siteParserVeVueVersion'
 }
