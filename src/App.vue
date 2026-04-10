@@ -12,14 +12,8 @@ import AppLoading from '@/components/ui/AppLoading.vue'
         <AppLoading/>
 
         <TheHeader>
-            <template v-slot:titleSite>
-                Welcome to the article parsing page
-            </template>
-            <template #txt-name-origin-site>
-                virtual-economics.eu
-            </template>
             <template #txt-name-btn-upload>
-                download the log table from the archive
+                GO
             </template>
         </TheHeader>
         

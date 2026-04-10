@@ -1,86 +1,86 @@
 
-export const getSchemaJournales = {
-    schema: {
-        summary: 'Парсим URL Journales',
-        description: 'Посылаем на сервер запрос для выполнение парсинга ссылок',
-        tags: ['URL Processor'],
-        params: {},      // Нет параметров пути
-        querystring: {}, // Нет query параметров
-        headers: {},     // Нет обязательных заголовков
-        response: {
-            201: {
-                type: 'array',
-                description: 'Успешный ответ с обработанными URL',
-                tags: ['URL Processor'],
-                required: ['title', 'url'],
-                examples: [
-                    {
-                        title: 'Vol. 9 No. 1 (2026)',
-                        url: 'https://www.virtual-economics.eu/index.php/VE/issue/view/31'
-                    },
-                ],
-                properties: {
-                    data: {
-                        type: 'array',
-                        description: 'Массив обработанных данных',
-                        minItems: 1,
-                        items: {
-                            type: 'object',
-                            properties: {
-                                url: {
-                                    type: 'string',
-                                    description: 'Исходный URL',
-                                    format: 'uri',
-                                    example: ['https://www.virtual-economics.eu/index.php/VE/issue/view/30'],
-                                },
-                                title: {
-                                    type: 'string',
-                                    description: 'Заголовок страницы',
-                                    minLength: 1,
-                                    maxLength: 500,
-                                    example: ['Vol. 8 No. 3 (2025)'],
-                                },
-                            },
-                        },
-                    },
-                },
-            },
-            400: {
-                description: 'Ошибка валидации. Неверный формат запроса.',
-                type: 'object',
-                properties: {
-                    message: { type: 'string' },
-                    errors: { type: 'array' }
-                }
-            },
-            401: {
-                description: 'Ошибка аутентификации.',
-                type: 'object',
-                properties: {
-                    error: { type: 'string', example: 'Unauthorized' }
-                }
-            },
-            // Означает, что сервер не может найти запрашиваемый ресурс.
-            404: {
-                description: 'Элемент не найден',
-                type: 'object',
-                properties: {
-                    error: { type: 'string' },
-                    message: { type: 'string' }
-                }
-            },
-            // сервер не может обработать запрос пользователя
-            500: {
-                description: 'Внутренняя ошибка сервера',
-                type: 'object',
-                properties: {
-                    success: { type: 'boolean', example: false },
-                    error: { type: 'string', example: 'Internal Server Error' }
-                }
-            }
-        },
-    },
-};
+// export const getSchemaJournales = {
+//     schema: {
+//         summary: 'Парсим URL Journales',
+//         description: 'Посылаем на сервер запрос для выполнение парсинга ссылок',
+//         tags: ['URL Processor'],
+//         params: {},      // Нет параметров пути
+//         querystring: {}, // Нет query параметров
+//         headers: {},     // Нет обязательных заголовков
+//         response: {
+//             201: {
+//                 type: 'array',
+//                 description: 'Успешный ответ с обработанными URL',
+//                 tags: ['URL Processor'],
+//                 required: ['title', 'url'],
+//                 examples: [
+//                     {
+//                         title: 'Vol. 9 No. 1 (2026)',
+//                         url: 'https://www.virtual-economics.eu/index.php/VE/issue/view/31'
+//                     },
+//                 ],
+//                 properties: {
+//                     data: {
+//                         type: 'array',
+//                         description: 'Массив обработанных данных',
+//                         minItems: 1,
+//                         items: {
+//                             type: 'object',
+//                             properties: {
+//                                 url: {
+//                                     type: 'string',
+//                                     description: 'Исходный URL',
+//                                     format: 'uri',
+//                                     example: ['https://www.virtual-economics.eu/index.php/VE/issue/view/30'],
+//                                 },
+//                                 title: {
+//                                     type: 'string',
+//                                     description: 'Заголовок страницы',
+//                                     minLength: 1,
+//                                     maxLength: 500,
+//                                     example: ['Vol. 8 No. 3 (2025)'],
+//                                 },
+//                             },
+//                         },
+//                     },
+//                 },
+//             },
+//             400: {
+//                 description: 'Ошибка валидации. Неверный формат запроса.',
+//                 type: 'object',
+//                 properties: {
+//                     message: { type: 'string' },
+//                     errors: { type: 'array' }
+//                 }
+//             },
+//             401: {
+//                 description: 'Ошибка аутентификации.',
+//                 type: 'object',
+//                 properties: {
+//                     error: { type: 'string', example: 'Unauthorized' }
+//                 }
+//             },
+//             // Означает, что сервер не может найти запрашиваемый ресурс.
+//             404: {
+//                 description: 'Элемент не найден',
+//                 type: 'object',
+//                 properties: {
+//                     error: { type: 'string' },
+//                     message: { type: 'string' }
+//                 }
+//             },
+//             // сервер не может обработать запрос пользователя
+//             500: {
+//                 description: 'Внутренняя ошибка сервера',
+//                 type: 'object',
+//                 properties: {
+//                     success: { type: 'boolean', example: false },
+//                     error: { type: 'string', example: 'Internal Server Error' }
+//                 }
+//             }
+//         },
+//     },
+// };
 
 // export const getSchemaArticles = {
 //     schema: {
