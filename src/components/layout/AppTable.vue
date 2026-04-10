@@ -1,7 +1,9 @@
 <script setup lang="ts">
 
-import { fetchArticleRdf, fetchJournaleXml } from '@/services/useService'
-import { downloadFile } from '@/utils/utils'
+import type { IDataGlobalMass } from '@/types/global-types.ts'
+
+import { fetchArticleRdf, fetchJournaleXml } from '@/services/useService.ts'
+import { downloadFile } from '@/utils/utils.ts'
 
 import { useGlobalStores } from '@/composables/global-stores.ts'
 import { useGlobalSwitchers } from '@/composables/global-switches.ts'
@@ -26,7 +28,7 @@ async function getArticleRdf(url_article: string) {
 };
 
 // получение данных Journale XML
-async function getJournaleXml(obj_journale: any) {
+async function getJournaleXml(obj_journale: IDataGlobalMass) {
     showHideLoading();
     try {
         const res = await fetchJournaleXml(obj_journale);
