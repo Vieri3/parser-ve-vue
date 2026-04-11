@@ -4,7 +4,6 @@ import { fetchJournalesAndArticlesUrls } from '@/services/useService.ts'
 import { useGlobalStores } from '@/composables/global-stores.ts'
 import { useGlobalSwitchers } from '@/composables/global-switches.ts'
 
-
 const { getGlobalMassData } = useGlobalStores()
 const { ref_hide_header, hideHeader, showHideLoading, showTable } = useGlobalSwitchers()
 
@@ -15,30 +14,12 @@ async function getJournalesAndArticlesUrls() {
     try {
         const res = await fetchJournalesAndArticlesUrls()
         if (!res.ok) { throw new Error(`HTTP error! status: ${res.status}`) };
-
-        const reader = res.body!.getReader();
-        const decoder = new TextDecoder();
-
-        while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-
-            const chunk = decoder.decode(value);
-            const lines = chunk.split('\n').filter(line => line.trim());
-
-            for (const line of lines) {
-                const item = JSON.parse(line)
-                console.log('Получен объект:', item)
-                // Обрабатываем каждый объект по мере поступления
-                getGlobalMassData(item);
-            }
-        }
+        const data = await res.json();
+        getGlobalMassData(data);
     } catch (err) {
         console.error(err)
     } finally {
-        // показываем компонент TABLE 
         showTable();
-        // Выключаем визуально компонент загрузка
         showHideLoading();
     }
 };

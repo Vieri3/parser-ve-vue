@@ -2,7 +2,7 @@ import * as cheerio from 'cheerio'
 import { getDecodedRdf, getDecodedXml, getDecryptedEmail, getDataWithoutNum, getNameOfTheMonth } from '../utils/utils.js'
 import { START_PARSE_URL_SITE } from '../constants/constants.js'
 
-export async function getJournalesAndArticlesUrls(stream) {
+export async function getJournalesAndArticlesUrls() {
     try {
         const DATA_URLS = [];
         const res = await fetch(START_PARSE_URL_SITE);
@@ -35,13 +35,8 @@ export async function getJournalesAndArticlesUrls(stream) {
                 const title_article = $(element).text().trim();
                 DATA_URLS[i].array_urls_articles.push({ title_article, url_article });
             });
-            // Отправляем в поток kаждый объект сразу после парсинга
-            stream.push(JSON.stringify(DATA_URLS[i]) + '\n')
         }
-
-        // Завершаем поток
-        stream.push(null)
-
+        return DATA_URLS
     } catch (error) {
         console.error('Parsing error:', error)
         return []

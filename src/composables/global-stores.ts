@@ -8,7 +8,8 @@ const GLOBAL_MODAL_UPDATES = ref<string>('')
 export function useGlobalStores() {
 
     function getGlobalMassData(data: IDataGlobalMass): void {
-        GLOBAL_MASS_DATA_URL.push(data)
+        // @ts-ignore
+        GLOBAL_MASS_DATA_URL.push(...data)
         // при первой загрузке мы сохраняем копию в seesionStorage
         window.sessionStorage.setItem(EDataSite.NAME_SESSIONSTORAGE, JSON.stringify(GLOBAL_MASS_DATA_URL))
     }
@@ -20,8 +21,6 @@ export function useGlobalStores() {
     function getGlobalMassDataFromSessionStorage(data_session_storage: string){
         // из строки в массив
         const mass_store = JSON.parse(data_session_storage as string)
-        // Очищаем массив
-        // GLOBAL_MASS_DATA_URL.length = 0;
         // Добавляем новые элементы
         GLOBAL_MASS_DATA_URL.push(...mass_store);
     }
