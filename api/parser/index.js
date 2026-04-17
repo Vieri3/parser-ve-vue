@@ -27,7 +27,7 @@ const start = async () => {
         })
         await fastify.register(cors)
         await fastify.register(useRoutes, { prefix: SUBDIRECTORY_SITE_API_NAME })
-        // запускаем и считываем 
+        // в фреймворке Fastify используется для выполнения кода после того, как все плагины были загружены
         await fastify.ready()
         fastify.swagger()
 

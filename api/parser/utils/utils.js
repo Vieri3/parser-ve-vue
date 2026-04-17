@@ -6,10 +6,6 @@ export function getDecodedRdf(str) {
         .replaceAll("M&amp;A", "M&A")
         .replaceAll("&quot;", '"')
         .replaceAll("&nbsp;", " ");
-    // .replaceAll("'", "\'")
-    // .replaceAll("'", "\"")
-    // .replaceAll("`", "\`")
-    // .replaceAll("`", "\\")
 };
 
 // функции принимает строку и декодирует символы
@@ -21,6 +17,7 @@ export function getDecodedXml(str) {
         .replaceAll("<", "&lt;")
         .replaceAll(">", "&gt;")
 };
+
 // функция получает данные <refrence> без нумерации списка
 export function getDataWithoutNum(str) {
     return str
